@@ -183,3 +183,24 @@ class Command(BaseCommand):
 #                 self.character = self.caller.get_puppet(self.session)
 #             else:
 #                 self.character = None
+
+class CmdAbilities(Command):
+    """
+    List abilities
+    
+    Usage:
+        abilities
+        
+    Displays a list of your current ability values.
+    """
+    key = "abilities"
+    aliases = ["abi", "abil"]
+    lock = "cmd:all()"
+    help_category = "The Ride"
+    
+    def func(self):
+        "Implements the actual functionality"
+        
+        strength, agility, magic = self.caller.get_abilities()
+        string = "STR: %s, AGI: %s, MAG: %s" % (strength, agility, magic)
+        self.caller.msg(string)

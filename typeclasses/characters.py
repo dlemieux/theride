@@ -30,4 +30,11 @@ class Character(DefaultCharacter):
     at_post_puppet - Echoes "AccountName has entered the game" to the room.
 
     """
-    pass
+    
+    def at_object_creation(self):
+        self.db.strength = 5
+        self.db.agility = 4
+        self.db.magic = 2
+        
+    def get_abilities(self):
+        return self.db.strength, self.db.agility, self.db.magic
