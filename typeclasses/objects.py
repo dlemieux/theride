@@ -12,15 +12,14 @@ inheritance.
 """
 
 import datetime
+import random
 
 from evennia import CmdSet
 from evennia import Command
 from evennia import create_object
 from evennia import DefaultObject
 
-
-
-TEST_MODE = True
+DALE_TEST_MODE = True
 
 class Object(DefaultObject):
     """
@@ -187,9 +186,6 @@ class Heavy(DefaultObject):
         self.db.get_err_msg = "This is too heavy to pick up."
 
 
-# TODO: Implement read command for the park pass
-        
-        
 class ParkPass(DefaultObject):
     """
     This implements a user's park pass.
@@ -210,8 +206,8 @@ class ParkPass(DefaultObject):
         self.db.park_points = 0
         now = datetime.datetime.now()
         self.db.creation_date = str(now)
-    
-        
+
+
 class CmdBuyPass(Command):
     """
     Usage:
@@ -294,10 +290,10 @@ class CmdSetPassSalesClerk(CmdSet):
         """Called at first creation of cmdset"""
         self.add(CmdBuyPass())
         
-        if TEST_MODE:
+        if DALE_TEST_MODE:
             self.add(CmdDropPass())
 
-
+        
 class PassSalesClerk(DefaultObject):
     """
     This object represents a pass sales clerk. When people use the
@@ -329,13 +325,4 @@ class PassSalesClerk(DefaultObject):
         else:
             caller.msg("You don't have a pass to drop.")
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+      
