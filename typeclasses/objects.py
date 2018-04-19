@@ -201,7 +201,9 @@ class ParkPass(DefaultObject):
         
         # Set system properties
         self.db.desc = "You're very own park pass! Read it to see the details!"
+        self.db.drop_err_msg = "The Park Pass is the most important item you own! Don't be so careless!"
         # TODO: Make sure they can't drop the pass
+        self.locks.add("drop:false()")
         # TODO: Add command set for people who hold a pass self.cmdset.add_default(CmdSetLight, permanent=True)
         
         # Set custom properties to store for the user
