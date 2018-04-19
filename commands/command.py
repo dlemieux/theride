@@ -184,23 +184,26 @@ class Command(BaseCommand):
 #             else:
 #                 self.character = None
 
-class CmdAbilities(Command):
+class CmdMoney(Command):
     """
-    List abilities
+    Check how much money you have.
     
     Usage:
-        abilities
+        money
         
-    Displays a list of your current ability values.
+    Displays how much money you have.
     """
-    key = "abilities"
-    aliases = ["abi", "abil"]
+    key = "money"
+    aliases = ["wallet"]
     lock = "cmd:all()"
     help_category = "The Ride"
     
     def func(self):
         "Implements the actual functionality"
         
-        strength, agility, magic = self.caller.get_abilities()
-        string = "STR: %s, AGI: %s, MAG: %s" % (strength, agility, magic)
+        curMoney = self.caller.get_money()
+        string = "You have $%s" % (curMoney)
         self.caller.msg(string)
+        
+        
+

@@ -32,9 +32,52 @@ class Character(DefaultCharacter):
     """
     
     def at_object_creation(self):
-        self.db.strength = 5
-        self.db.agility = 4
-        self.db.magic = 2
+        self.db.money = 0
+        self.db.has_id_card = False
         
-    def get_abilities(self):
-        return self.db.strength, self.db.agility, self.db.magic
+    def get_money(self):
+        return self.db.money
+        
+    def has_id_card(self):
+        return self.db.has_id_card
+
+
+class ParkPassCreator(Character):
+    """
+    An NPC character to help the player make their park pass
+    """
+    
+    def at_heard_say(self, message, from_obj):
+        """
+        Echos what they heard
+        """
+        
+        # message will be of the form `<Person> says, "say_text"`
+        message = message.split('says, ')[1].strip(' "');
+        
+        return "%s said: '%s'" % (from_obj, message)
+    
+    
+    def msg(self, text=None, from_obj=None, **kwargs):
+        "Custom msg() method reacting to say."
+
+        if from_obj != self:
+            # make sure to not repeat what we ourselves said or we'll create a loop
+            try:
+                # if text comes from a say, `text` is `('say_text', {'type': 'say'})`
+                say_text, is_say = text[0], text[1]['type'] == 'say'
+            except Exception:
+                is_say = False
+                
+            if is_say:
+                # First get the response (if any)
+                response = self.at_heard_say(say_text, from_obj)
+                
+                # If there is a response
+                if response != None:
+                    # speak ourselves, using the return
+                    self.execute_cmd("say %s" % response) # This responds like a real character so others can react appropriately
+    
+        # this is needed if anyone ever puppets this NPC - without it you would never
+        # get any feedback from the server (not even the results of look)
+        super(ParkPassCreator, self).msg(text=text, from_obj=from_obj, **kwargs)

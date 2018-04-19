@@ -1,0 +1,27 @@
+
+
+
+# In Limbo
+# Use admin portal to rename to Entrance
+@set Entrance/desc = From over a loudspeaker you hear: "Welcome to The Ride! Enjoy your stay!"\nThis theme park has been in operation for many years, attracting young and old from far and wide.\nAn assorment of people are milling about trying to get their tickets in order.
+
+# Add a bench in the entrance
+@create/drop bench
+@set bench/desc = A sturdy bench that is full of people waiting for the friends to arrive. It's always so hard to find a free seat!
+@lock bench = get:false()
+@set bench/get_err_msg = It'd be rude to pick it up while others are still sitting.
+
+# Add a heavy rock to the entrance
+@create/drop rock:objects.Heavy
+@set rock/desc = There's a giant theme park ahead of you, and you're here looking at a rock.
+@name box = very large box;box;very;crate
+
+# Create the Park Pass Creator in the Entrance
+@create/drop TicketMaker:npc.ParkPassCreator
+
+# Create the ticket agent to sell tickets
+@create/drop Ticket Agent:objects.TicketBooth
+
+
+
+# END

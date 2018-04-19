@@ -11,6 +11,8 @@ inheritance.
 
 """
 from evennia import DefaultObject
+from evennia import Command
+from evennia import CmdSet
 
 
 class Object(DefaultObject):
@@ -161,3 +163,101 @@ class Object(DefaultObject):
 
      """
     pass
+    
+    
+class Heavy(DefaultObject):
+    "Heavy object"
+    def at_object_creation(self):
+        "Called whenever a new object is created"
+        
+        # lock the object down by default
+        self.locks.add("get:false()")
+        
+        # the default "get" command looks for this Attribute in order
+        # to return a customized error message (we just happen to know
+        # this, you'd have to look at the code of the 'get' command to
+        # find out).
+        self.db.get_err_msg = "This is too heavy to pick up."
+
+
+class CmdBuyTicket(Command):
+    """
+    Usage:
+        buy ticket
+        
+    This will let you try to buy a ticket for the park.
+    """
+    key = "buy ticket"
+    aliases = ["buy ticket", "buy pass"]
+    locks = "cmd:all()"
+    help_category = "The Ride"
+    
+    def func(self):
+        """
+        Gets a ticket from the agent.
+        """
+        #self.caller.msg("enter CmdBuyTicket")
+        self.obj.produce_ticket(self.caller)
+
+
+class CmdSetTicketSalesBooth(CmdSet):
+    """
+    The cmdset for the ticket sales booth.
+    """
+    key = "ticketsales_cmdset"
+
+    def at_cmdset_creation(self):
+        """Called at first creation of cmdset"""
+        self.add(CmdBuyTicket())
+
+
+class TicketBooth(DefaultObject):
+    """
+    this object represents a ticket booth. when people use the
+    "buy ticket" command on this booth, it will produce one
+    ticket. this will also set a property on the character
+    to make sure they can't get more than one at a time.
+    """
+
+    def at_object_creation(self):
+        """
+        called at creation
+        """
+        self.cmdset.add_default(CmdSetTicketSalesBooth, permanent=True)
+        self.db.booth_id = "ticketbooth_1"
+        # these are prototype names from the prototype
+        # dictionary above.
+        #self.db.get_weapon_msg = "you find |c%s|n."
+        self.db.no_more_tickets_msg = "You already have a ticket for the park."
+        #self.db.available_weapons = ["knife", "dagger",
+        #                             "sword", "club"]
+
+    def produce_ticket(self, caller):
+        """
+        this will produce a new ticket from the ticket booth,
+        assuming the caller hasn't already gotten one. when
+        doing so, the caller will get tagged with the id
+        of this booth, to make sure they cannot keep
+        pulling tickets from it indefinitely.
+        """
+        #caller.msg("start product_ticket")
+        
+        booth_id = self.db.booth_id
+        if caller.tags.get(booth_id):
+            caller.msg(self.db.no_more_tickets_msg)
+        else:
+            # give the player a ticket
+            
+            #playername = yield("what name would you like on there?")
+            #caller.msg("Here you go %s!" % (playername))
+            
+            caller.msg("Here you go!")
+            caller.tags.add(booth_id)
+        
+            #prototype = random.choice(self.db.available_weapons)
+            # use the spawner to create a new weapon from the
+            # spawner dictionary, tag the caller
+            #wpn = spawn(weapon_prototypes[prototype], prototype_parents=weapon_prototypes)[0]
+            
+            #wpn.location = caller
+            #caller.msg(self.db.get_weapon_msg % wpn.key)
