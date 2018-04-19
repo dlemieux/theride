@@ -198,7 +198,39 @@ class CmdBuyPass(Command):
         Gets a pass from the agent.
         """
         #self.caller.msg("enter CmdBuyPass")
-        self.obj.produce_pass(self.caller)
+        #self.caller.msg("one")
+        #yield 2
+        #self.caller.msg("two")
+        
+        # Option 1: Call method on the clerk to give the pass
+        #self.obj.produce_pass(self.caller)
+        
+        # Option 2 to allow the use of yield statements
+        caller = self.caller
+        if caller.db.has_season_pass:
+            caller.msg(self.db.only_one_pass_msg)
+        else:
+            # give the player a pass
+            caller.msg("Clerk: Alright! We'll have you all set up in a jiffy!")
+            caller.msg("       Just a few details to collect first...")
+            caller.msg("       *The clerk rummages around*")
+            
+            yield 5
+            
+            homeLocation = yield("       Okay, question one. What town are you from?")
+            
+            caller.msg("       %s eh... wait... what did you say?" % (homeLocation))
+            
+            caller.msg("       Are you THE %s of %s! I'm your biggest fan!" % (caller.name, homeLocation))
+            
+            caller.msg("       Please take this pass for free and enjoy the park! It's an honor!")
+            
+            caller.msg("       *The Clerk shouts into the crowd*")
+            caller.msg("       Hey everyone! Make way for %s of %s!" % (caller.name, homeLocation))
+            
+            
+            caller.msg("       Here you go! *hands you a pass*")
+            caller.db.has_season_pass = True # maybe store the date they became a pass holder
 
 
 class CmdDropPass(Command):
@@ -273,16 +305,16 @@ class PassSalesClerk(DefaultObject):
             caller.msg(self.db.only_one_pass_msg)
         else:
             # give the player a pass
-            #caller.msg("Alright! We'll have you all set up in a jiffy!")
-            #caller.msg("Just a few details to collect first...")
+            caller.msg("Clerk: Alright! We'll have you all set up in a jiffy!")
+            caller.msg("       Just a few details to collect first...")
             
             #yield 2
             
-            #homeLocation = yield("What town are you from?")
-            #caller.msg("Here you go %s of %s!" % (caller.name, homeLocation))
+            #homeLocation = yield("       What town are you from?")
+            #caller.msg("      Here you go %s of %s!" % (caller.name, homeLocation))
             
             
-            caller.msg("Here you go!")
+            caller.msg("       Here you go!")
             caller.db.has_season_pass = True # maybe store the date they became a pass holder
         
             #prototype = random.choice(self.db.available_weapons)
@@ -299,7 +331,9 @@ class PassSalesClerk(DefaultObject):
         
         if caller.db.has_season_pass:
             caller.db.has_season_pass = False
-            caller.msg("The pass sales clerk rips up your pass")
+            caller.msg("The pass sales clerk rips up your pass.")
+        else:
+            caller.msg("You don't have a pass to drop.")
         
         #if caller.tags.get(booth_id, tagCategory):
         #    
