@@ -20,7 +20,7 @@
 @create/drop TicketMaker:npc.ParkPassCreator
 
 # Create the ticket agent to sell tickets
-@create/drop Ticket Agent:objects.TicketBooth
+@create/drop Pass Sales Clerk:objects.PassSalesClerk
 
 
 

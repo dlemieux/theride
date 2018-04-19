@@ -180,42 +180,42 @@ class Heavy(DefaultObject):
         self.db.get_err_msg = "This is too heavy to pick up."
 
 
-class CmdBuyTicket(Command):
+class CmdBuyPass(Command):
     """
     Usage:
-        buy ticket
+        buy pass
         
-    This will let you try to buy a ticket for the park.
+    This will let you try to buy a pass for the park.
     """
-    key = "buy ticket"
-    aliases = ["buy ticket", "buy pass"]
+    key = "buy pass"
+    aliases = ["buy season pass"]
     locks = "cmd:all()"
     help_category = "The Ride"
     
     def func(self):
         """
-        Gets a ticket from the agent.
+        Gets a pass from the agent.
         """
-        #self.caller.msg("enter CmdBuyTicket")
-        self.obj.produce_ticket(self.caller)
+        #self.caller.msg("enter CmdBuyPass")
+        self.obj.produce_pass(self.caller)
 
 
-class CmdSetTicketSalesBooth(CmdSet):
+class CmdSetPassSalesClerk(CmdSet):
     """
-    The cmdset for the ticket sales booth.
+    The cmdset for the pass sales clerk.
     """
-    key = "ticketsales_cmdset"
+    key = "passsales_cmdset"
 
     def at_cmdset_creation(self):
         """Called at first creation of cmdset"""
-        self.add(CmdBuyTicket())
+        self.add(CmdBuyPass())
 
 
-class TicketBooth(DefaultObject):
+class PassSalesClerk(DefaultObject):
     """
-    this object represents a ticket booth. when people use the
-    "buy ticket" command on this booth, it will produce one
-    ticket. this will also set a property on the character
+    This object represents a pass sales clerk. When people use the
+    "buy pass" command on this sales clerk, it will produce one
+    pass. This will also set a property on the character
     to make sure they can't get more than one at a time.
     """
 
@@ -223,36 +223,43 @@ class TicketBooth(DefaultObject):
         """
         called at creation
         """
-        self.cmdset.add_default(CmdSetTicketSalesBooth, permanent=True)
-        self.db.booth_id = "ticketbooth_1"
+        self.db.desc = "The pass sales clerk for the park. Purchase your season pass today!"
+        self.locks.add("get:false()")
+        self.locks.add("ic:false()")
+        
+        self.cmdset.add_default(CmdSetPassSalesClerk, permanent=True)
+        self.db.booth_id = "passsalesman_1"
         # these are prototype names from the prototype
         # dictionary above.
         #self.db.get_weapon_msg = "you find |c%s|n."
-        self.db.no_more_tickets_msg = "You already have a ticket for the park."
+        self.db.only_one_pass_msg = "Pass Sales Clerk: Oh hey! How's that pass working out for ya?\n                  You won't ever need another one. That's a lifetime guarantee!"
         #self.db.available_weapons = ["knife", "dagger",
         #                             "sword", "club"]
 
-    def produce_ticket(self, caller):
+    def produce_pass(self, caller):
         """
-        this will produce a new ticket from the ticket booth,
-        assuming the caller hasn't already gotten one. when
+        This will produce a new pass from the pass sales clerk,
+        assuming the caller hasn't already gotten one. When
         doing so, the caller will get tagged with the id
-        of this booth, to make sure they cannot keep
-        pulling tickets from it indefinitely.
+        of this sales clerk, to make sure they cannot keep
+        getting passes from it indefinitely.
         """
-        #caller.msg("start product_ticket")
+        #caller.msg("start product_pass")
+        
+        tagName = "the_ride"
         
         booth_id = self.db.booth_id
-        if caller.tags.get(booth_id):
-            caller.msg(self.db.no_more_tickets_msg)
+        if caller.tags.get(booth_id, tagName):
+            caller.msg(self.db.only_one_pass_msg)
         else:
-            # give the player a ticket
+            # give the player a pass
             
             #playername = yield("what name would you like on there?")
             #caller.msg("Here you go %s!" % (playername))
             
+            
             caller.msg("Here you go!")
-            caller.tags.add(booth_id)
+            caller.tags.add(booth_id, tagName)
         
             #prototype = random.choice(self.db.available_weapons)
             # use the spawner to create a new weapon from the
@@ -261,3 +268,16 @@ class TicketBooth(DefaultObject):
             
             #wpn.location = caller
             #caller.msg(self.db.get_weapon_msg % wpn.key)
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
