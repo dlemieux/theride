@@ -10,9 +10,15 @@ the other types, you can do so by adding this as a multiple
 inheritance.
 
 """
-from evennia import DefaultObject
-from evennia import Command
+
+import datetime
+
 from evennia import CmdSet
+from evennia import Command
+from evennia import create_object
+from evennia import DefaultObject
+
+
 
 TEST_MODE = True
 
@@ -181,6 +187,29 @@ class Heavy(DefaultObject):
         self.db.get_err_msg = "This is too heavy to pick up."
 
 
+# TODO: Implement read command for the park pass
+        
+        
+class ParkPass(DefaultObject):
+    """
+    This implements a user's park pass.
+    """
+
+    def at_object_creation(self):
+        """Called when object is first created."""
+        super(ParkPass, self).at_object_creation()
+        
+        # Set system properties
+        self.db.desc = "You're very own park pass! Read it to see the details!"
+        # TODO: Make sure they can't drop the pass
+        # TODO: Add command set for people who hold a pass self.cmdset.add_default(CmdSetLight, permanent=True)
+        
+        # Set custom properties to store for the user
+        self.db.park_points = 0
+        now = datetime.datetime.now()
+        self.db.creation_date = str(now)
+    
+        
 class CmdBuyPass(Command):
     """
     Usage:
@@ -208,7 +237,7 @@ class CmdBuyPass(Command):
         # Option 2 to allow the use of yield statements
         caller = self.caller
         if caller.db.has_season_pass:
-            caller.msg(self.db.only_one_pass_msg)
+            caller.msg("Pass Sales Clerk: Oh hey! How's that pass working out for ya?\n                  You won't ever need another one. That's a lifetime guarantee!")
         else:
             # give the player a pass
             caller.msg("Clerk: Alright! We'll have you all set up in a jiffy!")
@@ -231,6 +260,10 @@ class CmdBuyPass(Command):
             
             caller.msg("       Here you go! *hands you a pass*")
             caller.db.has_season_pass = True # maybe store the date they became a pass holder
+            
+            caller.msg("Test 1.1")
+            create_object(ParkPass, key="Park Pass", location=caller)
+            caller.msg("Test 1.2")
 
 
 class CmdDropPass(Command):
@@ -280,7 +313,6 @@ class PassSalesClerk(DefaultObject):
         self.locks.add("ic:false()")
         
         self.cmdset.add_default(CmdSetPassSalesClerk, permanent=True)
-        self.db.booth_id = "passsalesman_1"
         # these are prototype names from the prototype
         # dictionary above.
         #self.db.get_weapon_msg = "you find |c%s|n."
@@ -288,56 +320,12 @@ class PassSalesClerk(DefaultObject):
         #self.db.available_weapons = ["knife", "dagger",
         #                             "sword", "club"]
 
-    def produce_pass(self, caller):
-        """
-        This will produce a new pass from the pass sales clerk,
-        assuming the caller hasn't already gotten one. When
-        doing so, the caller will get tagged with the id
-        of this sales clerk, to make sure they cannot keep
-        getting passes from it indefinitely.
-        """
-        #caller.msg("start product_pass")
-        
-        tagCategory = "the_ride"
-        booth_id = self.db.booth_id
-        
-        if caller.db.has_season_pass:
-            caller.msg(self.db.only_one_pass_msg)
-        else:
-            # give the player a pass
-            caller.msg("Clerk: Alright! We'll have you all set up in a jiffy!")
-            caller.msg("       Just a few details to collect first...")
-            
-            #yield 2
-            
-            #homeLocation = yield("       What town are you from?")
-            #caller.msg("      Here you go %s of %s!" % (caller.name, homeLocation))
-            
-            
-            caller.msg("       Here you go!")
-            caller.db.has_season_pass = True # maybe store the date they became a pass holder
-        
-            #prototype = random.choice(self.db.available_weapons)
-            # use the spawner to create a new weapon from the
-            # spawner dictionary, tag the caller
-            #wpn = spawn(weapon_prototypes[prototype], prototype_parents=weapon_prototypes)[0]
-            
-            #wpn.location = caller
-            #caller.msg(self.db.get_weapon_msg % wpn.key)
-
     def drop_pass(self, caller):
-        booth_id = self.db.booth_id
-        tagCategory = "the_ride"
-        
         if caller.db.has_season_pass:
             caller.db.has_season_pass = False
             caller.msg("The pass sales clerk rips up your pass.")
         else:
             caller.msg("You don't have a pass to drop.")
-        
-        #if caller.tags.get(booth_id, tagCategory):
-        #    
-        #    caller.tags.remove(booth_id, tagCategory)
             
             
             
