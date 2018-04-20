@@ -259,9 +259,9 @@ class CmdBuyPass(Command):
             caller.msg("       Here you go! *hands you a pass*")
             caller.db.has_season_pass = True # maybe store the date they became a pass holder
             
-            caller.msg("Test 1.1")
+            #caller.msg("Test 1.1")
             create_object(ParkPass, key="Park Pass", location=caller)
-            caller.msg("Test 1.2")
+            #caller.msg("Test 1.2")
 
 
 class CmdDropPass(Command):
