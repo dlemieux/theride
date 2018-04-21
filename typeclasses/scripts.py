@@ -89,3 +89,31 @@ class Script(DefaultScript):
 
     """
     pass
+
+
+class EchoScript(DefaultScript):
+    key = "echo_script"
+    
+    def msg(self, text=None, from_obj=None, **kwargs):
+        "Custom msg() method reacting to say."
+
+        if from_obj != self:
+            # make sure to not repeat what we ourselves said or we'll create a loop
+            try:
+                # if text comes from a say, `text` is `('say_text', {'type': 'say'})`
+                say_text, is_say = text[0], text[1]['type'] == 'say'
+            except Exception:
+                is_say = False
+                
+            if is_say:
+                # First get the response (if any)
+                response = self.at_heard_say(say_text, from_obj)
+                
+                # If there is a response
+                if response != None:
+                    # speak ourselves, using the return
+                    self.execute_cmd("say %s" % response) # This responds like a real character so others can react appropriately
+    
+        # this is needed if anyone ever puppets this NPC - without it you would never
+        # get any feedback from the server (not even the results of look)
+        super(ParkPassCreator, self).msg(text=text, from_obj=from_obj, **kwargs)

@@ -210,4 +210,72 @@ class CmdMoney(Command):
         string = "You have $%s" % (curMoney)
         self.caller.msg(string)
         
-       
+
+class CmdConsider(Command):
+    """
+    Consider another target.
+
+    Usage:
+      consider <target>
+
+    Observes your target and gives an estimation of their abilities in a fight.
+    """
+    key = "consider"
+    aliases = ["cons"]
+    locks = "cmd:all()"
+    help_category = "The Ride"
+    arg_regex = r"\s|$"
+
+    def func(self):
+        """
+        Handle the consider.
+        """
+        caller = self.caller
+        if not self.args:
+            caller.msg("consider <target>")
+            return
+        else:
+            target = caller.search(self.args)
+            if not target:
+                return
+
+        # Do the action
+        if target.db.consider_msg:
+            caller.msg(target.db.consider_msg)
+        else:
+            caller.msg("It could go either way.")
+
+
+class CmdTalkTo(Command):
+    """
+    Talk to a target.
+
+    Usage:
+      talk to <target>
+
+    Talk to a target person.
+    """
+    key = "talk to"
+    aliases = ["talk"]
+    locks = "cmd:all()"
+    help_category = "The Ride"
+    arg_regex = r"\s|$"
+
+    def func(self):
+        """
+        Talk to the target.
+        """
+        caller = self.caller
+        if not self.args:
+            caller.msg("talk to <target>")
+            return
+        else:
+            target = caller.search(self.args)
+            if not target:
+                return
+
+        # Do the action
+        if target.db.talk_to_msg:
+            caller.msg(target.db.talk_to_msg)
+        else:
+            caller.msg("They have nothing to say.")

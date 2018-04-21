@@ -264,20 +264,19 @@ class CmdBuyPass(Command):
             #caller.msg("Test 1.2")
 
 
-class CmdDropPass(Command):
+class CmdDestroyPass(Command):
     """
     Usage:
-        drop pass
+        destroy pass
         
     This is a test command which gets rid of your pass
     """
-    key = "drop pass"
-    aliases = ["drop season pass"]
+    key = "destroy pass"
     locks = "cmd:all()"
     help_category = "The Ride"
     
     def func(self):
-        self.obj.drop_pass(self.caller)
+        self.obj.destroy_pass(self.caller)
 
 
 class CmdSetPassSalesClerk(CmdSet):
@@ -291,7 +290,7 @@ class CmdSetPassSalesClerk(CmdSet):
         self.add(CmdBuyPass())
         
         if DALE_TEST_MODE:
-            self.add(CmdDropPass())
+            self.add(CmdDestroyPass())
 
         
 class PassSalesClerk(DefaultObject):
@@ -318,9 +317,10 @@ class PassSalesClerk(DefaultObject):
         #self.db.available_weapons = ["knife", "dagger",
         #                             "sword", "club"]
 
-    def drop_pass(self, caller):
+    def destroy_pass(self, caller):
         if caller.db.has_season_pass:
             caller.db.has_season_pass = False
+            # Delete the item from their inventory
             caller.msg("The pass sales clerk rips up your pass.")
         else:
             caller.msg("You don't have a pass to drop.")
