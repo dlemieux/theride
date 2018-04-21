@@ -22,6 +22,7 @@ from commands.command import CmdAttack
 from commands.command import CmdCastMagic
 from commands.command import CmdKill
 from commands.command import CmdHelpNewbie
+from commands.command import CmdExits
 
 
 class CharacterCmdSet(default_cmds.CharacterCmdSet):
@@ -43,6 +44,7 @@ class CharacterCmdSet(default_cmds.CharacterCmdSet):
         self.add(CmdTalkTo())
         self.add(CmdConsider())
         self.add(CmdHelpNewbie())
+        #self.add(CmdExits())
 
         self.add(CmdMoney())
 

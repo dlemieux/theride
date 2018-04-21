@@ -369,3 +369,40 @@ class CmdHelpNewbie(Command):
         string += "riding The Ride!"
 
         caller.msg(string)
+
+
+# TODO: Not working yet
+class CmdExits(Command):
+    """
+    List the exits.
+
+    Usage:
+      exits
+
+    List the exits from this location.
+    """    
+    key = "exits"
+    locks = "cmd:all()"
+
+    def func(self):
+        caller = self.caller
+
+        allExits = caller.location.exits
+        if not allExits:
+            caller.msg("There are no exits.")
+            return;
+
+        string = "|wExits:|n "
+
+        firstExit = True
+
+        for curExit in allExits:
+            if self.access(caller, 'view'):
+                if firstExit:
+                    firstExit = False
+                else:
+                    string += ", "
+
+                string += "|g" + exitName + "|n"
+
+        caller.msg(string)
