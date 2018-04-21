@@ -344,3 +344,28 @@ class CmdKill(Command):
             return
 
         caller.msg("Security Guard: Did you really think you'd get away with that?")
+
+
+class CmdHelpNewbie(Command):
+    """
+    Display help for new players.
+
+    Usage:
+      help newbie
+
+    Display help for new players.
+    """    
+    key = "help newbie"
+    aliases = ["help new"]
+    locks = "cmd:all()"
+
+    def func(self):
+        caller = self.caller
+
+        string = ""
+        string += "Welcome to the Ride!\n"
+        string += "You're going to do great!\n"
+        string += "Have fun looking around the theme park and\n"
+        string += "riding The Ride!"
+
+        caller.msg(string)

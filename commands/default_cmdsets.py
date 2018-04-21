@@ -21,6 +21,7 @@ from commands.command import CmdConsider
 from commands.command import CmdAttack
 from commands.command import CmdCastMagic
 from commands.command import CmdKill
+from commands.command import CmdHelpNewbie
 
 
 class CharacterCmdSet(default_cmds.CharacterCmdSet):
@@ -41,6 +42,8 @@ class CharacterCmdSet(default_cmds.CharacterCmdSet):
         #
         self.add(CmdTalkTo())
         self.add(CmdConsider())
+        self.add(CmdHelpNewbie())
+
         self.add(CmdMoney())
 
         # Security guard commands
