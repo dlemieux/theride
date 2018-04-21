@@ -18,6 +18,9 @@ from evennia import default_cmds
 from commands.command import CmdMoney
 from commands.command import CmdTalkTo
 from commands.command import CmdConsider
+from commands.command import CmdAttack
+from commands.command import CmdCastMagic
+from commands.command import CmdKill
 
 
 class CharacterCmdSet(default_cmds.CharacterCmdSet):
@@ -39,6 +42,11 @@ class CharacterCmdSet(default_cmds.CharacterCmdSet):
         self.add(CmdTalkTo())
         self.add(CmdConsider())
         self.add(CmdMoney())
+
+        # Security guard commands
+        self.add(CmdAttack())
+        self.add(CmdCastMagic())
+        self.add(CmdKill())
 
 
 class AccountCmdSet(default_cmds.AccountCmdSet):

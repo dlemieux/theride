@@ -279,3 +279,68 @@ class CmdTalkTo(Command):
             caller.msg(target.db.talk_to_msg)
         else:
             caller.msg("They have nothing to say.")
+
+class CmdAttack(Command):
+    """
+    Attack a target.
+
+    Usage:
+      attack <target>
+
+    Attack a target.
+    """    
+    key = "attack"
+    locks = "cmd:all()"
+
+    def func(self):
+        caller = self.caller
+
+        if not self.args:
+            caller.msg("attack <target>")
+            return
+
+        caller.msg("Security Guard: Excuuuuse me! We'll have none of that!")
+
+
+class CmdCastMagic(Command):
+    """
+    Cast a magic spell.
+
+    Usage:
+      cast <spell> at <target>
+
+    Cast a magic spell at a target.
+    """    
+    key = "cast"
+    locks = "cmd:all()"
+
+    def func(self):
+        caller = self.caller
+
+        if not self.args:
+            caller.msg("cast <spell> at <target>")
+            return
+
+        caller.msg("*The security guard taps you on the shoulder*\nSecurity Guard: And just what do you think you're doing?")
+
+
+class CmdKill(Command):
+    """
+    Try to kill a target.
+
+    Usage:
+      kill <target>
+
+    Try to kill a target.
+    """    
+    key = "kill"
+    locks = "cmd:all()"
+
+    def func(self):
+        caller = self.caller
+
+        if not self.args:
+            caller.msg("kill <target>")
+            return
+
+        caller.msg("Security Guard: Did you really think you'd get away with that?")
