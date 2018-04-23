@@ -44,7 +44,7 @@ class CharacterCmdSet(default_cmds.CharacterCmdSet):
         self.add(CmdTalkTo())
         self.add(CmdConsider())
         self.add(CmdHelpNewbie())
-        #self.add(CmdExits())
+        self.add(CmdExits())
         self.add(CmdReadPass())
 
         # Security guard commands

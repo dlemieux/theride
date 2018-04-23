@@ -248,10 +248,10 @@ class CmdBuyPass(Command):
             homeLocation = yield("       Okay, question one. What town are you from?")
             
             caller.msg("       %s eh... wait... what did you say?" % (homeLocation))
-            caller.msg("       Are you THE |g%s of %s|n! I'm your biggest fan!" % (caller.name, homeLocation))
+            caller.msg("       Are you THE |g%s from %s|n! I'm your biggest fan!" % (caller.name, homeLocation))
             caller.msg("       Please take this pass for free and enjoy the park! It's an honor!")
             caller.msg("       *The Clerk shouts into the crowd*")
-            caller.msg("       Hey everyone! Make way for |g%s of %s|n!" % (caller.name, homeLocation))
+            caller.msg("       Hey everyone! Make way for |g%s from %s|n!" % (caller.name, homeLocation))
             caller.msg("       Here you go! *hands you a pass*")
 
             # Set the properties for the pass
@@ -321,7 +321,7 @@ class PassSalesClerk(DefaultObject):
     def destroy_pass(self, caller):
         if caller.db.has_season_pass:
             caller.db.has_season_pass = False
-            caller.search("pass").delete()
+            caller.search("pass", location=caller).delete()
             caller.msg("The pass sales clerk rips up your pass.")
         else:
             caller.msg("You don't have a pass to drop.")

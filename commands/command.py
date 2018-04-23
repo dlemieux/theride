@@ -349,7 +349,6 @@ class CmdHelpNewbie(Command):
         caller.msg(string)
 
 
-# TODO: Not working yet
 class CmdExits(Command):
     """
     List the exits.
@@ -365,26 +364,31 @@ class CmdExits(Command):
     def func(self):
         caller = self.caller
 
-        allExits = caller.location.exits
-        if not allExits:
-            caller.msg("There are no exits.")
-            return;
+        impl = 2
+        if impl == 1:
+            caller.execute_cmd("look") # The look command will list the exits
+        elif impl == 2:
+            # Get the look command output and parse it
+            lookOutput = caller.location.return_appearance(caller)
+            #caller.msg(lookOutput)
 
-        string = "|wExits:|n "
+            exitsToken = "|wExits:|n" # This needs to make the output of return_appearance implementation
+            exitsIndex = lookOutput.find(exitsToken)
+            
+            if exitsIndex == -1:
+                caller.msg("There are no exits.")
+            else:
+                # Remove everything before the 'Exits:' part
+                lookOutput = lookOutput[exitsIndex:]
 
-        firstExit = True
+                # Find the next \n and remove everything after it
+                newLineIndex = lookOutput.find("\n")
 
-        for curExit in allExits:
-            if self.access(caller, 'view'):
-                if firstExit:
-                    firstExit = False
-                else:
-                    string += ", "
+                if newLineIndex >= 0:
+                    lookOutput = lookOutput[:newLineIndex]
 
-                string += "|g" + exitName + "|n"
-
-        caller.msg(string)
-
+                # Display the result
+                caller.msg(lookOutput)
 
 class CmdReadPass(Command):
     """
