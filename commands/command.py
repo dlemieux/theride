@@ -407,7 +407,7 @@ class CmdReadPass(Command):
 
         nameRow = "Name: %s" % caller.name
         townRow = "Town: %s" % caller.db.pass_town
-        dateRow = "Registration date: %s" % caller.db.pass_create_date
+        dateRow = "Create date: %s (UTC)" % caller.db.pass_create_date
         pointsRow = "Park Points: %s" % caller.db.pass_points
 
         maxRowSize = max(len(nameRow), len(townRow), len(dateRow), len(pointsRow))

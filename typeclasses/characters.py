@@ -32,8 +32,7 @@ class Character(DefaultCharacter):
     """
     
     def at_object_creation(self):
-        #self.db.has_id_card = False
-        pass
+        self.db.is_player = True
 
 
 class ParkPassCreator(Character):
