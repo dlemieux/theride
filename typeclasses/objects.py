@@ -196,7 +196,7 @@ class ParkPass(DefaultObject):
         super(ParkPass, self).at_object_creation()
         
         # Set system properties
-        self.db.desc = "You're very own park pass! Read it to see the details!"
+        self.db.desc = "You're very own park pass! Use |gread pass|n to see the details!"
         self.db.drop_err_msg = "The Park Pass is the most important item you own! Don't be so careless!"
         # TODO: Make sure they can't drop the pass
         self.locks.add("drop:false()")
@@ -248,21 +248,21 @@ class CmdBuyPass(Command):
             homeLocation = yield("       Okay, question one. What town are you from?")
             
             caller.msg("       %s eh... wait... what did you say?" % (homeLocation))
-            
             caller.msg("       Are you THE |g%s of %s|n! I'm your biggest fan!" % (caller.name, homeLocation))
-            
             caller.msg("       Please take this pass for free and enjoy the park! It's an honor!")
-            
             caller.msg("       *The Clerk shouts into the crowd*")
             caller.msg("       Hey everyone! Make way for |g%s of %s|n!" % (caller.name, homeLocation))
-            
-            
             caller.msg("       Here you go! *hands you a pass*")
+
+            # Set the properties for the pass
             caller.db.has_season_pass = True # maybe store the date they became a pass holder
-            
-            #caller.msg("Test 1.1")
+            caller.db.pass_town = homeLocation
+            utcNow = datetime.datetime.utcnow()
+            caller.db.pass_create_date = utcNow.strftime("%B %d, %Y") # Ex: October 3, 2018
+            caller.db.pass_points = 0
+
             create_object(ParkPass, key="Park Pass", location=caller)
-            #caller.msg("Test 1.2")
+            #caller.msg("Finished buy pass")
 
 
 class CmdDestroyPass(Command):
@@ -321,7 +321,7 @@ class PassSalesClerk(DefaultObject):
     def destroy_pass(self, caller):
         if caller.db.has_season_pass:
             caller.db.has_season_pass = False
-            # Delete the item from their inventory
+            caller.search("pass").delete()
             caller.msg("The pass sales clerk rips up your pass.")
         else:
             caller.msg("You don't have a pass to drop.")

@@ -15,7 +15,6 @@ own cmdsets by inheriting from them or directly from `evennia.CmdSet`.
 """
 
 from evennia import default_cmds
-from commands.command import CmdMoney
 from commands.command import CmdTalkTo
 from commands.command import CmdConsider
 from commands.command import CmdAttack
@@ -23,6 +22,7 @@ from commands.command import CmdCastMagic
 from commands.command import CmdKill
 from commands.command import CmdHelpNewbie
 from commands.command import CmdExits
+from commands.command import CmdReadPass
 
 
 class CharacterCmdSet(default_cmds.CharacterCmdSet):
@@ -45,8 +45,7 @@ class CharacterCmdSet(default_cmds.CharacterCmdSet):
         self.add(CmdConsider())
         self.add(CmdHelpNewbie())
         #self.add(CmdExits())
-
-        self.add(CmdMoney())
+        self.add(CmdReadPass())
 
         # Security guard commands
         self.add(CmdAttack())

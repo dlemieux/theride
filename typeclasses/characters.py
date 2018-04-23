@@ -32,14 +32,8 @@ class Character(DefaultCharacter):
     """
     
     def at_object_creation(self):
-        self.db.money = 0
-        self.db.has_id_card = False
-        
-    def get_money(self):
-        return self.db.money
-        
-    def has_id_card(self):
-        return self.db.has_id_card
+        #self.db.has_id_card = False
+        pass
 
 
 class ParkPassCreator(Character):

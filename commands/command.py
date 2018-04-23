@@ -188,29 +188,7 @@ class Command(BaseCommand):
 #                 self.character = self.caller.get_puppet(self.session)
 #             else:
 #                 self.character = None
-
-class CmdMoney(Command):
-    """
-    Check how much money you have.
-    
-    Usage:
-        money
         
-    Displays how much money you have.
-    """
-    key = "money"
-    aliases = ["wallet"]
-    lock = "cmd:all()"
-    help_category = "The Ride"
-    
-    def func(self):
-        "Implements the actual functionality"
-        
-        curMoney = self.caller.get_money()
-        string = "You have $%s" % (curMoney)
-        self.caller.msg(string)
-        
-
 class CmdConsider(Command):
     """
     Consider another target.
@@ -406,3 +384,43 @@ class CmdExits(Command):
                 string += "|g" + exitName + "|n"
 
         caller.msg(string)
+
+
+class CmdReadPass(Command):
+    """
+    Read your park pass.
+
+    Usage:
+      read pass
+
+    Displays the details associated with your park pass.
+    """    
+    key = "read pass"
+    locks = "cmd:all()"
+
+    def func(self):
+        caller = self.caller
+
+        if not caller.db.has_season_pass:
+            caller.msg("You don't have a park pass yet.\nTry asking the Clerk if you can |gbuy pass|n from them?")
+            return
+
+        nameRow = "Name: %s" % caller.name
+        townRow = "Town: %s" % caller.db.pass_town
+        dateRow = "Registration date: %s" % caller.db.pass_create_date
+        pointsRow = "Park Points: %s" % caller.db.pass_points
+
+        maxRowSize = max(len(nameRow), len(townRow), len(dateRow), len(pointsRow))
+
+        details = ""
+        details += "|m" # Set a custom font color
+        details += "==%s==\n" % ("=".ljust(maxRowSize, '='))
+        details += "| |w%s|m |\n" % ("Park Pass".ljust(maxRowSize))
+        details += "| |w%s|m |\n" % (nameRow.ljust(maxRowSize))
+        details += "| |w%s|m |\n" % (townRow.ljust(maxRowSize))
+        details += "| |w%s|m |\n" % (dateRow.ljust(maxRowSize))
+        details += "| |w%s|m |\n" % (pointsRow.ljust(maxRowSize))
+        details += "==%s==" % ("=".ljust(maxRowSize, '='))
+        details += "|n" # Return to normal color
+
+        caller.msg(details)
