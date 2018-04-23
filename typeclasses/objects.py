@@ -239,21 +239,22 @@ class CmdBuyPass(Command):
         else:
             # give the player a pass
             caller.msg("Clerk: Alright! We'll have you all set up in a jiffy!")
+            caller.msg("       The pass itself costs |r$9999|n. I'm sure you have that right?")
             caller.msg("       Just a few details to collect first...")
             caller.msg("       *The clerk rummages around*")
             
-            yield 5
+            yield 3
             
             homeLocation = yield("       Okay, question one. What town are you from?")
             
             caller.msg("       %s eh... wait... what did you say?" % (homeLocation))
             
-            caller.msg("       Are you THE %s of %s! I'm your biggest fan!" % (caller.name, homeLocation))
+            caller.msg("       Are you THE |g%s of %s|n! I'm your biggest fan!" % (caller.name, homeLocation))
             
             caller.msg("       Please take this pass for free and enjoy the park! It's an honor!")
             
             caller.msg("       *The Clerk shouts into the crowd*")
-            caller.msg("       Hey everyone! Make way for %s of %s!" % (caller.name, homeLocation))
+            caller.msg("       Hey everyone! Make way for |g%s of %s|n!" % (caller.name, homeLocation))
             
             
             caller.msg("       Here you go! *hands you a pass*")
