@@ -39,6 +39,11 @@
 @create/drop fence
 @lock fence = get:false()
 
+# Create the hole
+@create/drop hole in fence;hole
+lock hole = "get:false();view:attr('look_fence')"
+desc hole = You peek through the hole and see wonderous things!
+
 # Create sign about the new ride
 @create/drop sign
 @lock sign = get:false()

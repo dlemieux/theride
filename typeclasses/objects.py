@@ -185,6 +185,11 @@ class Heavy(DefaultObject):
         # find out).
         self.db.get_err_msg = "This is too heavy to pick up."
 
+class ConstructionFence(DefaultObject):
+    "Fence"
+    def at_desc(self, looker=None):
+        if looker:
+            looker.db.look_fence = True
 
 class ParkPass(DefaultObject):
     """
