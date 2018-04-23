@@ -22,6 +22,54 @@
 # Create the ticket agent to sell tickets
 @create/drop Pass Sales Clerk:objects.PassSalesClerk
 
+# Create Escalator Room
+@dig WalkwayRoom = walkway,entrance
 
+# Create a tv to look at with a description
+@create/drop tv
+@lock tv = get:false()
+
+# Create the room Courtyard
+@dig CourtyardRoom = courtyard,walkway
+
+# Create Construction Zone
+@dig ConstructionZoneRoom = construction zone,courtyard
+
+# Create fence with hole to look through
+@create/drop fence
+@lock fence = get:false()
+
+# Create sign about the new ride
+@create/drop sign
+@lock sign = get:false()
+
+# Create Locker Room
+@dig LockerRoom = lockers,courtyard
+
+# Create Ride Entrance
+@dig ChimaraEntranceRoom = chimera ride entrance,courtyard
+
+# Sign with safety info
+@create/drop safety sign
+@lock safety sign = get:false()
+
+# Digital counter for how many people in line
+@create/drop line length display
+@lock line length display = get:false()
+
+# Create the line room
+@dig ChimeraLineRoom = join the line,chimera ride entrance
+
+# Create the boarding zone
+@dig ChimeraBoardingRoom = boarding zone,back to line
+
+# Create the Ride room
+@dig ChimeraRideRoom = start ride,boarding zone
+
+# Create the end zone for the chimera ride
+@dig ChimeraRideEndRoom = exit ride,back to ride
+
+# Chimera gift shop
+@dig ChimeraGiftShop = gift shop,ride exit room
 
 # END
