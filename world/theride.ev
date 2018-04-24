@@ -1,8 +1,13 @@
+# World Creation Script
 
+# NOTES
+# To run this script, use @batchcommand theride
+# It will automaticaly look inside the world folder for the file, and it assumes you will have a .ev extension.
 
+# Execution Permissions: The user will need to be a superuser so they can make objects, and telport
 
 # The script will create the game off of the current room.
-# It does not touch the current room.
+# It does not touch the current room other than to add a single exit to it.
 
 @dig Entrance;ride-room-01 = Enter The Ride;ride-entrance-01,Exit The Ride;ride-exit-01
 #
@@ -153,10 +158,13 @@ There are stuffed animals, hats, sunglasses, candy, and more!
 #
 @desc courtyard = Return to courtyard.
 
+# Return to the courtyard
+courtyard
+
 # Create Ride Entrance
 @dig ChimeraEntranceRoom = chimera ride entrance,courtyard
 #
-@desc chimera ride entrace = This leads to the Chimera Ride! It's supposed to be AMAZING!
+@desc chimera ride entrance = This leads to the Chimera Ride! It's supposed to be AMAZING!
 #
 chimera ride entrance
 #
@@ -180,9 +188,9 @@ The sign says: "Your safety is our primary concern! If you are prone to motion s
 # Create the line room
 @dig ChimeraLineRoom = join the line,leave the line
 #
-@desc ChimeraLineRoom = Go here to step in line for the Chimera ride.
+@desc join the line = Go here to step in line for the Chimera ride.
 #
-ChimeraLineRoom
+join the line
 #
 @desc leave the line = If you leave then you will lose your place in the line!
 #
@@ -241,9 +249,13 @@ You are so excited that you want to buy things to help you remember the experien
 #
 @desc gift shop = The exit to the gift shop for the Chimera ride.
 
+# Exit to the gift shop
+gift shop
 # Exit back to the courtyard
 courtyard
 # Exit back to the Entrance
 exit park
+# Exit back to where the script was executed from
+Exit The Ride
 
 # END
