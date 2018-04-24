@@ -20,14 +20,18 @@ from evennia import utils
 
 CONNECTION_SCREEN = """
 |b==============================================================|n
- Welcome to |g{}|n, version {}!
+ Welcome to |g{}|n!
+
+ This game was created as a submission for the |gEnter the (Multi-User) Dungeon|n gamejam.
 
  If you have an existing account, connect to it by typing:
-      |wconnect <username> <password>|n
+      |yconnect <username> <password>|n
  If you need to create an account, type (without the <>'s):
-      |wcreate <username> <password>|n
+      |ycreate <username> <password>|n
 
  If you have spaces in your username, enclose it in quotes.
- Enter |whelp|n for more info. |wlook|n will re-show this screen.
+ Enter |ghelp|n for more info. |glook|n will re-show this screen.
+
+ Enjoy!
 |b==============================================================|n""" \
     .format(settings.SERVERNAME, utils.get_evennia_version())
