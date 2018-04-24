@@ -31,16 +31,16 @@ class WalkwayRoom(DefaultRoom):
     """
 
     messages = (
-        "|WIntercom: Welcome to The Park!|n",
-        "|WIntercom: By participating in rides and attractions you can earn Park Points!|n",
-        "|WIntercom: Spend your Park Points at any gift shop to get wonderful prizes!|n",
+        "  |WIntercom: Welcome to The Park!|n",
+        "  |WIntercom: By participating in rides and attractions you can earn Park Points!|n",
+        "  |WIntercom: Spend your Park Points at any gift shop to get wonderful prizes!|n",
         )
     cur_message_index = 0
 
     def at_object_creation(self):
         super(WalkwayRoom, self).at_object_creation()
 
-        self.db.interval = 5 # Every 10 seconds it updates the room
+        self.db.interval = 8 # Every X seconds it updates the room
 
         TICKER_HANDLER.add(interval=self.db.interval, callback=self.update_intercom, idstring="the_ride")
 
