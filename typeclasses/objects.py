@@ -201,7 +201,7 @@ class ParkPass(DefaultObject):
         super(ParkPass, self).at_object_creation()
         
         # Set system properties
-        self.db.desc = "You're very own park pass! Use |gread pass|n to see the details!"
+        self.db.desc = "Your very own park pass! Use |gread pass|n to see the details!"
         self.db.drop_err_msg = "The Park Pass is the most important item you own! Don't be so careless!"
         # TODO: Make sure they can't drop the pass
         self.locks.add("drop:false()")
