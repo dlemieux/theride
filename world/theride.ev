@@ -72,7 +72,7 @@ You can already start to sense the faint smell of popcorn up ahead,
 and the sounds of people having tons of fun.
 
 # Create a special tv object
-@create/drop tv2 : objects.WalkwayTv
+@create/drop tv : objects.WalkwayTv
 
 # Create the courtyard room
 @dig CourtyardRoom;ride-room-03
