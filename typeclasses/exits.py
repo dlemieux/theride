@@ -44,7 +44,7 @@ class ParkEntranceExit(DefaultExit):
     """
     
     def at_object_creation(self):
-        self.locks.add("traverse:attr('has_season_pass')")
+        self.locks.add("traverse:attr(has_season_pass)")
 
     def at_traverse(self, traveller, target_loc):
         traveller.msg("You proudly flass your park pass for the Gatekeeper.")

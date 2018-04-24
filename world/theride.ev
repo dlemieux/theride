@@ -111,7 +111,7 @@ A nearby sign is advertising the attraction that will be built here soon.
 
 # Create the hole
 @create/drop hole in fence;hole
-@
+#
 @lock hole in fence = "get:false();view:attr('look_fence')"
 #
 @desc hole in fence = You peek through the hole and see wonderous things!
@@ -127,6 +127,7 @@ courtyard
 @desc lockers = This leads to the lockers.
 #
 lockers
+#
 @desc LockerRoom =
 The room is filled with THOUSANDS of lockers.
 Big ones, small ones, and everything in between.
@@ -134,7 +135,7 @@ A sign on the wall says that anyone with a park pass can rent a locker
 to store their belongings so they don't lose items on the rides.
 #
 @desc courtyard = Return to the courtyard.
-#
+
 
 # Return to the courtyard
 courtyard
