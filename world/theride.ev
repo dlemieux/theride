@@ -71,12 +71,8 @@ several televisions mounted high on the walls.
 You can already start to sense the faint smell of popcorn up ahead,
 and the sounds of people having tons of fun.
 
-# Create a tv to look at with a description
-@create/drop tv
-#
-@lock tv = get:false()
-#
-@desc tv = Several well known celebrities are making attempts at humor to get you in the mood for fun at the park!
+# Create a special tv object
+@create/drop tv2 : objects.WalkwayTv
 
 # Create the courtyard room
 @dig CourtyardRoom;ride-room-03
