@@ -140,19 +140,42 @@ to store their belongings so they don't lose items on the rides.
 # Return to the courtyard
 courtyard
 
-
-
+# Create the Chimera gift shop
+@dig ChimeraGiftShop;ride-room-04 = gift shop,courtyard
+#
+@desc gift shop = This leads to the gift shop for the Chimera ride!
+#
+gift shop
+#
+@desc ride-room-04 =
+You are standing in a gift shop with shelves of merchandising lining every wall.
+There are stuffed animals, hats, sunglasses, candy, and more!
+#
+@desc courtyard = Return to courtyard.
 
 # Create Ride Entrance
-#@dig ChimaraEntranceRoom = chimera ride entrance,courtyard
+@dig ChimeraEntranceRoom = chimera ride entrance,courtyard
+#
+@desc chimera ride entrace = This leads to the Chimera Ride! It's supposed to be AMAZING!
+#
+chimera ride entrance
+#
+@desc ChimeraEntranceRoom =
+You have entered the area for the Chimera Ride.
+Many people are standing nearby in a line, which you are not in.
+#
+@desc courtyard = Return to the courtyard.
 
 # Sign with safety info
-#@create/drop safety sign
-#@lock safety sign = get:false()
+@create/drop safety sign : objects.Heavy
+#
+@desc safety sign =
+The sign says: "Your safety is our primary concern! If you are prone to motion sickness or dislike unpredictable twists and turns, ride at your own risk!"
 
 # Digital counter for how many people in line
-#@create/drop line length display
-#@lock line length display = get:false()
+@create/drop line length display : objects.Heavy
+#
+@desc line length display = There are |g10|n people in the line.
 
 # Create the line room
 #@dig ChimeraLineRoom = join the line,chimera ride entrance
@@ -166,7 +189,6 @@ courtyard
 # Create the end zone for the chimera ride
 #@dig ChimeraRideEndRoom = exit ride,back to ride
 
-# Chimera gift shop
-#@dig ChimeraGiftShop = gift shop,ride exit room
+
 
 # END
