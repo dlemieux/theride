@@ -1,0 +1,171 @@
+
+
+
+# The script will create the game off of the current room.
+# It does not touch the current room.
+
+@dig Entrance;ride-room-01 = Enter The Ride;ride-entrance-01,Exit The Ride;ride-exit-01
+#
+@desc ride-entrance-01 = The first entrance to The Ride!
+#
+ride-entrance-01
+#
+@desc ride-room-01 =
+From over a loudspeaker you hear: "Welcome to The Ride! Enjoy your stay!"
+This theme park has been in operation for many years, attracting young and old from far and wide.
+An assorment of people are milling about trying to get their tickets in order.
+#
+@desc ride-exit-01 = The final exit to The Ride.
+
+# Add a bench in the entrance
+@create/drop bench
+#
+@lock bench = get:false()
+#
+@desc bench = A sturdy bench that is full of people waiting for the friends to arrive. It's always so hard to find a free seat!
+#
+@set bench/get_err_msg = It'd be rude to pick it up while others are still sitting.
+
+# Add a heavy rock to the entrance
+@create/drop rock : objects.Heavy
+#
+@desc rock = There's a giant theme park ahead of you, and you're here looking at a rock.
+#
+@set rock/consider_msg = It doesn't look good.
+
+# Create the Park Pass Sales Clerk in the Entrance
+@create/drop Clerk : objects.PassSalesClerk
+#
+@desc Clerk = The pass sales clerk for the park. This is where you can |gbuy|n your |gpass|n!
+#
+@set Clerk/talk_to_msg = Hello!
+
+# Create Walkway Room
+@dig WalkwayRoom;ride-room-02 : rooms.WalkwayRoom
+# Create one way exit to the walkway room
+@open walkway : exits.ParkEntranceExit = ride-room-02
+#
+@desc walkway = A moving walkway that leads into the interior of the park!
+#
+@tel ride-room-02
+#
+@desc ride-room-02 =
+You are standing on a moving walkway that carries you past
+several televisions mounted high on the walls.
+You can already start to sense the faint smell of popcorn up ahead,
+and the sounds of people having tons of fun.
+
+# Create a tv to look at with a description
+@create/drop tv
+#
+@lock tv = get:false()
+#
+@desc tv = Several well known celebrities are making attempts at humor to get you in the mood for fun at the park!
+
+# Create the courtyard room
+@dig CourtyardRoom;ride-room-03
+# Make a one way exit to the courtyard room
+@open courtyard = ride-room-03
+# Set the description on the exit
+@desc courtyard = Proceed to the interior courtyard of the park!
+# Switch rooms
+courtyard
+# Set CourtyardRoom description
+@desc CourtyardRoom =
+You arrive in a massive circular courtyard, filled with possibilities!
+All around you are entrances to rides, shops, attractions, and more!
+
+# Create an exit out of the park
+@open exit park = ride-room-01
+#
+@desc exit park = Leave the park.
+
+
+# Create Construction Zone
+@dig ConstructionZoneRoom = construction zone,courtyard
+#
+@desc construction zone = This leads to an area closed off for construction. Maybe they are building a new attraction?
+#
+construction zone
+#
+@desc ConstructionZoneRoom
+You are standing in a dusty pathway that looks like it is currently being worked on.
+Tools and supplies are strewn about, and there is a fence blocking off people from going any farther.
+A nearby sign is advertising the attraction that will be built here soon.
+#
+@desc courtyard = Return to the courtyard.
+
+# Create sign about the new ride under construction
+@create/drop sign
+#
+@lock sign = get:false()
+#
+@desc sign = The sign says: "Coming soon! The Temple of the Phoenix!"
+
+## Create fence with hole to look through
+@create/drop fence : objects.ConstructionFence
+#
+@lock fence = get:false()
+#
+@desc fence = The fence looks sturdy, although there is a tiny hole that you might be able to look through.
+
+# Create the hole
+@create/drop hole in fence;hole
+@
+@lock hole in fence = "get:false();view:attr('look_fence')"
+#
+@desc hole in fence = You peek through the hole and see wonderous things!
+
+
+# Return to the courtyard
+courtyard
+
+
+# Create Locker Room
+@dig LockerRoom = lockers,courtyard
+#
+@desc lockers = This leads to the lockers.
+#
+lockers
+@desc LockerRoom =
+The room is filled with THOUSANDS of lockers.
+Big ones, small ones, and everything in between.
+A sign on the wall says that anyone with a park pass can rent a locker
+to store their belongings so they don't lose items on the rides.
+#
+@desc courtyard = Return to the courtyard.
+#
+
+# Return to the courtyard
+courtyard
+
+
+
+
+# Create Ride Entrance
+#@dig ChimaraEntranceRoom = chimera ride entrance,courtyard
+
+# Sign with safety info
+#@create/drop safety sign
+#@lock safety sign = get:false()
+
+# Digital counter for how many people in line
+#@create/drop line length display
+#@lock line length display = get:false()
+
+# Create the line room
+#@dig ChimeraLineRoom = join the line,chimera ride entrance
+
+# Create the boarding zone
+#@dig ChimeraBoardingRoom = boarding zone,back to line
+
+# Create the Ride room
+#@dig ChimeraRideRoom = start ride,boarding zone
+
+# Create the end zone for the chimera ride
+#@dig ChimeraRideEndRoom = exit ride,back to ride
+
+# Chimera gift shop
+#@dig ChimeraGiftShop = gift shop,ride exit room
+
+# END
