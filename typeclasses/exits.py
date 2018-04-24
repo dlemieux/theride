@@ -35,3 +35,30 @@ class Exit(DefaultExit):
                                         defined, in which case that will simply be echoed.
     """
     pass
+
+
+class ParkEntranceExit(DefaultExit):
+    """
+    A class for the first exit from the park entrance.
+    It requires the player to have a park pass.
+    """
+    
+    def at_object_creation(self):
+        self.locks.add("traverse:attr('has_season_pass'")
+
+    def at_traverse(self, traveller, target_loc):
+        traveller.msg("You proudly flass your park pass for the Gatekeeper.")
+        traveller.msg("The Gatekeeper acknowledges with a nod, and let's you pass through.")
+
+        super(ParkEntranceExit, self).at_traverse(traveller, target_loc)
+
+    #def at_after_traverse(self, traveller, source_loc):
+        
+    #    traveller.msg("You proudly flass your park pass for the Gatekeeper.")
+    #    traveller.msg("The Gatekeeper acknowledges with a nod, and let's you pass through.")
+
+    #    super(ParkEntranceExit, self).at_after_traverse(traveller, source_loc)
+
+    def at_failed_traverse(self, traveller):
+        #super(ParkEntranceExit, self).at_failed_traverse(traveller)
+        traveller.msg("Gatekeeper: \"You can't enter the park until you |gbuy|n a park pass!\"")

@@ -311,7 +311,7 @@ class PassSalesClerk(DefaultObject):
         """
         called at creation
         """
-        self.db.desc = "The pass sales clerk for the park. Purchase your season pass today!"
+        self.db.desc = "The pass sales clerk for the park. This is where you can |gbuy|n your |gpass|n!"
         self.locks.add("get:false()")
         self.locks.add("ic:false()")
         

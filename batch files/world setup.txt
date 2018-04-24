@@ -25,6 +25,9 @@
 # Create Escalator Room
 @dig WalkwayRoom = walkway,entrance
 
+# The walkway Exit in the entrance needs to reject people and give an error message
+# Custom exit created ParkEntranceExit
+
 # Create a tv to look at with a description
 @create/drop tv
 @lock tv = get:false()
