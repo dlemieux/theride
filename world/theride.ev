@@ -178,17 +178,72 @@ The sign says: "Your safety is our primary concern! If you are prone to motion s
 @desc line length display = There are |g10|n people in the line.
 
 # Create the line room
-#@dig ChimeraLineRoom = join the line,chimera ride entrance
+@dig ChimeraLineRoom = join the line,leave the line
+#
+@desc ChimeraLineRoom = Go here to step in line for the Chimera ride.
+#
+ChimeraLineRoom
+#
+@desc leave the line = If you leave then you will lose your place in the line!
+#
+@desc ChimeraLineRoom =
+You are standing in line for the Chimera Ride.
+There are a few displays on the walls which are meant to keep you entertained
+while you wait. A few vendors are hanging around hoping people
+will purchase their wares to help pass the time.
 
 # Create the boarding zone
-#@dig ChimeraBoardingRoom = boarding zone,back to line
+@dig ChimeraBoardingRoom;ride-room-05
+# Open a one way door to the boarding zone
+@open boarding zone = ride-room-05
+#
+@desc boarding zone = From the front of the line you can step up to the boarding zone to get in a seat.
+#
+boarding zone
+#
+@desc ride-room-05 =
+You are in a small dark room with nothing but a cart that seats a few people.
+The cart looks fairly well built.
 
 # Create the Ride room
-#@dig ChimeraRideRoom = start ride,boarding zone
+@dig ChimeraRideRoom = start ride
+#
+@desc start ride = This will start the Chimera Ride!
+#
+start ride
+#
+@desc
+The wind is rushing past your ears and lights flash by at amazing speed!
+Suddenly a dragon appears! And a snake!
+Oh my! It appears to be a single animal, more complex than any you've ever seen!
+It's a Chimera!
+The Chimera leaps in front of the cart, causing it to slow down to a stop.
+It then leaps away and the cart rushes up a steep incline.
+A voice over an intercom is saying "Whew! Glad we got away!"
+The Chimera returns and blows fire directly at you!
+Just in time the cart whizzes forward and the Chimera falls down into a trap.
+You have escaped with your life! But what happened to the Chimera? ...
 
 # Create the end zone for the chimera ride
-#@dig ChimeraRideEndRoom = exit ride,back to ride
+@dig ChimeraRideEndRoom = exit ride
+#
+@desc exit ride = The exit for the ride.
+#
+exit ride
+#
+@desc
+You are in a narrow room that guides people out of the ride.
+There is a giant picture of a Chimera on the wall.
+You are so excited that you want to buy things to help you remember the experience!
 
+# Link back to the previously created gift shop
+@open gift shop = ride-room-04
+#
+@desc gift shop = The exit to the gift shop for the Chimera ride.
 
+# Exit back to the courtyard
+courtyard
+# Exit back to the Entrance
+exit park
 
 # END
