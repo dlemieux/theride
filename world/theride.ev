@@ -43,7 +43,7 @@ An assorment of people are milling about trying to get their tickets in order.
 #
 @desc Clerk = The pass sales clerk for the park. This is where you can |gbuy|n your |gpass|n!
 #
-@set Clerk/talk_to_msg = Hello!
+@set Clerk/talk_to_msg = Hello! Welcome to the park! If you would like to |gbuy|n a |gpass|n, then you just have to ask!
 #
 @set Clerk/consider_msg = You would be evenly matched.
 

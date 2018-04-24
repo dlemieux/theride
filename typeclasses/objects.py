@@ -221,7 +221,7 @@ class CmdBuyPass(Command):
     This will let you try to buy a pass for the park.
     """
     key = "buy pass"
-    aliases = ["buy season pass"]
+    aliases = ["buy season pass", "buy a pass"]
     locks = "cmd:all()"
     help_category = "The Ride"
     
@@ -240,7 +240,9 @@ class CmdBuyPass(Command):
         # Option 2 to allow the use of yield statements
         caller = self.caller
         if caller.db.has_season_pass:
-            caller.msg("Pass Sales Clerk: Oh hey! How's that pass working out for ya?\n                  You won't ever need another one. That's a lifetime guarantee!")
+            caller.msg("Pass Sales Clerk: Oh hey! How's that pass working out for ya?")
+            caller.msg("                  You won't ever need another one. That's a lifetime guarantee!")
+            caller.msg("                  (You can use |gi|n to view your inventory)")
         else:
             # give the player a pass
             caller.msg("Clerk: Alright! We'll have you all set up in a jiffy!")
@@ -252,12 +254,18 @@ class CmdBuyPass(Command):
             
             homeLocation = yield("       Okay, question one. What town are you from?")
             
+            # Trim the name of the home location in case it is too long
+            maxHomeLength = 40
+            if len(homeLocation) > maxHomeLength:
+                homeLocation = homeLocation[:maxHomeLength]
+
             caller.msg("       %s eh... wait... what did you say?" % (homeLocation))
             caller.msg("       Are you THE |g%s from %s|n! I'm your biggest fan!" % (caller.name, homeLocation))
             caller.msg("       Please take this pass for free and enjoy the park! It's an honor!")
             caller.msg("       *The Clerk shouts into the crowd*")
             caller.msg("       Hey everyone! Make way for |g%s from %s|n!" % (caller.name, homeLocation))
             caller.msg("       Here you go! *hands you a pass*")
+            caller.msg("       (You can use |gi|n to view your inventory)")
 
             # Set the properties for the pass
             caller.db.has_season_pass = True # maybe store the date they became a pass holder
