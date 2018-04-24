@@ -409,7 +409,12 @@ class CmdReadPass(Command):
             caller.msg("You don't have a park pass yet.\nTry asking the Clerk if you can |gbuy pass|n from them?")
             return
 
-        nameRow = "Name: %s" % caller.name
+        maxNameLength = 40
+        callerName = caller.name
+        if len(callerName) > maxNameLength:
+            callerName = callerName[:maxNameLength]
+
+        nameRow = "Name: %s" % callerName
         townRow = "Town: %s" % caller.db.pass_town
         dateRow = "Create date: %s (UTC)" % caller.db.pass_create_date
         pointsRow = "Park Points: %s" % caller.db.pass_points
