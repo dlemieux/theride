@@ -44,6 +44,17 @@ An assorment of people are milling about trying to get their tickets in order.
 @desc Clerk = The pass sales clerk for the park. This is where you can |gbuy|n your |gpass|n!
 #
 @set Clerk/talk_to_msg = Hello!
+#
+@set Clerk/consider_msg = You would be evenly matched.
+
+# Create the gatekeeper
+@create/drop Gatekeeper : objects.Heavy
+#
+@desc Gatekeeper = The Gatekeeper is doing a good job of keeping people out of the park if they haven't purchased their pass.
+#
+@set Gatekeeper/consider_msg = That doesn't seem like a good idea.
+#
+@set Gatekeeper/talk_to_msg = Hello! If you have already purchased your pass from the Clerk,\nthen enter the |gwalkway|n to get into the park!
 
 # Create Walkway Room
 @dig WalkwayRoom;ride-room-02 : rooms.WalkwayRoom
