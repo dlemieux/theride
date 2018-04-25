@@ -193,7 +193,7 @@ The sign says: "Your safety is our primary concern! If you are prone to motion s
 @desc line length display = There are |g10|n people in the line.
 
 # Create the line room
-@dig ChimeraLineRoom = join the line,leave the line
+@dig ChimeraLineRoom : rooms.ChimeraLineRoom = join the line,leave the line
 #
 @desc join the line = Go here to step in line for the Chimera ride.
 #

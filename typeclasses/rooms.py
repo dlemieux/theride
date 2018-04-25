@@ -52,3 +52,21 @@ class WalkwayRoom(DefaultRoom):
         self.cur_message_index = (self.cur_message_index + 1) % len(self.messages)
 
         self.msg_contents(message)
+
+
+class ChimeraLineRoom(DefaultRoom):
+    def at_object_creation(self):
+        self.msg_contents("ChimeraLineRoom: creation")
+        return super(ChimeraLineRoom, self).at_object_creation()
+
+    def at_object_leave(self, moved_obj, target_location, **kwargs):
+        self.msg_contents("ChimeraLineRoom: object leave")
+        return super(ChimeraLineRoom, self).at_object_leave(moved_obj, target_location, **kwargs)
+
+    def at_object_receive(self, moved_obj, source_location, **kwargs):
+        self.msg_contents("ChimeraLineRoom: object receive")
+        return super(ChimeraLineRoom, self).at_object_receive(moved_obj, source_location, **kwargs)
+
+    def at_heard_say(self, message, speaker):
+        self.msg_contents("ChimeraLineRoom: at_say")
+        
