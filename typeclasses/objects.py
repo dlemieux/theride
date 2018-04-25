@@ -221,7 +221,7 @@ class CmdBuyPass(Command):
     This will let you try to buy a pass for the park.
     """
     key = "buy pass"
-    aliases = ["buy season pass", "buy a pass"]
+    aliases = ["buy season pass", "buy a pass", "buy a park pass", "buy park pass"]
     locks = "cmd:all()"
     help_category = "The Ride"
     
