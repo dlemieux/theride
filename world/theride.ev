@@ -169,7 +169,7 @@ There are stuffed animals, hats, sunglasses, candy, and more!
 courtyard
 
 # Create Ride Entrance
-@dig ChimeraEntranceRoom = chimera ride entrance,courtyard
+@dig ChimeraEntranceRoom = chimera ride entrance;entrance;ride,courtyard
 #
 @desc chimera ride entrance = This leads to the Chimera Ride! It's supposed to be AMAZING!
 #
@@ -193,7 +193,7 @@ The sign says: "Your safety is our primary concern! If you are prone to motion s
 @desc line length display = There are |g10|n people in the line.
 
 # Create the line room
-@dig ChimeraLineRoom : rooms.ChimeraLineRoom = join the line,leave the line
+@dig ChimeraLineRoom : rooms.ChimeraLineRoom = join the line;line;join,leave the line;leave
 #
 @desc join the line = Go here to step in line for the Chimera ride.
 #
