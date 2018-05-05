@@ -390,6 +390,7 @@ class CmdExits(Command):
                 # Display the result
                 caller.msg(lookOutput)
 
+
 class CmdReadPass(Command):
     """
     Read your park pass.
@@ -433,3 +434,4 @@ class CmdReadPass(Command):
         details += "|n" # Return to normal color
 
         caller.msg(details)
+

@@ -272,7 +272,7 @@ class CmdBuyPass(Command):
             caller.db.pass_town = homeLocation
             utcNow = datetime.datetime.utcnow()
             caller.db.pass_create_date = utcNow.strftime("%B %d, %Y") # Ex: October 3, 2018
-            caller.db.pass_points = 0
+            caller.db.pass_points = 5
 
             create_object(ParkPass, key="Park Pass", location=caller)
             #caller.msg("Finished buy pass")

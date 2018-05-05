@@ -6,6 +6,7 @@ Rooms are simple containers that has no location of their own.
 """
 
 import random
+import datetime
 
 from evennia import DefaultRoom
 from evennia import TICKER_HANDLER
@@ -55,8 +56,21 @@ class WalkwayRoom(DefaultRoom):
 
 
 class ChimeraLineRoom(DefaultRoom):
+
+    # Room state
+    # 0 = waiting for car to return
+    # 1 = accepting people for current car
+
+    between_cars_delay = 60 # Value in seconds
+    boarding_time_delay = 30 # Seconds to board the current car
+
     def at_object_creation(self):
-        self.msg_contents("ChimeraLineRoom: creation")
+        #self.msg_contents("ChimeraLineRoom: creation")
+
+        self.db.next_ticket_number = 1
+
+        self.db.room_state = 0
+
         return super(ChimeraLineRoom, self).at_object_creation()
 
     def at_object_leave(self, moved_obj, target_location, **kwargs):
@@ -64,9 +78,75 @@ class ChimeraLineRoom(DefaultRoom):
         return super(ChimeraLineRoom, self).at_object_leave(moved_obj, target_location, **kwargs)
 
     def at_object_receive(self, moved_obj, source_location, **kwargs):
-        self.msg_contents("ChimeraLineRoom: object receive")
+        #self.msg_contents("ChimeraLineRoom: object receive")
+
+        moved_obj.db.chimera_line_index = self.db.next_ticket_number
+        self.db.next_ticket_number = self.db.next_ticket_number + 1
+
         return super(ChimeraLineRoom, self).at_object_receive(moved_obj, source_location, **kwargs)
 
     def at_heard_say(self, message, speaker):
         self.msg_contents("ChimeraLineRoom: at_say")
+
+    def at_object_creation(self):
+        super(ChimeraLineRoom, self).at_object_creation()
+
+        self.db.interval = 5 # Every X seconds it updates the room
+
+        TICKER_HANDLER.add(interval=self.db.interval, callback=self.update_loop, idstring="the_ride")
+
+    def update_loop(self, *args, **kwargs):
+        now = datetime.datetime.utcnow()
+
+        # See if this is the first ever time
+        if not hasattr(self, "last_ride_time"):
+            self.last_ride_time = now
+
+        time_elapsed = now - self.last_ride_time
+        seconds_elapsed = time_elapsed.seconds
+
+        # Determine whether we are waiting for ride to return or waiting for people to board, or sending off the people after time out
+        if self.db.room_state == 0:
+            # See if you should keep waiting or advance to state 1
+            if seconds_elapsed > self.between_cars_delay:
+                # Announce that a new car has arrived
+
+                self.db.room_state = 1 # Advance to boarding phase
+                self.last_ride_time = now # Update to current time
+
+                self.msg_contents("The next car has arrived! Please |cboard|n if you are next in line!")
+
+        elif self.db.room_state == 1:
+            # See if you should keep waiting, or move the car on and wait again in state 0
+            if seconds_elapsed > self.boarding_time_delay:
+                # Announce that the car is leaving
+                self.msg_contents("The car has left the station! Please wait for the next car to arrive.")
+
+                self.db.room_state = 0 # Switch back to the waiting state
+                self.db.last_ride_time = now # Update to current time
+
+        #self.msg_contents(self.contents) # This is a list of all things in the room
+        
+        # Iterate over all items in contents and assemble name/ticket number pairs
+        max_index_allowed = -1
+        player_name = "<none>"
+        for item in self.contents:
+            if (hasattr(item, "db") and hasattr(item.db, "chimera_line_index") and item.db.chimera_line_index > 0):
+                if max_index_allowed == -1 or item.db.chimera_line_index < max_index_allowed:
+                    max_index_allowed = item.db.chimera_line_index
+                    player_name = item.name
+
+        # Sort the list
+
+
+        # Take the bottom n entries and announce that they can board
+
+        self.db.max_index_allowed = max_index_allowed
+        message = "Now boarding |c%s|n (%s)" % (player_name, self.db.max_index_allowed)
+
+        #self.msg_contents(message)
+
+
+class ChimeraBoardingZone(DefaultRoom):
+    pass
         

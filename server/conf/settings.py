@@ -56,6 +56,16 @@ WEBSOCKET_CLIENT_PORT = 4005
 # Internal Server-Portal port. Not visible.
 AMP_PORT = 4006
 
+
+# security measures (optional)
+#TELNET_INTERFACES = ['203.0.113.0']
+#WEBSOCKET_CLIENT_INTERFACE = '203.0.113.0'
+#ALLOWED_HOSTS = ["theride.letsgame.ga"]
+
+# Uncomment to take server offline. Then restart the server.
+# If true, then only localhost is allowed to connect
+# LOCKDOWN_MODE = True
+
 ######################################################################
 # Settings given in secret_settings.py override those in this file.
 ######################################################################
