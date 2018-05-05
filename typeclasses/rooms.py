@@ -8,6 +8,7 @@ Rooms are simple containers that has no location of their own.
 import random
 import datetime
 
+from evennia import CmdSet, Command
 from evennia import DefaultRoom
 from evennia import TICKER_HANDLER
 
@@ -55,6 +56,47 @@ class WalkwayRoom(DefaultRoom):
         self.msg_contents(message)
 
 
+class CmdBoardCar(Command):
+    """
+    Command to board the car
+    """
+    key = "board"
+    #aliases = ["h", "?"]
+    locks = "cmd:all()"
+    help_category = "The Ride"
+
+    def func(self):
+        """Implements the command."""
+        
+        caller = self.caller
+
+        location = caller.location
+        room_state = location.db.room_state
+        max_index_allowed = location.db.max_index_allowed
+
+        # If room state is 0, then we are still waiting for a car to arrive
+        if room_state == 0:
+            caller.msg("You cannot board because a car has not arrived on the track yet.")
+        elif room_state == 1:
+            if caller.db.chimera_line_index <= max_index_allowed:
+                # Ready to board!
+                caller.msg("You may now board. Enjoy!")
+
+                # TODO: Move the player to the boarding zone room
+            else:
+                caller.msg("It's not your turn yet!")
+
+
+class CmdSetLineRoom(CmdSet):
+    """This groups the commands for people in the line room"""
+    key = "Line Room Commands"
+    priority = 1  # this gives it precedence over the normal look/help commands.
+
+    def at_cmdset_creation(self):
+        """Called at first cmdset creation"""
+        self.add(CmdBoardCar())
+
+
 class ChimeraLineRoom(DefaultRoom):
 
     # Room state
@@ -74,6 +116,8 @@ class ChimeraLineRoom(DefaultRoom):
 
         self.db.next_ticket_number = 1
         self.db.room_state = 0
+
+        self.cmdset.add_default(CmdSetLineRoom)
 
     #def at_object_leave(self, moved_obj, target_location, **kwargs):
         #self.msg_contents("ChimeraLineRoom: object leave")
@@ -181,18 +225,14 @@ class ChimeraLineRoom(DefaultRoom):
 
     def reset_lazy_riders(self):
         # Reset the boarding number for the people who missed their chance to ride
-        for rider in self.whitelist_riders:
-            # Note: This will be done to those who boarded AND didn't board
-            # For the boarders, it's okay because when they return they are given a new ticket number
-            # that will clobber this one
-            rider['obj'].db.chimera_line_index = self.db.next_ticket_number
-            self.db.next_ticket_number = self.db.next_ticket_number + 1
+        if hasattr(self, 'whitelist_riders'):
+            for rider in self.whitelist_riders:
+                # Note: This will be done to those who boarded AND didn't board
+                # For the boarders, it's okay because when they return they are given a new ticket number
+                # that will clobber this one
+                rider['obj'].db.chimera_line_index = self.db.next_ticket_number
+                self.db.next_ticket_number = self.db.next_ticket_number + 1
         
-
-
-# Create a board command
-    # If room_state is 1, and index is less or equal than current max index, move to boarding zone
-    # Give a message to the player, and ALSO a different message to the room saying they moved to the boarding zone
 
 class ChimeraBoardingZone(DefaultRoom):
     pass
