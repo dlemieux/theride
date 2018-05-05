@@ -67,8 +67,10 @@ class ChimeraLineRoom(DefaultRoom):
         self.db.interval = 5 # Every X seconds it updates the room
         TICKER_HANDLER.add(interval=self.db.interval, callback=self.update_loop, idstring="the_ride")
 
+        # Constants
         self.db.between_cars_delay = 60 # Value in seconds
         self.db.boarding_time_delay = 30 # Seconds to board the current car
+        self.db.riders_per_car = 4
 
         self.db.next_ticket_number = 1
         self.db.room_state = 0
@@ -126,7 +128,13 @@ class ChimeraLineRoom(DefaultRoom):
                 self.reset_lazy_riders()
 
         #self.msg_contents(self.contents) # This is a list of all things in the room
-        
+    
+    def create_new_boarding_zone(self):
+        # TODO Create a new room for people to enter
+        # TODO Save room info somewhere so board command can move people there
+        # TODO Have a plan to delete that room as needed
+        pass
+
     def build_rider_list(self):
         # Build the list of the top n people who can board
         # Save the value in a property for the board command to read from
@@ -135,20 +143,36 @@ class ChimeraLineRoom(DefaultRoom):
         # Iterate over all items in contents and assemble name/ticket number pairs
         max_index_allowed = -1
         player_name = "<none>"
+
+        # Build a list of all riders in the room
+        rider_list = []
         for item in self.contents:
             if (hasattr(item, "db") and hasattr(item.db, "chimera_line_index") and item.db.chimera_line_index > 0):
-                if max_index_allowed == -1 or item.db.chimera_line_index < max_index_allowed:
-                    max_index_allowed = item.db.chimera_line_index
-                    player_name = item.name
+                rider_info = {}
+                rider_info['name'] = "|c%s|n" % (item.name)
+                rider_info['index'] = item.db.chimera_line_index
+
+                rider_list.append(rider_info)
 
         # Sort the list
-        # TODO
+        sorted_riders = sorted(rider_list, key=lambda rider: rider['index'])
+
+        # TEST DATA
+        #a = {'name':'A','index':4}
+        #b = {'name':'B','index':8}
+        #c = {'name':'C','index':3}
+        #d = {'name':'D','index':1}
+        #test_list = [a, b, c, d]
+        #sorted(test_list, key=lambda rider: rider['index'])
 
         # Take the bottom n entries and announce that they can board
-        # TODO
+        whitelist_riders = sorted_riders[:self.db.riders_per_car]
 
-        self.db.max_index_allowed = max_index_allowed
-        message = "That would be... |c%s|n! (%s)" % (player_name, self.db.max_index_allowed)
+        # Set a property so the board command knows who to allow
+        last_index = len(whitelist_riders) - 1
+        last_rider = whitelist_riders[last_index]
+        self.db.max_index_allowed = last_rider['index']
+        message = "That would be... %s!" % (", ".join(x['name'] for x in whitelist_riders))
 
         self.msg_contents(message)
 
