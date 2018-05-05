@@ -110,7 +110,7 @@ class ChimeraLineRoom(DefaultRoom):
                 self.db.room_state = 1 # Advance to boarding phase
                 self.last_ride_time = now # Update to current time
 
-                self.msg_contents("The next car has arrived! Please |cboard|n if you are next in line!")
+                self.msg_contents("The next car has arrived! Please |gboard|n if you are next in line!")
 
                 # Make a whitelist for the people who can board
                 self.build_rider_list()
@@ -121,11 +121,12 @@ class ChimeraLineRoom(DefaultRoom):
                 # Announce that the car is leaving
                 self.msg_contents("The car has left the station! Please wait for the next car to arrive.")
 
-                self.db.room_state = 0 # Switch back to the waiting state
                 self.last_ride_time = now # Update to current time
 
                 # Anyone who missed their chance is moved to the back of the line
                 self.reset_lazy_riders()
+
+                self.db.room_state = 0 # Switch back to the waiting state
 
         #self.msg_contents(self.contents) # This is a list of all things in the room
     
@@ -151,6 +152,7 @@ class ChimeraLineRoom(DefaultRoom):
                 rider_info = {}
                 rider_info['name'] = "|c%s|n" % (item.name)
                 rider_info['index'] = item.db.chimera_line_index
+                rider_info['obj'] = item
 
                 rider_list.append(rider_info)
 
@@ -167,6 +169,7 @@ class ChimeraLineRoom(DefaultRoom):
 
         # Take the bottom n entries and announce that they can board
         whitelist_riders = sorted_riders[:self.db.riders_per_car]
+        self.whitelist_riders = whitelist_riders # Save a reference of the rider list on the object itself
 
         # Set a property so the board command knows who to allow
         last_index = len(whitelist_riders) - 1
@@ -178,8 +181,18 @@ class ChimeraLineRoom(DefaultRoom):
 
     def reset_lazy_riders(self):
         # Reset the boarding number for the people who missed their chance to ride
-        # TODO
-        pass
+        for rider in self.whitelist_riders:
+            # Note: This will be done to those who boarded AND didn't board
+            # For the boarders, it's okay because when they return they are given a new ticket number
+            # that will clobber this one
+            rider['obj'].db.chimera_line_index = self.db.next_ticket_number
+            self.db.next_ticket_number = self.db.next_ticket_number + 1
+        
+
+
+# Create a board command
+    # If room_state is 1, and index is less or equal than current max index, move to boarding zone
+    # Give a message to the player, and ALSO a different message to the room saying they moved to the boarding zone
 
 class ChimeraBoardingZone(DefaultRoom):
     pass
