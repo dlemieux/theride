@@ -294,8 +294,11 @@ class ChimeraBoardingZone(DefaultRoom):
     def at_object_creation(self):
         super(ChimeraBoardingZone, self).at_object_creation()
 
-        self.db.desc = "You are in a dark room that has the ride car in the middle.\nThe ride will begin shortly."
-        #self.cmdset.add_default(CmdSetLineRoom)
+        desc = ""
+        desc += "You are in a dark room that has the ride car in the middle.\n"
+        desc += "The ride will begin shortly.\nYou can use |gsuggest <feature>|n to encourage\n"
+        desc += "different events to happen during your ride, IF the attendant feels like helping you out."
+        self.db.desc = desc
 
         self.cmdset.add_default(CmdSetBoardingZone)
 
