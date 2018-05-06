@@ -164,8 +164,10 @@ class ChimeraLineRoom(DefaultRoom):
                 self.msg_contents("The next car has arrived! Please |gboard|n if you are next in line!")
 
                 # Make a whitelist for the people who can board
-                self.build_rider_list()
-                self.create_new_boarding_zone()
+                create_room = self.build_rider_list()
+
+                if create_room:
+                    self.create_new_boarding_zone()
 
                 self.db.room_state = 1 # Advance to boarding phase
 
@@ -233,6 +235,8 @@ class ChimeraLineRoom(DefaultRoom):
 
         self.msg_contents(message)
 
+        return len(whitelist_riders) > 0
+
     def reset_lazy_riders(self):
         # Reset the boarding number for the people who missed their chance to ride
         if hasattr(self, 'whitelist_riders'):
@@ -244,29 +248,128 @@ class ChimeraLineRoom(DefaultRoom):
                 self.db.next_ticket_number = self.db.next_ticket_number + 1
         
 
+class CmdSuggestRideTopic(Command):
+    """
+    Command to suggest a topic for the ride.
+
+    suggest <suggestion>
+    """
+    key = "suggest"
+    #aliases = ["h", "?"]
+    locks = "cmd:all()"
+    help_category = "The Ride"
+
+    def func(self):
+        """Implements the command."""
+        
+        caller = self.caller
+
+        if not self.args:
+            caller.msg("suggest <suggestion>")
+            return
+
+        caller.msg("You suggest%s" % self.args)
+        caller.location.msg_contents("Someone made a suggestion", exclude=caller)
+
+
+class CmdSetBoardingZone(CmdSet):
+    """This groups the commands for people in the boarding zone"""
+    key = "Line Room Commands"
+    priority = 1  # this gives it precedence over the normal look/help commands.
+
+    def at_cmdset_creation(self):
+        """Called at first cmdset creation"""
+        self.add(CmdSuggestRideTopic())
+
+
 class ChimeraBoardingZone(DefaultRoom):
     # Have the room destroy itself if no one ever shows up after 2 minutes, or if everyone leaves the room
+
+    task_messages = [
+        "You may talk amongst yourselves while I verify the integrity of your restraints...",
+        "Please entertain each other and pay no mind to the loose bolts I'll be fixing with this wrench...",
+        "Be careful as you move about the car. Any human remains...I mean belongings...will be removed shortly...",
+        ]
 
     def at_object_creation(self):
         super(ChimeraBoardingZone, self).at_object_creation()
 
-        #self.db.interval = 5 # Every X seconds it updates the room
-        #TICKER_HANDLER.add(interval=self.db.interval, callback=self.update_loop, idstring="the_ride")
-
-        # Constants
-        self.db.no_show_timeout = 60 * 2 # Value in seconds
-        
-
+        self.db.desc = "You are in a dark room that has the ride car in the middle.\nThe ride will begin shortly."
         #self.cmdset.add_default(CmdSetLineRoom)
 
-    def at_object_receive(self, moved_obj, source_location, **kwargs):
-        #self.msg_contents("ChimeraBoardingZone: object receive")
+        self.cmdset.add_default(CmdSetBoardingZone)
 
-        #moved_obj.db.chimera_line_index = self.db.next_ticket_number
-        #self.db.next_ticket_number = self.db.next_ticket_number + 1
+        self.db.interval = 1 # Every X seconds it updates the room
+        TICKER_HANDLER.add(interval=self.db.interval, callback=self.update_loop, idstring="the_ride")
 
-        return super(ChimeraBoardingZone, self).at_object_receive(moved_obj, source_location, **kwargs)
 
     def update_loop(self):
-        pass
+        now = datetime.datetime.utcnow()
+
+        if not hasattr(self, 'last_event_time'):
+            self.last_event_time = now
+
+        if not hasattr(self, 'msg_index'):
+            self.msg_index = -1
+
+        if not hasattr(self, 'msg_delay'):
+            self.msg_delay = 0
+
+        elapsed = now - self.last_event_time
+        if elapsed.seconds > self.msg_delay:
+            self.msg_index = self.msg_index + 1 # Advance to the next index
+
+            next_delay = self.send_message(self.msg_index)
+            if next_delay >= 0:
+                self.msg_delay = next_delay
+                self.last_event_time = now
+            else: # Nothing left to do in here
+                if len(self.contents) > 0:
+                    # Create a room for the exit
+                    new_ride_room = create_object(ChimeraRideRoom, key="Chimera Ride Room")
+
+                    # Move all players into the ride room
+                    for rider in self.contents:
+                        rider.move_to(new_ride_room)
+
+                # Destroy this room
+                self.delete()
+
+
+    # Returns the number of seconds to wait until the next event
+    def send_message(self, index):
+        if index == 0:
+            return 9 # Slight delay with no text for people to enter
+        elif index == 1:
+            msg = ""
+            msg += "-----------------------------------------" + "\n"
+            msg += "Welcome to the boarding zone!" + "\n"
+            msg += "Just get in your seats and the ride will begin shortly." + "\n"
+
+            msg += random.choice(self.task_messages)
+
+            self.msg_contents(msg)
+            return 9
+        elif index == 2:
+            msg = ""
+            msg += "-----------------------------------------" + "\n"
+            msg += "A massive chimera approaches from beneath the cart and you feel the entire thing raise up!"
+
+            self.msg_contents(msg)
+
+            return 9
+        elif index == 3:
+            msg = ""
+            msg += "-----------------------------------------" + "\n"
+            msg += "As the chimera flexes its legs, you are tossed about easily like toy." + "\n"
+            msg += "Suddenly...the chimera leaps forward! And you're off!"
+
+            self.msg_contents(msg)
+
+            return 9
+
+        return -1
         
+
+class ChimeraRideRoom(DefaultRoom):
+    pass

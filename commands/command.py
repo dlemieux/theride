@@ -268,6 +268,7 @@ class CmdAttack(Command):
     Attack a target.
     """    
     key = "attack"
+    help_category = "The Ride"
     locks = "cmd:all()"
 
     def func(self):
@@ -290,6 +291,7 @@ class CmdCastMagic(Command):
     Cast a magic spell at a target.
     """    
     key = "cast"
+    help_category = "The Ride"
     locks = "cmd:all()"
 
     def func(self):
@@ -312,6 +314,7 @@ class CmdKill(Command):
     Try to kill a target.
     """    
     key = "kill"
+    help_category = "The Ride"
     locks = "cmd:all()"
 
     def func(self):
@@ -334,6 +337,7 @@ class CmdHelpNewbie(Command):
     Display help for new players.
     """    
     key = "help newbie"
+    help_category = "The Ride"
     aliases = ["help new"]
     locks = "cmd:all()"
 
@@ -359,6 +363,7 @@ class CmdExits(Command):
     List the exits from this location.
     """    
     key = "exits"
+    help_category = "The Ride"
     locks = "cmd:all()"
 
     def func(self):
@@ -401,6 +406,7 @@ class CmdReadPass(Command):
     Displays the details associated with your park pass.
     """    
     key = "read pass"
+    help_category = "The Ride"
     locks = "cmd:all()"
 
     def func(self):
