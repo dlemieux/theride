@@ -9,6 +9,7 @@ import random
 import datetime
 
 from evennia import CmdSet, Command
+from evennia import create_object
 from evennia import DefaultRoom
 from evennia import TICKER_HANDLER
 
@@ -74,6 +75,10 @@ class CmdBoardCar(Command):
         room_state = location.db.room_state
         max_index_allowed = location.db.max_index_allowed
 
+        boarding_zone = None
+        if hasattr(location, 'cur_boarding_zone'):
+            boarding_zone = location.cur_boarding_zone
+
         # If room state is 0, then we are still waiting for a car to arrive
         if room_state == 0:
             caller.msg("You cannot board because a car has not arrived on the track yet.")
@@ -82,7 +87,10 @@ class CmdBoardCar(Command):
                 # Ready to board!
                 caller.msg("You may now board. Enjoy!")
 
-                # TODO: Move the player to the boarding zone room
+                if boarding_zone:
+                    #caller.msg("Boarding zone: %s" % boarding_zone.id)
+                    #caller.location = boarding_zone # This moves the player, but they don't get the next look command
+                    caller.move_to(boarding_zone)
             else:
                 caller.msg("It's not your turn yet!")
 
@@ -151,13 +159,15 @@ class ChimeraLineRoom(DefaultRoom):
             if seconds_elapsed >= self.db.between_cars_delay:
                 # Announce that a new car has arrived
 
-                self.db.room_state = 1 # Advance to boarding phase
                 self.last_ride_time = now # Update to current time
 
                 self.msg_contents("The next car has arrived! Please |gboard|n if you are next in line!")
 
                 # Make a whitelist for the people who can board
                 self.build_rider_list()
+                self.create_new_boarding_zone()
+
+                self.db.room_state = 1 # Advance to boarding phase
 
         elif self.db.room_state == 1:
             # See if you should keep waiting, or move the car on and wait again in state 0
@@ -175,11 +185,11 @@ class ChimeraLineRoom(DefaultRoom):
         #self.msg_contents(self.contents) # This is a list of all things in the room
     
     def create_new_boarding_zone(self):
-        # TODO Create a new room for people to enter
-        # TODO Save room info somewhere so board command can move people there
-        # TODO Have a plan to delete that room as needed
-        pass
-
+        new_boarding_zone = create_object(ChimeraBoardingZone, key="Boarding Zone")
+        # Save room info somewhere so board command can move people there
+        self.cur_boarding_zone = new_boarding_zone
+        self.msg_contents("Created new boarding zone: %s" % new_boarding_zone.id)
+        
     def build_rider_list(self):
         # Build the list of the top n people who can board
         # Save the value in a property for the board command to read from
@@ -235,5 +245,28 @@ class ChimeraLineRoom(DefaultRoom):
         
 
 class ChimeraBoardingZone(DefaultRoom):
-    pass
+    # Have the room destroy itself if no one ever shows up after 2 minutes, or if everyone leaves the room
+
+    def at_object_creation(self):
+        super(ChimeraBoardingZone, self).at_object_creation()
+
+        #self.db.interval = 5 # Every X seconds it updates the room
+        #TICKER_HANDLER.add(interval=self.db.interval, callback=self.update_loop, idstring="the_ride")
+
+        # Constants
+        self.db.no_show_timeout = 60 * 2 # Value in seconds
+        
+
+        #self.cmdset.add_default(CmdSetLineRoom)
+
+    def at_object_receive(self, moved_obj, source_location, **kwargs):
+        #self.msg_contents("ChimeraBoardingZone: object receive")
+
+        #moved_obj.db.chimera_line_index = self.db.next_ticket_number
+        #self.db.next_ticket_number = self.db.next_ticket_number + 1
+
+        return super(ChimeraBoardingZone, self).at_object_receive(moved_obj, source_location, **kwargs)
+
+    def update_loop(self):
+        pass
         
