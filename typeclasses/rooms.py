@@ -79,7 +79,7 @@ class CmdBuyHotDog(Command):
         player_points = caller.db.pass_points
         
         if player_points < hot_dog_price:
-            caller.msg("Hot Dog Vendor: \"Gee, I'd love to give you a hot dog but you don't have the $2!\nAnd I gotta make a living here.\"")
+            caller.msg("Hot Dog Vendor: \"Gee, I'd love to give you a hot dog but you don't have the 2 points!\nAnd I gotta make a living here.\"")
         else:
             caller_msg = ""
             caller_msg += "(2 points were deducted from your account)\n"
@@ -312,7 +312,7 @@ class CmdSuggestRideTopic(Command):
             return
 
         caller.msg("You suggest%s" % self.args)
-        caller.location.msg_contents("Someone made a suggestion", exclude=caller)
+        caller.location.msg_contents("  |CSomeone made a suggestion", exclude=caller)
 
 
 class CmdSetBoardingZone(CmdSet):
@@ -459,7 +459,11 @@ class ChimeraRideRoom(DefaultRoom):
 
                     # Move all players into the ride room
                     for rider in self.contents:
-                        rider.move_to(new_exit_room)
+                        if hasattr(rider, "db"):
+                            if (hasattr(rider.db, "has_season_pass") and rider.db.has_season_pass == True):
+                                rider.move_to(new_exit_room)
+
+                    new_exit_room.players_arrived()
 
                 # Destroy this room
                 self.delete()
@@ -501,9 +505,7 @@ class ChimeraExitRoom(DefaultRoom):
         super(ChimeraExitRoom, self).at_object_creation()
 
         desc = ""
-        desc += "Thank you for riding!\n"
-        desc += "If you check your |ginventory|n you will see the photo that was taken."
-        desc += "You have also all been given 2 points for riding with us today!"
+        desc += "Thank you for riding!"
 
         # Set up an exit in the room that they can take
         # DALE: This needs to match the current database you are running on
@@ -514,7 +516,39 @@ class ChimeraExitRoom(DefaultRoom):
         exit_obj.db.desc = "The way to the gift shop."
 
         self.db.desc = desc
+        self.db.players_arrived = False
 
-    # TODO: Destroy this room when the last person leaves
+        self.db.interval = 10 # Every X seconds it updates the room
+        TICKER_HANDLER.add(interval=self.db.interval, callback=self.update_loop, idstring="the_ride")
 
 
+    def players_arrived(self):
+        points_per_ride = 10
+
+        for person in self.contents:
+            if hasattr(person, "db"):
+                if (hasattr(person.db, "has_season_pass") and person.db.has_season_pass == True):
+                    # Give them points
+                    person.db.pass_points = person.db.pass_points + points_per_ride
+                    person.msg("You were awarded %s points for surviving the |rChimera|n!\nPlease ride again soon!" % points_per_ride)
+
+                    # Do the album logic
+
+        self.db.players_arrived = True
+
+    def does_contain_players(self):
+        # See if any people are left who have a season pass
+        players_remaining = 0
+        for person in self.contents:
+            if hasattr(person, "db"):
+                if (hasattr(person.db, "has_season_pass") and person.db.has_season_pass == True):
+                    players_remaining += 1
+
+        return players_remaining > 0
+
+    def update_loop(self):
+        # Destroy this room when it is no longer needed
+        if self.db.players_arrived:
+            contains_players = self.does_contain_players()
+            if not contains_players:
+                self.delete()
