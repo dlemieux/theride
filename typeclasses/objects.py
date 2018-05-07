@@ -300,7 +300,7 @@ class CmdDestroyPass(Command):
     This is a test command which gets rid of your pass
     """
     key = "destroy pass"
-    locks = "cmd:all()"
+    locks = "cmd:perm(Developer)"
     help_category = "The Ride"
     
     def func(self):
