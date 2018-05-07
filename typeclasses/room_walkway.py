@@ -3,7 +3,7 @@ import datetime
 
 from evennia import CmdSet, Command
 from evennia import create_object
-from evennia import DefaultRoom
+from evennia import DefaultRoom, DefaultObject
 from evennia import DefaultExit
 from evennia import TICKER_HANDLER
 
@@ -38,3 +38,18 @@ class WalkwayRoom(DefaultRoom):
         self.cur_message_index = (self.cur_message_index + 1) % len(self.messages)
 
         self.msg_contents(message)
+
+
+class WalkwayTv(DefaultObject):
+    messages = (
+        "Several well known celebrities are making attempts at humor to get you in the mood for fun at the park!",
+        "The tv is showing a sweeping overhead video of the park.",
+        "There are pictures of smiling people, kids, adults, and even pets! Everyone loves this park!",
+        )
+    
+    def at_object_creation(self):
+        self.locks.add("get:false()")
+
+    def return_appearance(self, looker, **kwargs):
+        string = random.choice(self.messages)
+        looker.msg(string)
