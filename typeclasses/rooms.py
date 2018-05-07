@@ -243,13 +243,17 @@ class ChimeraLineRoom(DefaultRoom):
         # Build a list of all riders in the room
         rider_list = []
         for item in self.contents:
-            if (hasattr(item, "db") and hasattr(item.db, "chimera_line_index") and item.db.chimera_line_index > 0):
-                rider_info = {}
-                rider_info['name'] = "|c%s|n" % (item.name)
-                rider_info['index'] = item.db.chimera_line_index
-                rider_info['obj'] = item
+            # Only take people with a park pass
+            if hasattr(item, "db"):
+                if item.db.has_season_pass == True:
+                    # Only take people in line
+                    if (hasattr(item.db, "chimera_line_index") and item.db.chimera_line_index > 0):
+                        rider_info = {}
+                        rider_info['name'] = "|c%s|n" % (item.name)
+                        rider_info['index'] = item.db.chimera_line_index
+                        rider_info['obj'] = item
 
-                rider_list.append(rider_info)
+                        rider_list.append(rider_info)
 
         # Sort the list
         sorted_riders = sorted(rider_list, key=lambda rider: rider['index'])
