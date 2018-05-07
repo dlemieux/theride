@@ -338,17 +338,28 @@ class CmdHelpNewbie(Command):
     """    
     key = "help newbie"
     help_category = "The Ride"
-    aliases = ["help new"]
+    aliases = ["help new", "newbie", "new"]
     locks = "cmd:all()"
 
     def func(self):
         caller = self.caller
 
         string = ""
-        string += "Welcome to the Ride!\n"
-        string += "You're going to do great!\n"
-        string += "Have fun looking around the theme park and\n"
-        string += "riding The Ride!"
+        string += "\n"
+        string += "Welcome to The Ride!\n"
+        string += "You're going to do great! Have fun looking around the theme park and riding the |rChimera|n!\n"
+        string += "\n"
+        string += "Commands:\n"
+        string += "  |glook|n, |glook <object>|n:  See the descriptions on things\n"
+        string += "  |ginventory|n, |gi|n:         View your inventory\n"
+        string += "  |g<exit name>|n:          Type the name of an exit to use it and enter another room\n"
+        string += "\n"
+        string += "  |gsay|n:                  Share a message with all players in the room\n"
+        string += "  |gemote|n, |gpose|n:          Share an emote or pose with all players in the room.\n"
+        string += "                        Ex: |gemote claps wildly!|n\n"
+        string += "\n"
+        string += "  |ghelp|n, |ghelp <command>|n: See general help or help for a specific command\n"
+        #string += "  |g|n: \n"
 
         caller.msg(string)
 
