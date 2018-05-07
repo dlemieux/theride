@@ -12,8 +12,6 @@ from evennia import Command as BaseCommand
 
 # from evennia import default_cmds
 
-DALE_TEST_MODE = True
-
 class Command(BaseCommand):
     """
     Inherit from this if you want to create your own command styles

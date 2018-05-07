@@ -19,8 +19,6 @@ from evennia import Command
 from evennia import create_object
 from evennia import DefaultObject
 
-DALE_TEST_MODE = True
-
 class Object(DefaultObject):
     """
     This is the root typeclass object, implementing an in-game Evennia
@@ -316,9 +314,7 @@ class CmdSetPassSalesClerk(CmdSet):
     def at_cmdset_creation(self):
         """Called at first creation of cmdset"""
         self.add(CmdBuyPass())
-        
-        if DALE_TEST_MODE:
-            self.add(CmdDestroyPass())
+        self.add(CmdDestroyPass())
 
         
 class PassSalesClerk(DefaultObject):
