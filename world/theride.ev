@@ -55,7 +55,7 @@ create/drop Gatekeeper : objects.ParkAttendant
 @set Gatekeeper/talk_to_msg = Hello! If you have already purchased your |mpass|n from the Clerk,\nthen enter the |gwalkway|n to get into the park!
 
 # Create Walkway Room
-@dig WalkwayRoom;ride-room-02 : rooms.WalkwayRoom
+@dig WalkwayRoom;ride-room-02 : room_walkway.WalkwayRoom
 # Create one way exit to the walkway room
 @open walkway : exits.ParkEntranceExit = ride-room-02
 #
@@ -191,7 +191,7 @@ The sign says: "Your safety is our primary concern! If you are prone to motion s
 @desc line length display = There are |g10|n people in the line.
 
 # Create the line room
-@dig ChimeraLineRoom : rooms.ChimeraLineRoom = join the line;line;join,leave the line;leave
+@dig ChimeraLineRoom : room_chimera_line.ChimeraLineRoom = join the line;line;join,leave the line;leave
 #
 @desc join the line = Go here to step in line for the |rChimera|n ride.
 #
