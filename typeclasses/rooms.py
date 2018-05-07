@@ -35,9 +35,9 @@ class WalkwayRoom(DefaultRoom):
     """
 
     messages = (
-        "  |WIntercom: Welcome to The Park!|n",
-        "  |WIntercom: By participating in rides and attractions you can earn Park Points!|n",
-        "  |WIntercom: Spend your Park Points at any gift shop to get wonderful prizes!|n",
+        "  |WWelcome to The Park!|n",
+        "  |WBy participating in rides and attractions you can earn Park Points!|n",
+        "  |WSpend your Park Points at any gift shop to get wonderful prizes!|n",
         )
     cur_message_index = 0
 
@@ -52,7 +52,9 @@ class WalkwayRoom(DefaultRoom):
         
         #self.msg_contents(self.contents) # This is a list of all things in the room
         
-        message = self.messages[self.cur_message_index]
+        message = "|y> Intercom: auto-advance\n"
+        message += self.messages[self.cur_message_index]
+
         self.cur_message_index = (self.cur_message_index + 1) % len(self.messages)
 
         self.msg_contents(message)

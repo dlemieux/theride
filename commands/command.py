@@ -278,7 +278,7 @@ class CmdAttack(Command):
             caller.msg("attack <target>")
             return
 
-        caller.msg("Security Guard: Excuuuuse me! We'll have none of that!")
+        caller.msg("Security Guard: \"Excuuuuse me! We'll have none of that!\"")
 
 
 class CmdCastMagic(Command):
@@ -301,7 +301,7 @@ class CmdCastMagic(Command):
             caller.msg("cast <spell> at <target>")
             return
 
-        caller.msg("*The security guard taps you on the shoulder*\nSecurity Guard: And just what do you think you're doing?")
+        caller.msg("*The security guard taps you on the shoulder*\nSecurity Guard: \"And just what do you think you're doing?\"")
 
 
 class CmdKill(Command):
@@ -324,7 +324,7 @@ class CmdKill(Command):
             caller.msg("kill <target>")
             return
 
-        caller.msg("Security Guard: Did you really think you'd get away with that?")
+        caller.msg("Security Guard: \"Did you really think you'd get away with that?\"")
 
 
 class CmdHelpNewbie(Command):
