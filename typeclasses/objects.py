@@ -185,6 +185,20 @@ class Heavy(DefaultObject):
         # find out).
         self.db.get_err_msg = "This is too heavy to pick up."
 
+
+class ParkAttendant(DefaultObject):
+    "Park Attendant"
+    def at_object_creation(self):
+        "Called whenever a new object is created"
+        
+        # lock the object down by default
+        self.locks.add("get:false()")
+        
+        self.db.desc = "They are standing there smiling."
+        self.db.get_err_msg = "No touching!"
+        self.db.talk_to_msg = "Hello!"
+        self.db.consider_msg = "This person is much stronger than you."
+
 class ConstructionFence(DefaultObject):
     "Fence"
     def at_desc(self, looker=None):

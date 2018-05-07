@@ -355,6 +355,7 @@ class CmdHelpNewbie(Command):
         string += "  |g<exit name>|n:          Type the name of an exit to use it and enter another room\n"
         string += "\n"
         string += "  |gsay|n:                  Share a message with all players in the room\n"
+        string += "  |gwhisper <name> = <message>|n: Send a message to one specific player\n"
         string += "  |gemote|n, |gpose|n:          Share an emote or pose with all players in the room.\n"
         string += "                        Ex: |gemote claps wildly!|n\n"
         string += "\n"

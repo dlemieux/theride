@@ -58,6 +58,37 @@ class WalkwayRoom(DefaultRoom):
         self.msg_contents(message)
 
 
+class CmdBuyHotDog(Command):
+    """
+    Command to buy a hot dog
+    """
+    key = "buy hot dog"
+    aliases = ["buy dog","buy hot"]
+    locks = "cmd:all()"
+    help_category = "The Ride"
+
+    def func(self):
+        hot_dog_price = 2
+
+        caller = self.caller;
+        location = caller.location
+
+        # Check if the user has enough money
+        player_points = caller.db.pass_points
+        
+        if player_points < hot_dog_price:
+            caller.msg("Hot Dog Vendor: \"Gee, I'd love to give you a hot dog but you don't have the $2!\nAnd I gotta make a living here.\"")
+        else:
+            caller_msg = ""
+            caller_msg += "(2 points were deducted from your account)\n"
+            caller_msg += "You eat the hot dog and exclaim loudly about how that was the best hot dog you've ever had!"
+
+            room_msg = "  |C%s ate a hot dog. So tasty!|n" % (caller.name)
+
+            caller.db.pass_points = player_points - hot_dog_price # Subtract the money from their account
+            caller.msg(caller_msg) # Message the player
+            location.msg_contents(room_msg , exclude=(caller)) # Message everyone else in the room
+
 class CmdBoardCar(Command):
     """
     Command to board the car
@@ -104,6 +135,7 @@ class CmdSetLineRoom(CmdSet):
     def at_cmdset_creation(self):
         """Called at first cmdset creation"""
         self.add(CmdBoardCar())
+        self.add(CmdBuyHotDog())
 
 
 class ChimeraLineRoom(DefaultRoom):
@@ -162,7 +194,9 @@ class ChimeraLineRoom(DefaultRoom):
 
                 self.last_ride_time = now # Update to current time
 
-                self.msg_contents("The next car has arrived! Please |gboard|n if you are next in line!")
+                msg = "|y> Line Attendant: auto-message|n\n"
+                msg += "  The next car has arrived! Please [|gboard|n] if you are next in line!"
+                self.msg_contents(msg)
 
                 # Make a whitelist for the people who can board
                 create_room = self.build_rider_list()
@@ -176,7 +210,9 @@ class ChimeraLineRoom(DefaultRoom):
             # See if you should keep waiting, or move the car on and wait again in state 0
             if seconds_elapsed >= self.db.boarding_time_delay:
                 # Announce that the car is leaving
-                self.msg_contents("The car has left the station! Please wait for the next car to arrive.")
+                msg = "|y> Line Attendant: auto-message|n\n"
+                msg += "  The car has left the station! Please wait for the next car to arrive."
+                self.msg_contents(msg)
 
                 self.last_ride_time = now # Update to current time
 
@@ -191,7 +227,7 @@ class ChimeraLineRoom(DefaultRoom):
         new_boarding_zone = create_object(ChimeraBoardingZone, key="Boarding Zone")
         # Save room info somewhere so board command can move people there
         self.cur_boarding_zone = new_boarding_zone
-        self.msg_contents("Created new boarding zone: %s" % new_boarding_zone.id)
+        #self.msg_contents("Created new boarding zone: %s" % new_boarding_zone.id)
         
     def build_rider_list(self):
         # Build the list of the top n people who can board
@@ -232,7 +268,7 @@ class ChimeraLineRoom(DefaultRoom):
         last_index = len(whitelist_riders) - 1
         last_rider = whitelist_riders[last_index]
         self.db.max_index_allowed = last_rider['index']
-        message = "That would be... %s!" % (", ".join(x['name'] for x in whitelist_riders))
+        message = "  That would be... %s!" % (", ".join(x['name'] for x in whitelist_riders))
 
         self.msg_contents(message)
 
