@@ -152,7 +152,7 @@ class ChimeraLineRoom(DefaultRoom):
 
         time_elapsed = now - self.last_ride_time
         seconds_elapsed = time_elapsed.seconds
-        self.msg_contents("Seconds elapsed: %s" % seconds_elapsed)
+        #self.msg_contents("Seconds elapsed: %s" % seconds_elapsed)
 
         # Determine whether we are waiting for ride to return or waiting for people to board, or sending off the people after time out
         if self.db.room_state == 0:
