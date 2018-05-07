@@ -464,6 +464,7 @@ class ChimeraExitRoom(DefaultRoom):
         desc += "You have also all been given 2 points for riding with us today!"
 
         # Set up an exit in the room that they can take
+        # DALE: This needs to match the current database you are running on
         gift_shop_room = "#228" #self.search("ChimeraGiftShop")
 
         typeclass = "typeclasses.exits.Exit"
