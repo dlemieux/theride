@@ -10,6 +10,22 @@ from evennia import TICKER_HANDLER
 from typeclasses.room_chimera_boarding_zone import ChimeraBoardingZone
 
 
+class CmdLineLength(Command):
+    """
+    Command to display your position in line.
+    """
+    key = "line length"
+    aliases = ["line", "length"]
+    locks = "cmd:all()"
+    help_category = "The Ride"
+
+    def func(self):
+        caller = self.caller
+        location = caller.location
+
+        # TODO: Iterate on location contents to determine your position in line
+
+
 class CmdBuyHotDog(Command):
     """
     Command to buy a hot dog
@@ -137,7 +153,13 @@ class ChimeraLineRoom(DefaultRoom):
 
         time_elapsed = now - self.last_ride_time
         seconds_elapsed = time_elapsed.seconds
-        #self.msg_contents("Seconds elapsed: %s" % seconds_elapsed)
+
+        log_enabled = False
+        if hasattr(self, 'db') and hasattr(self.db, 'log_enabled') and self.db.log_enabled:
+            log_enabled = True
+
+        if log_enabled:
+            self.msg_contents("Seconds elapsed: %s" % seconds_elapsed)
 
         # Determine whether we are waiting for ride to return or waiting for people to board, or sending off the people after time out
         if self.db.room_state == 0:

@@ -100,8 +100,10 @@ class ChimeraBoardingZone(DefaultRoom):
 
     # Returns the number of seconds to wait until the next event
     def send_message(self, index):
+        delay = 5
+
         if index == 0:
-            return 9 # Slight delay with no text for people to enter
+            return delay # Slight delay with no text for people to enter
         elif index == 1:
             msg = ""
             msg += "|y> auto-advance|n" + "\n"
@@ -111,7 +113,7 @@ class ChimeraBoardingZone(DefaultRoom):
             msg += random.choice(self.task_messages)
 
             self.msg_contents(msg)
-            return 9
+            return delay
         elif index == 2:
             msg = ""
             msg += "|y> auto-advance|n" + "\n"
@@ -119,7 +121,7 @@ class ChimeraBoardingZone(DefaultRoom):
 
             self.msg_contents(msg)
 
-            return 9
+            return delay
         elif index == 3:
             msg = ""
             msg += "|y> auto-advance|n" + "\n"
@@ -128,6 +130,6 @@ class ChimeraBoardingZone(DefaultRoom):
 
             self.msg_contents(msg)
 
-            return 9
+            return delay
 
         return -1
