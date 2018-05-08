@@ -200,7 +200,7 @@ join the line
 @desc leave the line = If you leave then you will lose your place in the line!
 #
 @desc ChimeraLineRoom =
-You are standing in line for the |rChimera|n ride.
+You are standing in line for the |rChimera|n ride. Use [|gline length|n] to view your position in line.
 There are a few displays on the walls which are meant to keep you entertained
 while you wait. A few vendors are hanging around hoping people
 will purchase their wares to help pass the time.

@@ -15,7 +15,7 @@ class CmdLineLength(Command):
     Command to display your position in line.
     """
     key = "line length"
-    aliases = ["line", "length"]
+    aliases = ["line", "length", "line order", "order"]
     locks = "cmd:all()"
     help_category = "The Ride"
 
@@ -23,7 +23,7 @@ class CmdLineLength(Command):
         caller = self.caller
         location = caller.location
 
-        # TODO: Iterate on location contents to determine your position in line
+        location.show_line_details(caller)
 
 
 class CmdBuyHotDog(Command):
@@ -105,6 +105,7 @@ class CmdSetLineRoom(CmdSet):
         """Called at first cmdset creation"""
         self.add(CmdBoardCar())
         self.add(CmdBuyHotDog())
+        self.add(CmdLineLength())
 
 
 class ChimeraLineRoom(DefaultRoom):
@@ -204,10 +205,46 @@ class ChimeraLineRoom(DefaultRoom):
         self.cur_boarding_zone = new_boarding_zone
         #self.msg_contents("Created new boarding zone: %s" % new_boarding_zone.id)
         
+
+    def show_line_details(self, caller):
+        # Build an ordered list of all people in line
+        rider_list = []
+        for item in self.contents:
+            # Only take people with a park pass
+            if hasattr(item, "db"):
+                if item.db.has_season_pass == True:
+                    # Only take people in line
+                    if (hasattr(item.db, "chimera_line_index") and item.db.chimera_line_index > 0):
+                        rider_info = {}
+
+                        if item.name == caller.name:
+                            rider_name = "|n%s" % (item.name)
+                        else: # Not you
+                            rider_name = "|C%s" % (item.name)
+
+                        rider_info['name'] = rider_name
+                        rider_info['index'] = item.db.chimera_line_index
+
+                        rider_list.append(rider_info)
+
+                        
+
+        # Sort the list
+        sorted_riders = sorted(rider_list, key=lambda rider: rider['index'])
+
+        # Add the numbers to the names
+        index = 1
+        for rider in sorted_riders:
+            rider['name'] = "|C%s) %s|n" % (index, rider['name'])
+            index += 1
+
+        msg = "\n".join(x['name'] for x in sorted_riders)
+        caller.msg(msg)
+
+
     def build_rider_list(self):
         # Build the list of the top n people who can board
         # Save the value in a property for the board command to read from
-        # TODO
 
         # Iterate over all items in contents and assemble name/ticket number pairs
         max_index_allowed = -1
