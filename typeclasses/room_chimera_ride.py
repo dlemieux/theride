@@ -20,7 +20,7 @@ DATA_ROLES = [
     { "msg": "Coal Miners",         "command_name": "mine", },
     { "msg": "Rock Band Musicians", "command_name": "rock", },
     { "msg": "Test Subjects",       "command_name": "endure", },
-    { "msg": "Animal Trainers",     "command_name": "", },
+    { "msg": "Animal Trainers",     "command_name": "train", },
     { "msg": "Wizards",             "command_name": "conjure", },
     { "msg": "Athletes",            "command_name": "train", },
     { "msg": "Students",            "command_name": "study", },
@@ -151,7 +151,7 @@ class ChimeraRideRoom(DefaultRoom):
 
             msg += "You came to the park at a really special time. %s And hey, we could really use your help! But it seems like we're having some trouble for some reason.\n" % (ride_problem['msg'])
 
-            msg += "Also, the villain is %s!\n" % (ride_villain['msg'])
+            msg += "And you'll never believe it, but our efforts keep being thwarted by %s!\n" % (ride_villain['msg'])
 
             self.msg_contents(msg)
 
