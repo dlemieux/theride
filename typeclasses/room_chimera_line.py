@@ -121,8 +121,8 @@ class ChimeraLineRoom(DefaultRoom):
         TICKER_HANDLER.add(interval=self.db.interval, callback=self.update_loop, idstring="the_ride")
 
         # Constants
-        self.db.between_cars_delay = 60 # Value in seconds
-        self.db.boarding_time_delay = 30 # Seconds to board the current car
+        self.db.between_cars_delay = 15 # Value in seconds
+        self.db.boarding_time_delay = 10 # Seconds to board the current car
         self.db.riders_per_car = 4
 
         self.db.next_ticket_number = 1
