@@ -163,7 +163,12 @@ There are stuffed animals, hats, sunglasses, candy, and more!
 #
 @desc courtyard = Return to courtyard.
 
-# Create the items that are for sale
+# Create the gift shop attendant
+@create/drop Sales Clerk : objects.ParkAttendant
+#
+@desc Sales Clerk = The sales clerk appears eager to sell you items!
+#
+@set Sales Clerk/talk_to_msg = Sales Clerk: "Welcome to the |rChimera|n gift shop! You can purchase any of these items using your park points!\n             If you don't have enough points, you can ride the |rChimera|n to earn more!\n             Use [|gbuy <item>|n] if you see something you like!"
 
 # Return to the courtyard
 courtyard
