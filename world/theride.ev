@@ -151,7 +151,7 @@ to store their belongings so they don't lose items on the rides.
 courtyard
 
 # Create the Chimera gift shop
-@dig ChimeraGiftShop;ride-room-04 = gift shop,courtyard
+@dig ChimeraGiftShop;ride-room-04 : room_chimera_gift_shop.ChimeraGiftShopRoom = gift shop,courtyard
 #
 @desc gift shop = This leads to the gift shop for the Chimera ride!
 #
@@ -162,6 +162,8 @@ You are standing in a gift shop with shelves of merchandising lining every wall.
 There are stuffed animals, hats, sunglasses, candy, and more!
 #
 @desc courtyard = Return to courtyard.
+
+# Create the items that are for sale
 
 # Return to the courtyard
 courtyard
