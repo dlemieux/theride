@@ -2153,8 +2153,6 @@ class ChimeraRideRoom(DefaultRoom):
             self.ride_events = []
 
             # Set up all the sections
-            
-
             for section_info in DATA_RIDE_EVENT_SECTIONS:
                 # Choose the random scenario within the section options
                 section_option = random.choice(section_info['options'])
@@ -2189,7 +2187,7 @@ class ChimeraRideRoom(DefaultRoom):
 
             # We have more events
             cur_event = self.ride_events[0]
-            self.ride_events = self.ride_events[1:]
+            self.ride_events = self.ride_events[1:] # Remove the front element
 
             msg = ""
             msg += "|y> auto-advance|n" + "\n"
