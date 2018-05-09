@@ -281,10 +281,16 @@ class ChimeraLineRoom(DefaultRoom):
         self.whitelist_riders = whitelist_riders # Save a reference of the rider list on the object itself
 
         # Set a property so the board command knows who to allow
-        last_index = len(whitelist_riders) - 1
-        last_rider = whitelist_riders[last_index]
-        self.db.max_index_allowed = last_rider['index']
-        message = "  That would be... %s!" % (", ".join(x['name'] for x in whitelist_riders))
+        if len(whitelist_riders) == 0:
+            self.db.max_index_allowed = 0
+
+            message = "  That would be... no one! I'm all alone!"
+        else:
+            last_index = len(whitelist_riders) - 1
+            last_rider = whitelist_riders[last_index]
+            self.db.max_index_allowed = last_rider['index']
+
+            message = "  That would be... %s!" % (", ".join(x['name'] for x in whitelist_riders))
 
         self.msg_contents(message)
 
