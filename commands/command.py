@@ -335,8 +335,9 @@ class CmdHelpNewbie(Command):
     Display help for new players.
     """    
     key = "help newbie"
+    aliases = ["help new", "newbie", "new", "help"]
+    priority = 1
     help_category = "The Ride"
-    aliases = ["help new", "newbie", "new"]
     locks = "cmd:all()"
 
     def func(self):
