@@ -2123,9 +2123,6 @@ class ChimeraRideRoom(DefaultRoom):
                     # Create a room for the exit
                     new_exit_room = create_object(ChimeraExitRoom, key="Chimera Ride Exit Room")
 
-                    # TODO: Create a photo item for everyone and add it to their inventory
-                    # Make sure the description lists who was in the photo
-
                     # Move all players into the ride room
                     for rider in self.contents:
                         if hasattr(rider, "db"):
