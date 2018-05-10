@@ -161,7 +161,7 @@ class ChimeraExitRoom(DefaultRoom):
                         self.give_player_album(person)
                         self.give_player_photo(person, cur_photo_info)
                     else:
-                        person.msg("If you would like to purchase your ride photo for %s points, don't forget to use [|gbuy photo|n] before you leave the room!" % (PHOTO_PRICE))
+                        person.msg("If you would like to purchase your ride photo for |c%s|n points, don't forget to use [|gbuy photo|n] before you leave the room!" % (PHOTO_PRICE))
 
         self.db.players_arrived = True
 
