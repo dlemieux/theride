@@ -2328,9 +2328,29 @@ class ChimeraRideRoom(DefaultRoom):
             msg = ""
             msg += "|y> auto-advance|n" + "\n"
             
-            msg += "%s" % (cur_event['msg'])
+            cur_event_msg = "%s" % (cur_event['msg'])
+            cur_event_msg = self.apply_special_dialog_rules(cur_event_msg)
+
+            msg += cur_event_msg
 
             self.msg_contents(msg)
 
             return cur_event['delay']
+
+    def apply_special_dialog_rules(self, msg):
+
+        villain_name = self.ride_villain['msg']
+        role_name = self.ride_role['msg']
+
+        # VILLAIN
+        msg = msg.replace('VILLAIN', villain_name)
+
+        # ROLE
+        msg = msg.replace('ROLE', role_name)
+
+        # Chimera
+        msg = msg.replace('Chimera', '|rChimera|n')
+
+        return msg
+
 
