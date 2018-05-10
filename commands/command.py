@@ -432,22 +432,22 @@ class CmdReadPass(Command):
         if len(callerName) > maxNameLength:
             callerName = callerName[:maxNameLength]
 
-        nameRow = "Name: %s" % callerName
-        townRow = "Town: %s" % caller.db.pass_town
-        dateRow = "Create date: %s (UTC)" % caller.db.pass_create_date
-        pointsRow = "Park Points: %s" % caller.db.pass_points
+        nameRow = "Name: |c%s|n" % callerName
+        townRow = "Town: |c%s|n" % caller.db.pass_town
+        dateRow = "Create date: |c%s (UTC)|n" % caller.db.pass_create_date
+        pointsRow = "Park Points: |c%s|n" % caller.db.pass_points
 
         maxRowSize = max(len(nameRow), len(townRow), len(dateRow), len(pointsRow))
 
         details = ""
         details += "|m" # Set a custom font color
-        details += "==%s==\n" % ("=".ljust(maxRowSize, '='))
-        details += "| |w%s|m |\n" % ("Park Pass".ljust(maxRowSize))
+        details += "==%s==\n" % ("=".ljust(maxRowSize - 4, '='))
+        details += "| |w%s|m |\n" % ("|gPark Pass|n".ljust(maxRowSize))
         details += "| |w%s|m |\n" % (nameRow.ljust(maxRowSize))
         details += "| |w%s|m |\n" % (townRow.ljust(maxRowSize))
         details += "| |w%s|m |\n" % (dateRow.ljust(maxRowSize))
         details += "| |w%s|m |\n" % (pointsRow.ljust(maxRowSize))
-        details += "==%s==" % ("=".ljust(maxRowSize, '='))
+        details += "==%s==" % ("=".ljust(maxRowSize - 4, '='))
         details += "|n" # Return to normal color
 
         caller.msg(details)
