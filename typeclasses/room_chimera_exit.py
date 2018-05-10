@@ -124,6 +124,7 @@ class ChimeraExitRoom(DefaultRoom):
         # Set up an exit in the room that they can take
         # DALE: This needs to match the current database you are running on
         gift_shop_room = "#228" #self.search("ChimeraGiftShop")
+        gift_shop_room = self.search("ChimeraGiftShop", global_search=True) # Try to fetch dynamically
 
         typeclass = "typeclasses.exits.Exit"
         exit_obj = create_object(typeclass, "gift shop", self, aliases=["gift","shop"], destination=gift_shop_room)
