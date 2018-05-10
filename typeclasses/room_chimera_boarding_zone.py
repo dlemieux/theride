@@ -55,7 +55,7 @@ class ChimeraBoardingZone(DefaultRoom):
 
         desc = ""
         desc += "You are in a dark room that has the ride car in the middle.\n"
-        desc += "The ride will begin shortly.\nYou can use |gsuggest <feature>|n to encourage\n"
+        desc += "The ride will begin shortly.\nYou can use [|gsuggest <feature>|n] to encourage\n"
         desc += "different events to happen during your ride, IF the attendant feels like helping you out."
         self.db.desc = desc
 
