@@ -695,7 +695,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a pistol duel!'",
+                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a pistol duel!\"",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -722,7 +722,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a triathlon!'",
+                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a triathlon!\"",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -749,7 +749,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a game of poker!'",
+                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a game of poker!\"",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -776,7 +776,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a foot race!'",
+                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a foot race!\"",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -803,7 +803,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a battle of wits!'",
+                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a battle of wits!\"",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -830,7 +830,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a dance battle!'",
+                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a dance battle!\"",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -857,7 +857,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a lip sync contest!'",
+                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a lip sync contest!\"",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -884,7 +884,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a paintball contest!'",
+                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a paintball contest!\"",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -911,7 +911,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at an arm wrestling contest!'",
+                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at an arm wrestling contest!\"",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -938,7 +938,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a staring contest!'",
+                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a staring contest!\"",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -965,7 +965,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a contest of riddles!'",
+                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a contest of riddles!\"",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -992,7 +992,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a strength contest!'",
+                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a strength contest!\"",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1019,7 +1019,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a first to laugh contest!'",
+                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a first to laugh contest!\"",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1046,7 +1046,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at an archery contest!'",
+                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at an archery contest!\"",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1073,7 +1073,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a writing contest!'",
+                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a writing contest!\"",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1100,7 +1100,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at an ugly sweater contest!'",
+                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at an ugly sweater contest!\"",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
