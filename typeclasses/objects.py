@@ -212,14 +212,12 @@ class LineLengthSign(DefaultObject):
         self.db.get_err_msg = "This is too heavy to pick up."
 
     def return_appearance(self, looker, **kwargs):
-        # Get room 213 'ChimeraLineRoom'
-        # Ask how many people are in line
-        
-        val = random.randint(1, 10)
-        # TODO: Get the real value from the other room
+        # Get the real value from the other room
+        line_room = self.search("ChimeraLineRoom", global_search=True) # Room 213
+        val = line_room.get_line_length()
 
         if val == 1:
-            return "The sign says: \"There is |c1|n person is line for the |rChimera|n.\""
+            return "The sign says: \"There is |c1|n person in line for the |rChimera|n.\""
         else:
             return "The sign says: \"There are |c%s|n people in line for the |rChimera|n.\"" % (val)
 

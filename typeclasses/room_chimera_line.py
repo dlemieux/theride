@@ -284,6 +284,17 @@ class ChimeraLineRoom(DefaultRoom):
         #self.msg_contents("Created new boarding zone: %s" % new_boarding_zone.id)
         
 
+    def get_line_length(self):
+        num_people = 0
+        for item in self.contents:
+            # Only take people with a park pass
+            if hasattr(item, "db"):
+                if item.db.has_season_pass == True:
+                    # Only take people in line
+                    if (hasattr(item.db, "chimera_line_index") and item.db.chimera_line_index > 0):
+                        num_people += 1
+        return num_people
+
     def show_line_details(self, caller):
         # Build an ordered list of all people in line
         rider_list = []
