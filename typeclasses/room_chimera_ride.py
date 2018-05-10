@@ -93,7 +93,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -116,7 +116,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -139,7 +139,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -162,7 +162,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -185,7 +185,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -208,7 +208,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -231,7 +231,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -254,7 +254,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -277,7 +277,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -300,7 +300,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -323,7 +323,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -346,7 +346,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -369,7 +369,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -392,7 +392,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -415,7 +415,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -438,7 +438,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -467,7 +467,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -490,7 +490,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -513,7 +513,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -536,7 +536,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -559,7 +559,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -582,7 +582,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -605,7 +605,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -628,7 +628,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -657,7 +657,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -680,7 +680,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -703,7 +703,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -726,7 +726,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -749,7 +749,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -772,7 +772,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -795,7 +795,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -818,7 +818,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -841,7 +841,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -864,7 +864,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -887,7 +887,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -910,7 +910,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -933,7 +933,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -956,7 +956,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -979,7 +979,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1002,7 +1002,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1031,7 +1031,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1054,7 +1054,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1077,7 +1077,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1100,7 +1100,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1123,7 +1123,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1146,7 +1146,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1169,7 +1169,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1192,7 +1192,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1215,7 +1215,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1238,7 +1238,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1261,7 +1261,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1290,7 +1290,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1313,7 +1313,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1336,7 +1336,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1359,7 +1359,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1382,7 +1382,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1405,7 +1405,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1428,7 +1428,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1451,7 +1451,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1474,7 +1474,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1497,7 +1497,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1520,7 +1520,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1543,7 +1543,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1566,7 +1566,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1589,7 +1589,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1612,7 +1612,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1641,7 +1641,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1664,7 +1664,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1687,7 +1687,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1710,7 +1710,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1733,7 +1733,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1756,7 +1756,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1779,7 +1779,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1808,7 +1808,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1831,7 +1831,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1854,7 +1854,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1877,7 +1877,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1900,7 +1900,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1923,7 +1923,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1946,7 +1946,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1969,7 +1969,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1992,7 +1992,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -2021,7 +2021,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -2044,7 +2044,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -2067,7 +2067,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An interactive bit.',
+                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
