@@ -1,32 +1,33 @@
 
 # Config
-DEFAULT_EVENT_DELAY = 2
+DEFAULT_EVENT_DELAY = 1
 
 # Thanks for joining us on the ride today. Now, according to my notes, you're a group of [roles]? Wow! Well remember to [special command] when the time is right.
-# Action message example. A player types 'listen' as a Concert Goer, and we print 'Stacy listens'
+# command_name: Be sure to ______ when the time is right!
+# action_msg: '<person> <action_msg>!' Example: A player types 'listen' as a Concert Goer and we show 'Stacy listens!'
 DATA_ROLES = [
-    { "msg": "Thieves",                 "command_name": "steal",          "action_msg": "steals", },
-    { "msg": "Pirates",                 "command_name": "loot",           "action_msg": "loots", },
-    { "msg": "Scientists",              "command_name": "research",       "action_msg": "researched", },
-    { "msg": "Tourists",                "command_name": "tour",           "action_msg": "tours", },
-    { "msg": "Space Cadets",            "command_name": "trek",           "action_msg": "treks", },
-    { "msg": "Coal Miners",             "command_name": "mine",           "action_msg": "mines", },
-    { "msg": "Rock Band Musicians",     "command_name": "rock",           "action_msg": "rocks out", },
-    { "msg": "Test Subjects",           "command_name": "endure",         "action_msg": "endures", },
-    { "msg": "Animal Trainers",         "command_name": "train",          "action_msg": "trains", },
-    { "msg": "Wizards",                 "command_name": "conjure",        "action_msg": "conjures", },
-    { "msg": "Athletes",                "command_name": "train",          "action_msg": "trains", },
-    { "msg": "Students",                "command_name": "study",          "action_msg": "studies", },
-    { "msg": "Concert Goers",           "command_name": "listen",         "action_msg": "listens", },
-    { "msg": "Game Developers",         "command_name": "debug",          "action_msg": "debugs", },
-    { "msg": "Writers",                 "command_name": "write",          "action_msg": "writes", },
-    { "msg": "Teachers",                "command_name": "teach",          "action_msg": "teaches", },
-    { "msg": "Car Mechanics",           "command_name": "fix",            "action_msg": "fixes", },
-    { "msg": "Billionaires",            "command_name": "invest",         "action_msg": "invests", },
-    { "msg": "Actors",                  "command_name": "act",            "action_msg": "acts", },
-    { "msg": "New Hires",               "command_name": "work",           "action_msg": "works", },
-    { "msg": "Pilots",                  "command_name": "fly",            "action_msg": "flies", },
-    { "msg": "Settlers",                "command_name": "settle",         "action_msg": "settles", },
+    { "msg": "thieves",                 "command_name": "steal",          "action_msg": "steals", },
+    { "msg": "pirates",                 "command_name": "loot",           "action_msg": "loots", },
+    { "msg": "scientists",              "command_name": "research",       "action_msg": "researched", },
+    { "msg": "tourists",                "command_name": "tour",           "action_msg": "tours", },
+    { "msg": "space cadets",            "command_name": "trek",           "action_msg": "treks", },
+    { "msg": "coal miners",             "command_name": "mine",           "action_msg": "mines", },
+    { "msg": "rock band musicians",     "command_name": "rock",           "action_msg": "rocks out", },
+    { "msg": "test subjects",           "command_name": "endure",         "action_msg": "endures", },
+    { "msg": "animal trainers",         "command_name": "train",          "action_msg": "trains", },
+    { "msg": "wizards",                 "command_name": "conjure",        "action_msg": "conjures", },
+    { "msg": "athletes",                "command_name": "train",          "action_msg": "trains", },
+    { "msg": "students",                "command_name": "study",          "action_msg": "studies", },
+    { "msg": "concert goers",           "command_name": "listen",         "action_msg": "listens", },
+    { "msg": "game developers",         "command_name": "debug",          "action_msg": "debugs", },
+    { "msg": "writers",                 "command_name": "write",          "action_msg": "writes", },
+    { "msg": "teachers",                "command_name": "teach",          "action_msg": "teaches", },
+    { "msg": "car mechanics",           "command_name": "fix",            "action_msg": "fixes", },
+    { "msg": "billionaires",            "command_name": "invest",         "action_msg": "invests", },
+    { "msg": "actors",                  "command_name": "act",            "action_msg": "acts", },
+    { "msg": "new hires",               "command_name": "work",           "action_msg": "works", },
+    { "msg": "pilots",                  "command_name": "fly",            "action_msg": "flies", },
+    { "msg": "settlers",                "command_name": "settle",         "action_msg": "settles", },
 ]
 
 # You came to the park at a really special time. [main problem]. And hey, we could really use your help! But it seems like we're having some trouble for some reason.
@@ -127,7 +128,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Suddenly, ",
+                        'msg': "Suddenly, a massive cage builds itself around the group and you become trapped! It must have been one of those easy setup cages!",
+                        'delay': DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "And not only are you trapped, but the cage seems to be getting smaller and smaller over time. You'll be crushed for sure!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -135,11 +140,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "The line attendant acts quickly, ",
+                        'msg': "The line attendant acts quickly, and pulls out a laser which burns holes through the pipes.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "The laser does just enough damage that the Chimera is able to leap up and push through the remaining cage pieces!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -150,7 +155,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Suddenly, ",
+                        'msg': "Suddenly, the ground rumbles, and you realize that the Chimera is actually standing on the tongue of a giant monster! And the mouth of this monster is closing fast!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -158,11 +163,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "The line attendant acts quickly, ",
+                        'msg': "The line attendant acts quickly, and pours lemon juice on the tongue of the monster! The group is spit out of its mouth with blazing speed!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "The Chimera is finally able to get its barings and does a controlled landing.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -173,7 +178,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Suddenly, ",
+                        'msg': "The Chimera was sauntering along at a quick pace, and then stopped suddenly! Its paws were stuck in some kind of webbing substance. Surely there couldn't be a spider large enough to trap a Chimera!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -181,11 +186,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "The line attendant acts quickly, ",
+                        'msg': "The line attendant acts quickly, and pulled out a giant pair of scissors, like you'd find at a giant ribbon cutting ceremony. These giant scissors are cutting away all the webs, but the giant spider is rushing towards the group fast!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "At the last minute the line attendant cuts the final thread, and the Chimera breaks free. The scissors were left behind, but at least the group is out of there!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
