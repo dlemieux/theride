@@ -123,10 +123,13 @@ class ChimeraRideRoom(DefaultRoom):
             section_option = random.choice(section_info['options'])
 
             # All events in this section need to be added
+            add_event_name_first = True # Only add the debug info for the first event in an option
             for single_event in section_option['events']:
                     
                 if ADD_EVENT_NAME_PREFIX:
-                    single_event['msg'] = "(%s->%s) %s" % (section_info['section_name'], section_option['option_name'], single_event['msg'])
+                    if add_event_name_first:
+                        single_event['msg'] = "(%s->%s) %s" % (section_info['section_name'], section_option['option_name'], single_event['msg'])
+                        add_event_name_first = False
 
                 self.ride_events.append(single_event)
 
@@ -197,12 +200,16 @@ class ChimeraRideRoom(DefaultRoom):
             cur_event = self.ride_events[0]
             self.ride_events = self.ride_events[1:] # Remove the front element
 
+            # Skip empty messages
+            if cur_event['msg'] == '':
+                return cur_event['delay']
+
+            # Build the appropriate message to show the room
             msg = ""
             msg += "|y> auto-advance|n" + "\n"
             
             cur_event_msg = "%s" % (cur_event['msg'])
             cur_event_msg = self.apply_special_dialog_rules(cur_event_msg)
-
             msg += cur_event_msg
 
             self.msg_contents(msg)
