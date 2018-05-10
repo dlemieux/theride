@@ -128,11 +128,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Suddenly, a massive cage builds itself around the group and you become trapped! It must have been one of those easy setup cages!",
+                        'msg': "Suddenly, a massive jail cube builds itself around the group and you become trapped! It must have been one of those easy setup jails!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "And not only are you trapped, but the cage seems to be getting smaller and smaller over time. You'll be crushed for sure!",
+                        'msg': "And not only are you trapped, but the bars seems to be getting smaller and smaller over time. You'll be crushed for sure!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -144,7 +144,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "The laser does just enough damage that the Chimera is able to leap up and push through the remaining cage pieces!",
+                        'msg': "The laser does just enough damage that the Chimera is able to leap up and push through the remaining jail pieces!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -201,7 +201,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Suddenly, ",
+                        'msg': "Suddenly, the Chimera falls through the fake carpet it was walking on and falls into a deep pit! \"How could this happen!\" you ask. \"It's the oldest trick in the book!\"",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -209,11 +209,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "The line attendant acts quickly, ",
+                        'msg': "The line attendant acts quickly, and straps a bunch of springs to the Chimera's feed. *BOOOOIIINNGGG* The Chimera pops right out of the pit!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "The group continues on the ride with the Chimera bouncing extra high with every step.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -224,7 +224,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Suddenly, ",
+                        'msg': "Suddenly, you realize the Chimera has been standing in quicksand! And it's already up to your waist!",
+                        'delay': DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "Ever since you were a kid, you just KNEW quicksand would be the end of you! And you've been so diligent about avoiding quicksand your whole life!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -232,245 +236,245 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "The line attendant acts quickly, ",
+                        'msg': "The line attendant acts quickly, and screams for help at the top of their lungs!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "A group of construction workers show up and quickly excavate all the sand around you. Apparently, they are planning to make a new sand pit in the children's center of the park.\nAlas, you are free!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
             },
-            {
-                'option_name': 'a puzzle room',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Suddenly, ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "The line attendant acts quickly, ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'underwater cavern',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Suddenly, ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "The line attendant acts quickly, ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'dragon\'s treasure chamber',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Suddenly, ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "The line attendant acts quickly, ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'shrunk tiny',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Suddenly, ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "The line attendant acts quickly, ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'shuttle to space',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Suddenly, ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "The line attendant acts quickly, ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'inside of a computer',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Suddenly, ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "The line attendant acts quickly, ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'in mud',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Suddenly, ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "The line attendant acts quickly, ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "\"Save us!\"' the line attendant yells ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'a cave-in',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Suddenly, ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "The line attendant acts quickly, ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "\"Save us!\"' the line attendant yells ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'time loop',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Suddenly, ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "The line attendant acts quickly, ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "\"Save us!\"' the line attendant yells ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'haunted house',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Suddenly, ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "The line attendant acts quickly, ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "\"Save us!\"' the line attendant yells ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
+            #{
+            #    'option_name': 'a puzzle room',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Suddenly, ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': '',
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "The line attendant acts quickly, ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'underwater cavern',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Suddenly, ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': '',
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "The line attendant acts quickly, ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'dragon\'s treasure chamber',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Suddenly, ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': '',
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "The line attendant acts quickly, ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'shrunk tiny',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Suddenly, ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': '',
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "The line attendant acts quickly, ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'shuttle to space',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Suddenly, ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': '',
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "The line attendant acts quickly, ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'inside of a computer',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Suddenly, ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': '',
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "The line attendant acts quickly, ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'in mud',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Suddenly, ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': '',
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "The line attendant acts quickly, ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "\"Save us!\"' the line attendant yells ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'a cave-in',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Suddenly, ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': '',
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "The line attendant acts quickly, ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "\"Save us!\"' the line attendant yells ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'time loop',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Suddenly, ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': '',
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "The line attendant acts quickly, ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "\"Save us!\"' the line attendant yells ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'haunted house',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Suddenly, ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': '',
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "The line attendant acts quickly, ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "\"Save us!\"' the line attendant yells ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
             {
                 'option_name': 'in a cage',
                 'events': [
