@@ -193,9 +193,7 @@ Many people are standing nearby in a line, which you are not in.
 The sign says: "Your safety is our primary concern! If you are prone to motion sickness or dislike unpredictable twists and turns, ride at your own risk!"
 
 # Digital counter for how many people in line
-@create/drop line length display : objects.Heavy
-#
-@desc line length display = There are |g10|n people in the line.
+@create/drop line length display : objects.LineLengthSign
 
 # Create the line room
 @dig ChimeraLineRoom : room_chimera_line.ChimeraLineRoom = join the line;line;join,leave the line;leave
