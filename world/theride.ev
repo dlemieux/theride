@@ -215,7 +215,7 @@ will purchase their wares to help pass the time.
 # Create the line attendant
 @create/drop Line Attendant : objects.ParkAttendant
 #
-@desc Line Attendant = The line attendant is dressed in a long brown cloak that covers his feet.\nHe also appears to be wearning a fake beard that extends down to knees.
+@desc Line Attendant = The line attendant is dressed in a long brown cloak that covers his feet.\nThey also appears to be wearning a fake beard that extends down to knees.\nUse [|gtalk to line attendant|n] to see if they have a way to help pass the time.
 #
 @set Line Attendant/talk_to_msg = Line Attendant: "Welcome to the |rChimera|n! If you wait then another ride cart will be along shortly.\nIf you are feeling bored, you could talk with others, buy a hot dog, or type [|gplay game|n]"
 

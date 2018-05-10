@@ -10,6 +10,82 @@ from evennia import TICKER_HANDLER
 from typeclasses.room_chimera_boarding_zone import ChimeraBoardingZone
 
 
+class CmdPlayGame(Command):
+    """
+    Command to play a game in line with the attendant.
+    """
+    key = "play game"
+    locks = "cmd:all()"
+    help_category = "The Ride"
+
+    def func(self):
+        caller = self.caller
+        location = caller.location
+
+        # See if a game is already started
+        if location.db.number_game_started:
+            caller.msg("Line Attendant: \"A game is already in progress. Join in by using [|gguess <number>|n]!\"")
+            return
+
+        # Start a new game
+        answer = random.randint(1, 100)
+        location.db.number_game_answer = answer
+        location.db.number_game_started = True
+
+        game_start_msg = ""
+        game_start_msg += "Line Attendant: \"Okay everybody! Let's play the number game!\n"
+        game_start_msg += "                Use [|gguess <number>|n] to guess a number between 1 and 100. Go!\""
+
+        location.msg_contents(game_start_msg)
+
+
+class CmdGuessNumber(Command):
+    """
+    Command to guess a number for the attendant's game.
+
+    guess <number>
+    """
+    key = "guess"
+    locks = "cmd:all()"
+    help_category = "The Ride"
+
+    def func(self):
+        caller = self.caller
+        location = caller.location
+
+        if not self.args:
+            caller.msg("guess <number>")
+
+        # See if a game is running
+        if not location.db.number_game_started:
+            caller.msg("Line Attendant: \"A game is not in progress. Use [|gplay game|n] if you want me to start a new game.\"")
+            return
+
+        # Determine the user's guess
+        user_guess = 0
+
+        try:
+            user_guess = int(self.args)
+        except Exception:
+            caller.msg("Line Attendant: \"You must guess an integer number (no decimals or fractions)\"")
+            return
+
+        if user_guess == location.db.number_game_answer:
+            # player won!
+            location.db.number_game_started = False
+
+            msg = "Line Attendant: \"We have a winner! |c%s|n guessed the answer |c%s|n!\"" % (caller.name, user_guess)
+            location.msg_contents(msg)
+        elif user_guess > location.db.number_game_answer:
+            # guess too high
+            msg = "Line Attendant: \"|c%s|n's guess of |c%s|n is too high!\"" % (caller.name, user_guess)
+            location.msg_contents(msg)
+        else:
+            # guess too low
+            msg = "Line Attendant: \"|c%s|n's guess of |c%s|n is too low!\"" % (caller.name, user_guess)
+            location.msg_contents(msg)
+
+
 class CmdLineLength(Command):
     """
     Command to display your position in line.
@@ -106,6 +182,8 @@ class CmdSetLineRoom(CmdSet):
         self.add(CmdBoardCar())
         self.add(CmdBuyHotDog())
         self.add(CmdLineLength())
+        self.add(CmdPlayGame())
+        self.add(CmdGuessNumber())
 
 
 class ChimeraLineRoom(DefaultRoom):
