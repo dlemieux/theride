@@ -89,7 +89,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -97,11 +97,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -112,7 +112,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -120,11 +120,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -135,7 +135,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -143,11 +143,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -158,7 +158,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -166,11 +166,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -181,7 +181,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -189,11 +189,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -204,7 +204,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -212,11 +212,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -227,7 +227,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -235,11 +235,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -250,7 +250,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -258,11 +258,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -273,7 +273,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -281,11 +281,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -296,7 +296,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -304,11 +304,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -319,7 +319,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -327,11 +327,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -342,7 +342,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -350,11 +350,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -365,7 +365,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -373,11 +373,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -388,7 +388,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -396,11 +396,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -411,7 +411,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -419,11 +419,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -434,7 +434,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -442,11 +442,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -463,7 +463,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -471,11 +471,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -486,7 +486,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -494,11 +494,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -509,7 +509,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -517,11 +517,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -532,7 +532,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -540,11 +540,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -555,7 +555,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -563,11 +563,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -578,7 +578,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -586,11 +586,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -601,7 +601,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -609,11 +609,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -624,7 +624,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -632,11 +632,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -653,7 +653,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -661,11 +661,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -676,7 +676,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -684,11 +684,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -699,7 +699,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -707,11 +707,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -722,7 +722,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -730,11 +730,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -745,7 +745,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -753,11 +753,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -768,7 +768,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -776,11 +776,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -791,7 +791,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -799,11 +799,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -814,7 +814,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -822,11 +822,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -837,7 +837,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -845,11 +845,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -860,7 +860,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -868,11 +868,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -883,7 +883,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -891,11 +891,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -906,7 +906,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -914,11 +914,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -929,7 +929,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -937,11 +937,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -952,7 +952,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -960,11 +960,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -975,7 +975,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -983,11 +983,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -998,7 +998,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1006,11 +1006,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1027,7 +1027,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1035,11 +1035,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1050,7 +1050,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1058,11 +1058,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1073,7 +1073,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1081,11 +1081,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1096,7 +1096,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1104,11 +1104,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1119,7 +1119,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1127,11 +1127,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1142,7 +1142,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1150,11 +1150,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1165,7 +1165,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1173,11 +1173,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1188,7 +1188,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1196,11 +1196,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1211,7 +1211,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1219,11 +1219,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1234,7 +1234,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1242,11 +1242,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1257,7 +1257,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1265,11 +1265,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1286,7 +1286,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1294,11 +1294,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1309,7 +1309,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1317,11 +1317,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1332,7 +1332,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1340,11 +1340,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1355,7 +1355,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1363,11 +1363,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1378,7 +1378,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1386,11 +1386,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1401,7 +1401,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1409,11 +1409,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1424,7 +1424,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1432,11 +1432,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1447,7 +1447,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1455,11 +1455,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1470,7 +1470,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1478,11 +1478,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1493,7 +1493,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1501,11 +1501,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1516,7 +1516,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1524,11 +1524,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1539,7 +1539,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1547,11 +1547,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1562,7 +1562,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1570,11 +1570,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1585,7 +1585,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1593,11 +1593,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1608,7 +1608,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1616,11 +1616,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1637,7 +1637,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1645,11 +1645,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1660,7 +1660,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1668,11 +1668,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1683,7 +1683,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1691,11 +1691,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1706,7 +1706,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1714,11 +1714,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1729,7 +1729,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1737,11 +1737,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1752,7 +1752,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1760,11 +1760,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1775,7 +1775,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1783,11 +1783,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1804,7 +1804,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1812,11 +1812,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1827,7 +1827,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1835,11 +1835,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1850,7 +1850,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1858,11 +1858,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1873,7 +1873,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1881,11 +1881,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1896,7 +1896,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1904,11 +1904,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1919,7 +1919,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1927,11 +1927,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1942,7 +1942,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1950,11 +1950,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1965,7 +1965,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1973,11 +1973,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1988,7 +1988,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1996,11 +1996,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -2017,7 +2017,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -2025,11 +2025,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -2040,7 +2040,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -2048,11 +2048,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -2063,7 +2063,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': 'Explain the setup.',
+                        'msg': "Explain the setup.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -2071,11 +2071,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'An ending.',
+                        'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'A transition out.',
+                        'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
