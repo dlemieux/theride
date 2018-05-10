@@ -41,22 +41,70 @@ DATA_ROLES = [
 
 # You came to the park at a really special time. [main problem]. And hey, we could really use your help! But it seems like we're having some trouble for some reason.
 DATA_MAIN_PROBLEMS = [
-    { "msg": "Our Chimera is sick!", },
-    { "msg": "Our Chimera needs exercise!", },
-    { "msg": "Our Chimera is hungry!", },
-    { "msg": "Our Chimera wants to take a nap but it has insomnia!", },
-    { "msg": "Our Chimera lost its memory!", },
-    { "msg": "A new ride is malfunctioning!", },
-    { "msg": "Someone hacked the park security network!", },
-    { "msg": "There's a bad storm coming!", },
-    { "msg": "The park is running out of money!", },
-    { "msg": "Someone's been trying to kidnap the Chimera!", },
-    { "msg": "Booby traps have been placed around the park!", },
-    { "msg": "An artifact has been stolen!", },
-    { "msg": "We've lost communication with a far off base!", },
-    { "msg": "We have to rescue something!", },
-    { "msg": "We're scouting out a new territory!", },
-    { "msg": "We found a treasure map, but don't know how to decipher it!", },
+    {
+        "msg": "Our Chimera is sick!",
+        "end_line": "The Chimera coughed up a hairball and turned around to look at the group. Turns out there was nothing wrong with it the whole time!",
+    },
+    {
+        "msg": "Our Chimera needs exercise!",
+        "end_line": "The Chimera was finally tuckered out and had been sufficiently exercised.",
+    },
+    {
+        "msg": "Our Chimera is hungry!",
+        "end_line": "Suddenly, a giant piece of Chimera food dropped from the heavens! The now ravenous Chimera swiped it from the air and started chowing down on that sweet meat.\nThe slurping and tearing sounds clearly indicated the Chimera was pleased with this outcome.",
+    },
+    {
+        "msg": "Our Chimera wants to take a nap but it has insomnia!",
+        "end_line": "The Chimera seems to have become so tired from all the action that its actually starting to fall asleep. Normally this would be exactly what we want, but the passangers are still in a cart strapped to the Chimera's back.",
+    },
+    {
+        "msg": "Our Chimera lost its memory!",
+        "end_line": "The Chimera, still confused from having lost its memory, started heading into a secret cave nearby but forgot to duck its head and smashed it against the rocks!\nRocks and tiny debris were falling down, but the Chimera seemed relieved. That must have jolted back all of its memories! Huzzah!",
+    },
+    {
+        "msg": "A new ride is malfunctioning!",
+        "end_line": "The malfunctiong ride we've been trying to fix was now even more rickety! And as a cart ran along its tracks the final screws came loose and the cart went soaring into the air, untethered, full of screaming passengers!\nThe Chimera leaps up and wrapped the ride cart in its tail, landing softing and lowering the cart.",
+    },
+    {
+        "msg": "Someone hacked the park security network!",
+        "end_line": "The security network seemed completely lost. It was still hacked and no one could do anything about it! The Chimera suddenly had an idea, and ran over to pull out the mainframe cord. Holding the cord in its teeth for a few seconds, it then plugged it back in. The reboot worked! The hacker was kicked out! And never heard from again.",
+    },
+    {
+        "msg": "There's a bad storm coming!",
+        "end_line": "The Chimera ran all over the park and the riders warned everyone of the incoming storm, and they were all able to prepare adequately. The park was saved!",
+    },
+    {
+        "msg": "The park is running out of money!",
+        "end_line": "Luckily, this amazing journey was being documented the whole time, and a famour film company wants to buy the rights so they can make a movie! The park will earn all the money it needs to keep operating!",
+    },
+    {
+        "msg": "Someone's been trying to kidnap the Chimera!",
+        "end_line": "The Chimera Kidnapper suddenly appeared and lunged at the Chimera with a large brown sack to steal it away! Unfortunately, they grossly underestimated the size of a Chimera and the sack merely covered its front paw. The very paw that proceeded to smack the kidnapper up into the sky, soaring away. Looks like the Chimera Kidnapper is blasting off agaaaaiiiiin!",
+    },
+    {
+        "msg": "Booby traps have been placed around the park!",
+        "end_line": "As it turns out, the booby traps placed around the park were just trial versions, and disabled themselves after the 30 minute free period! The park was saved!",
+    },
+    {
+        "msg": "An artifact has been stolen!",
+        "end_line": "The stolen artifact was still on everyone's mind, and they did some research into where a theif may try to sell the rare artifact. The group put in a WANT ad in the park newsletter and immediately caught the thief.",
+    },
+    {
+        "msg": "We've lost communication with a far off base!",
+        "end_line": "The Chimera leapt high into the air and was knocked around by high winds! When it landed, it hit an antenna on the communications building, which amazingly fixed the signal coming from the far off base! Communications were restored!",
+    },
+    {
+        "msg": "We have to rescue a cat up a tree!",
+        "end_line": "Everyone remembers that the cat is still stuck in the tree and start calling out to the cat to reassure it that they'll resuce the cat soon. The cat yawns, and leaps down out of the tree and onto the ground unharmed, because obviously it was a cat and being in a tree isn't a problem.",
+    },
+    {
+        "msg": "We're scouting out a new territory!",
+        "end_line": "After all that adventuring, it looks like we've managed to map out the whole territory. Great work everyone!",
+    },
+    {
+        "msg": "We found a treasure map, but don't know how to decipher it!",
+        "end_line": "Suddenly, the meaning of the treasure map was all so obvious. All the clues, Xs, riddles, and compass marks became one, and then, became nothing. There was no treasure this group could not find. And with this knowledge, there was no need to dig up the treasure, because the real treasure, was friendship.",
+    },
 ]
 
 # And you'll never believe it, but our efforts keep being thwarted by [villain]!
@@ -72,7 +120,7 @@ DATA_VILLAIN = [
     { "msg": "a psychic child", },
     { "msg": "a time traveler", },
     { "msg": "an overachieving college student", }, # I've gotta maintain my magna cum laude status. I'll definitely get into grad school with this thesis
-    { "msg": "another Chimera", },
+    { "msg": "a knockoff brand 'Kaimera'", },
     { "msg": "a pirate captain", },
     { "msg": "a cursed object", },
 ]
@@ -89,7 +137,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Suddenly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -97,7 +145,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "The line attendant acts quickly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -112,7 +160,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Suddenly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -120,7 +168,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "The line attendant acts quickly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -135,7 +183,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Suddenly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -143,7 +191,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "The line attendant acts quickly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -158,7 +206,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Suddenly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -166,7 +214,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "The line attendant acts quickly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -181,7 +229,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Suddenly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -189,7 +237,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "The line attendant acts quickly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -204,7 +252,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Suddenly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -212,7 +260,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "The line attendant acts quickly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -227,7 +275,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Suddenly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -235,7 +283,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "The line attendant acts quickly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -250,7 +298,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Suddenly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -258,7 +306,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "The line attendant acts quickly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -273,7 +321,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Suddenly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -281,7 +329,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "The line attendant acts quickly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -296,7 +344,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Suddenly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -304,7 +352,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "The line attendant acts quickly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -319,7 +367,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Suddenly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -327,7 +375,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "The line attendant acts quickly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -342,7 +390,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Suddenly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -350,11 +398,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "The line attendant acts quickly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "\"Save us!\"' the line attendant yells ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -365,7 +413,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Suddenly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -373,11 +421,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "The line attendant acts quickly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "\"Save us!\"' the line attendant yells ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -388,7 +436,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Suddenly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -396,11 +444,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "The line attendant acts quickly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "\"Save us!\"' the line attendant yells ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -411,7 +459,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Suddenly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -419,11 +467,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "The line attendant acts quickly, ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "\"Save us!\"' the line attendant yells ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -434,7 +482,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Suddenly, the bars of a cage wrap around you and the Chimera. A chain lifts your new cell high above the ground!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -442,11 +490,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "The line attendant acts quickly, pulling on the bottom of the chain until you swing like a pendulum, right through the roof!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "\"Save us!\"' the line attendant yells as you land, shattering the cage and earning your freedom!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -463,7 +511,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "The Chimera has anticipated this type of danger!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -471,11 +519,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "With its magical powers, it summons a bright and shiny rainbow!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "With a single leap, the Chimera leaps onto the rainbow and gallops towards the heavens!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -486,7 +534,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "The Chimera has anticipated this type of danger!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -494,7 +542,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "With its magical powers, it summons ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -509,7 +557,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "The Chimera has anticipated this type of danger!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -517,7 +565,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "With its magical powers, it summons ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -532,7 +580,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "The Chimera has anticipated this type of danger!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -540,7 +588,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "With its magical powers, it summons ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -555,7 +603,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "The Chimera has anticipated this type of danger!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -563,7 +611,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "With its magical powers, it summons ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -578,7 +626,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "The Chimera has anticipated this type of danger!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -586,7 +634,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "With its magical powers, it summons ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -601,7 +649,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "The Chimera has anticipated this type of danger!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -609,7 +657,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "With its magical powers, it summons ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -624,7 +672,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "The Chimera has anticipated this type of danger!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -632,7 +680,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "With its magical powers, it summons ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -653,7 +701,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+                        'delay': DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a pistol duel!'",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -661,7 +713,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -676,7 +728,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+                        'delay': DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a triathlon!'",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -684,7 +740,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -699,7 +755,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+                        'delay': DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a game of poker!'",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -707,7 +767,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': " ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -722,7 +782,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+                        'delay': DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a foot race!'",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -730,7 +794,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': " ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -745,7 +809,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+                        'delay': DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a battle of wits!'",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -768,7 +836,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+                        'delay': DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a dance battle!'",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -791,7 +863,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+                        'delay': DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a lip sync contest!'",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -814,7 +890,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+                        'delay': DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a paintball contest!'",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -837,7 +917,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+                        'delay': DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at an arm wrestling contest!'",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -860,7 +944,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+                        'delay': DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a staring contest!'",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -883,7 +971,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+                        'delay': DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a contest of riddles!'",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -906,7 +998,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+                        'delay': DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a strength contest!'",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -929,7 +1025,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+                        'delay': DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a first to laugh contest!'",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -952,7 +1052,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+                        'delay': DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at an archery contest!'",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -975,7 +1079,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "EManiacal laughter fills the air as VILLAIN appears before you.",
+                        'delay': DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at a writing contest!'",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -998,7 +1106,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+                        'delay': DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "A challenge rings out in the air: 'Let's see if you can best me... at an ugly sweater contest!'",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1027,7 +1139,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "The challenge is finally over. An adoring crowd rushes over, impressed with your magnificent skills!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1035,11 +1147,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "You sign autographs until your hands grow sore!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "The Chimera finally makes its way through to the other side.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1050,7 +1162,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "The challenge is finally over. ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1073,7 +1185,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "The challenge is finally over. ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1096,7 +1208,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "The challenge is finally over. ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1119,7 +1231,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "The challenge is finally over. ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1142,7 +1254,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "The challenge is finally over. Suddenly, you're in the park entrance! How did you get out here?",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1150,11 +1262,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "No, it's just an illusion! You focus your thoughts, and the world around you starts to dissolve.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "The Chimera snorts with disdain and saunters through the evaporating mist.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1165,7 +1277,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "The challenge is finally over. ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1188,7 +1300,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "The challenge is finally over. ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1211,7 +1323,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "The challenge is finally over. The mist clears... you find yourself at the pinnacle of a mountain!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1234,7 +1346,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "The challenge is finally over. The Chimera lumbers away and crashes into the side of a surburban home. ",
+                        'delay': DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "Within, the startled inhabitants leap to their feet, knocking over a board covered in dice and miniatures. You've interrupted a night of Caverns and Chimeras!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1242,11 +1358,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "The owner of the house puts on his robe and wizard hat. He attempts to make you pay for the damages. Alas, he rolls a one.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "Bored, the Chimera breaks a few more pieces of furniture as it ventures back out to the street.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1257,7 +1373,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "The challenge is finally over. You suddently realize the sky is curved...",
+                        'delay': DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "It's the inside of a giant monitor! Wait, why is everything blocky? You're in a video game!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1265,11 +1385,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "The only way out is to die on purpose. Spotting a tall cliff, the Chimera launches itself off into a free fall!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "You feel the cells of your body de-pixellating as you return to the physical plane.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1286,7 +1406,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "But the worst is yet to come. At the horizon, you spot the silhouette of a tornado coming straight at you!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1309,7 +1429,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "But the worst is yet to come. ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1332,7 +1452,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "But the worst is yet to come. ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1355,7 +1475,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "But the worst is yet to come. ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1378,7 +1498,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "But the worst is yet to come. ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1401,7 +1521,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "But the worst is yet to come. ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1424,7 +1544,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "But the worst is yet to come. ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1447,7 +1567,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "But the worst is yet to come. ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1470,7 +1590,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "But the worst is yet to come. ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1493,7 +1613,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "But the worst is yet to come. ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1516,7 +1636,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "But the worst is yet to come. ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1539,7 +1659,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "But the worst is yet to come. ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1562,7 +1682,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "But the worst is yet to come. ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1585,7 +1705,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "But the worst is yet to come. ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1608,7 +1728,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "But the worst is yet to come. An ominous hum overwhelms your ears as the air fills with thousands upon thousands of bees!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1616,11 +1736,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "The Chimera hisses as the bees attack, but their stingers are no match for its legendary scales!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "After several minutes, the vicious swarm recedes, allowing you to escape!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1637,7 +1757,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "You can never trust VILLAIN! There's one more obstacle between you and them!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1660,7 +1780,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "You can never trust VILLAIN! There's one more obstacle between you and them!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1683,7 +1803,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "You can never trust VILLAIN! There's one more obstacle between you and them!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1706,7 +1826,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "You can never trust VILLAIN! There's one more obstacle between you and them!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1729,7 +1849,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "You can never trust VILLAIN! There's one more obstacle between you and them!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1752,7 +1872,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "You can never trust VILLAIN! There's one more obstacle between you and them!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1775,7 +1895,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "You can never trust VILLAIN! There's one more obstacle between you and them!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1804,7 +1924,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Delighted that the danger is over, a pack of paparazzi approaches!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1812,11 +1932,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "You briefly perceive a flash of light!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "Now it's surely time for a happy ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1827,7 +1947,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Delighted that the danger is over, a ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1835,11 +1955,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "You briefly perceive a flash of light!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "Now it's surely time for a happy ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1850,7 +1970,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Delighted that the danger is over, a ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1858,11 +1978,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "You briefly perceive a flash of light!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "Now it's surely time for a happy ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1873,7 +1993,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Delighted that the danger is over, a ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1881,11 +2001,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "You briefly perceive a flash of light!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "Now it's surely time for a happy ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1896,7 +2016,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Delighted that the danger is over, a swarm of special effects artists approaches, setting up equipment and green screens on all sides of you.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1904,11 +2024,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "You briefly perceive a flash of light!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "Now it's surely time for a happy ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1919,7 +2039,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Delighted that the danger is over, a ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1927,11 +2047,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "You briefly perceive a flash of light!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "Now it's surely time for a happy ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1942,7 +2062,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Delighted that the danger is over, a ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1950,11 +2070,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "You briefly perceive a flash of light!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "Now it's surely time for a happy ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1965,7 +2085,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Delighted that the danger is over, a ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1973,11 +2093,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "You briefly perceive a flash of light!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "Now it's surely time for a happy ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1988,7 +2108,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Delighted that the danger is over, a ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1996,11 +2116,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "You briefly perceive a flash of light!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "Now it's surely time for a happy ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -2058,7 +2178,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                 ],
             },
             {
-                'option_name': 'archery',
+                'option_name': 'power of heart',
                 'events': [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
@@ -2161,6 +2281,25 @@ class ChimeraRideRoom(DefaultRoom):
                         single_event['msg'] = "(%s->%s) %s" % (section_info['section_name'], section_option['option_name'], single_event['msg'])
 
                     self.ride_events.append(single_event)
+
+            final_event_1 = {
+                'msg': "The line attendant appears before you. You did it! We no longer have to worry about VILLAIN, and it's all thanks to you!",
+                'delay': DEFAULT_EVENT_DELAY,
+            }
+
+            final_event_2 = {
+                'msg': self.ride_problem['end_line'],
+                'delay': DEFAULT_EVENT_DELAY,
+            }
+
+            final_event_3 = {
+                'msg': "Everything is finally as it should be again. The Chimera brings you to the ride platform and grunts in thanks. \n The line attendant beams with pride. \"Who knew a group of ROLE would save the day! See you next time.\" She waves happily as the shoulder harnesses lift and you are free to exit the ride.",
+                'delay': DEFAULT_EVENT_DELAY,
+            }
+
+            self.ride_events.append(final_event_1)
+            self.ride_events.append(final_event_2)
+            self.ride_events.append(final_event_3)
 
             # Display the premise
             msg = ""
