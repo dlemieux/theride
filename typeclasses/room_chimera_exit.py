@@ -153,7 +153,7 @@ class ChimeraExitRoom(DefaultRoom):
                 if (hasattr(person.db, "has_season_pass") and person.db.has_season_pass == True):
                     # Give them points
                     person.db.pass_points = person.db.pass_points + points_per_ride
-                    person.msg("You were awarded %s points for surviving the |rChimera|n!\nPlease ride again soon!" % points_per_ride)
+                    person.msg("You were awarded |c%s|n points for surviving the |rChimera|n!\nPlease ride again soon!" % points_per_ride)
 
                     # Do the album logic
                     if not self.player_has_album(person):
