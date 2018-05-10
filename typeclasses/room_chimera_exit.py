@@ -101,7 +101,7 @@ class PhotoAlbum(DefaultObject):
         super(PhotoAlbum, self).at_object_creation()
         
         # Set system properties
-        self.db.desc = "A photo album to store your treasured memories in the park! Use |gread album|n to see the details!"
+        self.db.desc = "A photo album to store your treasured memories in the park! Use [|gread album|n] to see the details!"
         self.db.drop_err_msg = "You wouldn't want to drop that!"
         self.db.is_photo_album = True # Used to detect albums in another command
 

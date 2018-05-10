@@ -232,13 +232,13 @@ class ParkPass(DefaultObject):
         super(ParkPass, self).at_object_creation()
         
         # Set system properties
-        self.db.desc = "Your very own park pass! Use |gread pass|n to see the details!"
+        self.db.desc = "Your very own park pass! Use [|gread pass|n] to see the details!"
         self.db.drop_err_msg = "The Park Pass is the most important item you own! Don't be so careless!"
         # Make sure they can't drop the pass
         self.locks.add("drop:false()")
         
         # Set custom properties to store for the user
-        self.db.park_points = 0
+        #self.db.park_points = 0
         now = datetime.datetime.now()
         self.db.creation_date = str(now)
 
@@ -272,7 +272,7 @@ class CmdBuyPass(Command):
         if caller.db.has_season_pass:
             caller.msg("Pass Sales Clerk: Oh hey! How's that pass working out for ya?")
             caller.msg("                  You won't ever need another one. That's a lifetime guarantee!")
-            caller.msg("                  (You can use |gi|n to view your inventory)")
+            caller.msg("                  (You can use [|gi|n] to view your inventory)")
         else:
             # give the player a pass
             caller.msg("Clerk: Alright! We'll have you all set up in a jiffy!")
@@ -295,7 +295,7 @@ class CmdBuyPass(Command):
             caller.msg("       *The Clerk shouts into the crowd*")
             caller.msg("       Hey everyone! Make way for |g%s from %s|n!" % (caller.name, homeLocation))
             caller.msg("       Here you go! *hands you a pass*")
-            caller.msg("       (You can use |gi|n to view your inventory)")
+            caller.msg("       (You can use [|gi|n] to view your inventory)")
 
             # Set the properties for the pass
             caller.db.has_season_pass = True # maybe store the date they became a pass holder

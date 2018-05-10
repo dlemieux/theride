@@ -339,16 +339,17 @@ class ChimeraGiftShopRoom(DefaultRoom):
         msg = ""
 
         msg += "You are standing in a gift shop with shelves of merchandising lining every wall.\n"
-        msg += "Type the name of a shelf to see more details about the items that are there.\n"
 
         # For each shelf
         for shelf_info in GIFT_SHOP_ITEMS:
             shelf_desc = shelf_info['shelf description'] % (shelf_info['item price'])
-            msg += "  |g%s|n: %s\n" % (shelf_info['shelf command name'], shelf_desc)
+            msg += "    [|g%s|n]: %s\n" % (shelf_info['shelf command name'], shelf_desc)
 
             # For all items on a shelf
             #for item_info in shelf_info['items']:
             #    msg += "    |m%s|n: %s\n" % (item_info['names'][0], item_info['desc'])
+
+        msg += "Type the name of a shelf to see more details about the items that are there."
 
         self.db.desc = msg
 
@@ -378,6 +379,6 @@ class ChimeraGiftShopRoom(DefaultRoom):
         for item_info in target_shelf['items']:
             msg += "  |m%s|n: %s\n" % (item_info['names'][0], item_info['desc'])
 
-        msg += "Type |gbuy <item name>|n to purchase any of these wonderful items!"
+        msg += "Type [|gbuy <item name>|n] to purchase any of these wonderful items!"
 
         caller.msg(msg)

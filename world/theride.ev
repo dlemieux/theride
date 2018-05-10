@@ -41,9 +41,9 @@ An assorment of people are milling about trying to get their tickets in order.
 # Create the Park Pass Sales Clerk in the Entrance
 @create/drop Clerk : objects.PassSalesClerk
 #
-@desc Clerk = The pass sales clerk for the park. This is where you can |gbuy|n your |gpass|n!
+@desc Clerk = The pass sales clerk for the park. This is where you can [|gbuy a pass|n]!
 #
-@set Clerk/talk_to_msg = Hello! Welcome to the park! If you would like to |gbuy|n a |gpass|n, then you just have to ask!
+@set Clerk/talk_to_msg = Hello! Welcome to the park! If you would like to [|gbuy a pass|n], then you just have to ask!
 #
 @set Clerk/consider_msg = You would be evenly matched.
 
@@ -52,7 +52,7 @@ create/drop Gatekeeper : objects.ParkAttendant
 #
 @desc Gatekeeper = The Gatekeeper is doing a good job of keeping people out of the park if they haven't purchased their pass.
 #
-@set Gatekeeper/talk_to_msg = Hello! If you have already purchased your |mpass|n from the Clerk,\nthen enter the |gwalkway|n to get into the park!
+@set Gatekeeper/talk_to_msg = Hello! If you have already purchased your |mpass|n from the Clerk,\nthen enter the [|gwalkway|n] to get into the park!
 
 # Create Walkway Room
 @dig WalkwayRoom;ride-room-02 : room_walkway.WalkwayRoom
