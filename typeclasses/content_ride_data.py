@@ -8,7 +8,7 @@ DEFAULT_EVENT_DELAY = 1
 DATA_ROLES = [
     { "msg": "thieves",                 "command_name": "steal",          "action_msg": "steals", },
     { "msg": "pirates",                 "command_name": "loot",           "action_msg": "loots", },
-    { "msg": "scientists",              "command_name": "research",       "action_msg": "researched", },
+    { "msg": "scientists",              "command_name": "research",       "action_msg": "researches", },
     { "msg": "tourists",                "command_name": "tour",           "action_msg": "tours", },
     { "msg": "space cadets",            "command_name": "trek",           "action_msg": "treks", },
     { "msg": "coal miners",             "command_name": "mine",           "action_msg": "mines", },
@@ -66,7 +66,7 @@ DATA_MAIN_PROBLEMS = [
     },
     {
         "msg": "The park is running out of money!",
-        "end_line": "Luckily, this amazing journey was being documented the whole time, and a famour film company wants to buy the rights so they can make a movie! The park will earn all the money it needs to keep operating!",
+        "end_line": "Luckily, this amazing journey was being documented the whole time, and a famous film company wants to buy the rights so they can make a movie! The park will earn all the money it needs to keep operating!",
     },
     {
         "msg": "Someone's been trying to kidnap the Chimera!",
@@ -186,7 +186,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "The line attendant acts quickly, and pulled out a giant pair of scissors, like you'd find at a giant ribbon cutting ceremony. These giant scissors are cutting away all the webs, but the giant spider is rushing towards the group fast!",
+                        'msg': "The line attendant acts quickly, pulling out a giant pair of scissors. Like the ones you'd find at a ribbon cutting ceremony! These giant scissors are cutting away all the webs, but the giant spider is rushing towards the group fast!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1253,7 +1253,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'The park security guard shakes their head disapprovingly, and starts writing you all up a ticket for theft of park property.\n"No park equipment, or Chimera\'s, are permitted to leave the park!" the guard says. "You all are going away for a loooong time."',
+                        'msg': 'The park security guard shakes their head disapprovingly, and starts writing you up a ticket for theft of park property.\n"No park equipment, or Chimera\'s, are permitted to leave the park!" the guard says. "You all are going away for a loooong time."',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1420,7 +1420,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "The Chimera dives to the left. Dives to the right. Pulls a rope-a-dope against the side and dekes around the tornado unscathed!",
+                        'msg': 'The Chimera dives to the left. Dives to the right. Pulls a rope-a-dope against the side and jukes around the tornado unscathed!',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1648,7 +1648,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "Everyone held on tight to the Chimera so they wouldn't be tossed around, and the Chimera held on to a nearby flag pole.",
+                        'msg': "Everyone held on tight to the Chimera so they wouldn't be tossed around, and the Chimera held on to the stone Chimera statue in front of the ride entrance.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1711,42 +1711,42 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
+                        'msg': 'And this time, it\'s aliens! The sky darkens as hundreds of UFOs descend, bent on wiping out all life on Earth!',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "The Chimera clears its throat loudly and gestures towards a nearby wall. A notice posted there states that intergalactic highways, restaurants, and wars are forbidden without the proper permits.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "With the type of unison only a collective hive mind can muster, the aliens bow their spaceships in disappointment and warp away.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
             },
-            {
-                'option_name': 'black hole',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "You can never trust VILLAIN! There's one more obstacle between you and them!",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
+            #{
+            #    'option_name': 'black hole',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "You can never trust VILLAIN! There's one more obstacle between you and them!",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': '',
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
             {
                 'option_name': 'time rift',
                 'events': [
@@ -1757,15 +1757,15 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
+                        'msg': 'The sky rips open as a rip in time appears. Objects from past and future centuries begin to spew out, coating the landscape as if it\'s the world\'s biggest yard sale.',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "Just when all hope appears lost, the Chimera dashes forward and picks up a glittering piece of metal in its mouth. a long thread dangles from one end, but it looks like it\'s made out of light!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "You bounce back and forth violently as the Chimera expertly sews the fabric of time back together.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1780,15 +1780,15 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
+                        'msg': 'A horde of the undead emerges from all directions. A plague must have infected the entire human population!',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "As they come within biting distance, you recoil in horror. But you notice something odd. Up close, their green skin looks a bit splotchy?",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "What you feared was the end of humanity was simply a local zombie run for charity! Relieved, you wave to them as the Chimera continues its journey.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1849,15 +1849,15 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
+                        'msg': 'The nearby trees begin to shake, then collapse as millions of locusts eat them alive in seconds!',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "You aren\'t exactly relieved when the Chimera licks its fangs and plunges you all into the thick of the locust swarm.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "It turns out locusts are a delicious Chimera snack. A fact you wish you didn't know, as you brush insect legs from your clothes...",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1893,7 +1893,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Delighted that the danger is over, an old time photographer hobbles over and begins to set up their gear. ",
+                        'msg': "Delighted that the danger is over, an old time photographer hobbles over and begins to set up their gear.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
