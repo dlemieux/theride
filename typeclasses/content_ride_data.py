@@ -1142,111 +1142,107 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
                         'msg': "You sign autographs until your hands grow sore!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "The Chimera finally makes its way through to the other side.",
+                        'msg': "The Chimera finally makes its way through to the other side. Missing a few tufts of hair to the more passionate of fans.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
             },
-            {
-                'option_name': 'press conference',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "The challenge is finally over. ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'tropical vacation',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "The challenge is finally over. ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'stunt show',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "The challenge is finally over. ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'parade',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "The challenge is finally over. ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
+            #{
+            #    'option_name': 'press conference',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "The challenge is finally over. ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': '',
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'tropical vacation',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "The challenge is finally over. ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': '',
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'stunt show',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "The challenge is finally over. ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': '',
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'parade',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "The challenge is finally over. The Chimera slows down to a trot and walks down the park's Main Street.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': 'A parade spontaneously errupts around you, complete with musicians, ',
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
             {
                 'option_name': 'park entrance',
                 'events': [
@@ -1257,7 +1253,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
+                        'msg': 'The park security guard shakes their head disapprovingly, and starts writing you all up a ticket for theft of park property.\n"No park equipment, or Chimera\'s, are permitted to leave the park!" the guard says. "You all are going away for a loooong time."',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1271,74 +1267,97 @@ DATA_RIDE_EVENT_SECTIONS = [
                 ],
             },
             {
-                'option_name': 'party',
+                'option_name': 'flash mob',
                 'events': [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "The challenge is finally over. ",
+                        'msg': "The challenge is finally over. The Chimera slows down to a trot and walks among a group of mild manered adults in the park's Main Street.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
+                        'msg': 'Suddenly, the Chimera stops moving, and everything around you freezes still! All time appears to has stopped as people are frozen mid-stride, and the murmoring of voices has completely disappeared.',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "You start to hear a song faintly being played over speakers, and then it fades in louder and louder as the group around you begins doing choreographed dancing and singing. You've been caught in the middle of a flash mob! And the Chimera knows the moves too!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "After the song finishes the dancers return to their normal activities as if nothing happened, and the Chimear saunters on.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
             },
-            {
-                'option_name': 'desert',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "The challenge is finally over. ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'top of a mountain',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "The challenge is finally over. The mist clears... you find yourself at the pinnacle of a mountain!",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
+            #{
+            #    'option_name': 'party',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "The challenge is finally over. ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': '',
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'desert',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "The challenge is finally over. ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': '',
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'top of a mountain',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "The challenge is finally over. The mist clears... you find yourself at the pinnacle of a mountain!",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': '',
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
             {
                 'option_name': 'dungeons and dragons night',
                 'events': [
@@ -1350,10 +1369,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                     },
                     {
                         'msg': "Within, the startled inhabitants leap to their feet, knocking over a board covered in dice and miniatures. You've interrupted a night of Caverns and Chimeras!",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1372,15 +1387,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "The challenge is finally over. You suddently realize the sky is curved...",
+                        'msg': "The challenge is finally over. You suddenly realize the sky is curved...",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
                         'msg': "It's the inside of a giant monitor! Wait, why is everything blocky? You're in a video game!",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
