@@ -46,19 +46,100 @@ class CmdRiderParticipate(Command):
             caller.msg("That command is not appropriate at this time. Use [|g%s|n] instead." % (expected_command))
             return
 
-        # Commented out old implementation that would allow multiple types of commands at once
-        # Determine the exact alias they wrote that triggered the command, and look up the appropriate text
-        #cmd_options = filter(lambda x: x['command_name'].strip().lower() == user_command, DATA_ROLES)
-        #if len(cmd_options) == 0:
-        #    caller.msg("Unknown command: '%s'" % (user_command))
-        # Use the first result
-        #role_info = cmd_options[0]
-
         action_msg = location.ride_role['action_msg']
         
-        msg = "  |c%s|n %s!" % (caller.name, action_msg)
+        # If no battle is taking place, simply show the command as normal
+        if not hasattr(location, 'ride_villain_battle') or not location.ride_villain_battle:
+            msg = "  |c%s|n %s!" % (caller.name, action_msg)
+            location.msg_contents(msg)
+            return
+
+        # Run the villain battle
+        if location.ride_villain_battle['state'] == 'idle':
+            location.ride_villain_battle['battle_start_time'] = datetime.datetime.utcnow()
+            location.ride_villain_battle['state'] = 'battle'
+            self.attack_villain(caller, location)
+
+        elif location.ride_villain_battle['state'] == 'battle':
+            max_health = location.ride_villain_battle['max_health']
+            orig_health = location.ride_villain_battle['health']
+            self.attack_villain(caller, location)
+            new_health = location.ride_villain_battle['health']
+
+            # Check for first strike
+            if orig_health == max_health and new_health < max_health:
+                location.msg_contents("\"Ow!\"")
+
+            # Check for half way
+            if orig_health > max_health * 0.5 and new_health <= max_health * 0.5:
+                location.msg_contents("\"Hey! That's not fair!\"")
+
+            # Check for 3/4
+            if orig_health > max_health * 0.25 and new_health <= max_health * 0.25:
+                location.msg_contents("\"It's not over yet!\"")
+
+            # Check if killed
+            if orig_health > 0 and new_health <= 0:
+                location.ride_villain_battle['state'] = 'villain_killed'
+
+        else:
+            # Normal message
+            msg = "  |c%s|n %s!" % (caller.name, action_msg)
+            location.msg_contents(msg)
+
+    def attack_villain(self, caller, location):
+        action_msg = location.ride_role['action_msg']
+        
+        # Determine battle metrics
+        is_crit = random.randint(1, 4) == 1
+        hit_damage = 10
+        if is_crit:
+            hit_damage = 15
+
+        msg = ""
+
+        
+
+        msg += "|c%s|n %s and deals |c%s|n points of damage!" % (caller.name, action_msg, hit_damage)
+
+        if is_crit:
+            msg += " Critical hit!"
+        
+        # There may be race condition issues with this and multiple players
+        
+        new_health = location.ride_villain_battle['health'] - hit_damage
+
+        if new_health < 0:
+            new_health = 0
+
+        location.ride_villain_battle['health'] = new_health
+        
+        max_health = location.ride_villain_battle['max_health']
+
+        # Add the villains health stats
+        health_bar_msg = self.build_health_bar(new_health, max_health)
+
+        msg += "\nHealth for |c%s|n: %s %s/%s HP" % (location.ride_villain['msg'], health_bar_msg, new_health, max_health)
 
         location.msg_contents(msg)
+
+    def build_health_bar(self, new_health, max_health):
+        # Determine health bars remaining
+        num_bars_left = 0
+        max_bars = 20
+
+        if new_health > 0:
+            num_bars_left = new_health * max_bars / max_health
+
+        # Show the bars
+        health_msg = ""
+        health_msg += " ||" # Starting bar
+        health_msg += "".ljust(num_bars_left, '-')
+        health_msg += "".ljust(max_bars - num_bars_left, ' ')
+        health_msg += "||" # Ending bar
+
+        return health_msg
+
 
 class CmdSetChimeraRide(CmdSet):
     """This groups the commands for people."""
@@ -223,12 +304,13 @@ class ChimeraRideRoom(DefaultRoom):
                 self.ride_villain_battle = {
                     'start_time': datetime.datetime.utcnow(),
                     'battle_start_time': None, # This is set when the first attack hits
-                    'health': 20,
+                    'max_health': 100,
+                    'health': 100,
                     'state': 'idle',
                     'idle_warning_delay': 5,
                     'idle_warning_1': False,
                     'idle_warning_2': False,
-                    'battle_length_seconds': 10,
+                    'battle_length_seconds': 20,
                 }
 
             # Build the appropriate message to show the room
