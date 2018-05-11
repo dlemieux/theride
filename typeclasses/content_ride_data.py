@@ -2051,66 +2051,24 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Explain the setup.",
+                        'msg': "Or is it? A puff of smoke appears and you can see the outline of VILLAIN! The smoke dissipates away.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
+                        'msg': "\"You fools! You're just a bunch of ROLE. What are you going to do, ACTION me to death?\"",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
+                        'msg': "\"Muwahahahahahahah!\"",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'ingenuity',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Explain the setup.",
+                        'msg': "Hmmm...that's not a bad idea...",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'power of heart',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Explain the setup.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
+                        'msg': "",
+                        'delay': DEFAULT_EVENT_DELAY * 5,
                     },
                 ],
             },
