@@ -1409,84 +1409,68 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
+                        'msg': "The Chimera dives to the left. Dives to the right. Pulls a rope-a-dope against the side and dekes around the tornado unscathed!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
+                        'msg': "Now that you are thoroughly nausiated, the Chimera saunters away proudly.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
             },
-            {
-                'option_name': 'typhoon',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "But the worst is yet to come. ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'earthquake',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "But the worst is yet to come. ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
+            #{
+            #    'option_name': 'typhoon',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "But the worst is yet to come. ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'earthquake',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "But the worst is yet to come. ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
             {
                 'option_name': 'volcanic eruption',
                 'events': [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "But the worst is yet to come. ",
+                        'msg': "But the worst is yet to come. The volcano on the park grounds starts to erupt boiling hot lava!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
+                        'msg': "The Chimera thinks quickly, and diverts all the water cannons in the water park towards the mouth of the volcano. All you can hear is the sizzling of water as it evaporates.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
+                        'msg': "With the volcano quelched, you are able to continue on.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1497,203 +1481,167 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "But the worst is yet to come. ",
+                        'msg': "But the worst is yet to come. For at this very moment, the stock market was crashing to its lowest point in 30 years!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
+                        'msg': "None of you were prepared for this! Adults around the park begin sobbing at the news. The Chimera urges everyone not to sell, as it will only make things worse!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
+                        'msg': "A voice over the park's loudspeaker that they have finished their disaster preparedness test and people may resume their regularly scheduled activities. Whew! Disaster averted for another day!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
             },
-            {
-                'option_name': 'dust storm',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "But the worst is yet to come. ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'asteroid shower',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "But the worst is yet to come. ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'stampede of wild animals',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "But the worst is yet to come. ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'runaway train',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "But the worst is yet to come. ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'flash flood',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "But the worst is yet to come. ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'power outage',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "But the worst is yet to come. ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'blizzard/avalanche',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "But the worst is yet to come. ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
+            #{
+            #    'option_name': 'dust storm',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "But the worst is yet to come. ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'asteroid shower',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "But the worst is yet to come. ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'stampede of wild animals',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "But the worst is yet to come. ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'runaway train',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "But the worst is yet to come. ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'flash flood',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "But the worst is yet to come. ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'power outage',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "But the worst is yet to come. ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'blizzard/avalanche',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "But the worst is yet to come. ",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
             {
                 'option_name': 'tidal wave',
                 'events': [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "But the worst is yet to come. ",
+                        'msg': "But the worst is yet to come. A meteriorite has crashed into the wave pool in the park, and caused a massive tidal wave to thrash over the park!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
+                        'msg': "Everyone held on tight to the Chimera so they wouldn't be tossed around, and the Chimera held on to a nearby flag pole.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
+                        'msg': "The tidal wave passed, and was actually a lot more fun than anticipated. With smiles on your faces, the Chimera leaps on!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1704,19 +1652,15 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "But the worst is yet to come. ",
+                        'msg': "But the worst is yet to come. The temperature around you feels to be rising fast, and you realize that several fires have surrounded you and the Chimera!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
+                        'msg': "You and the Chimera take a deep breath....and blow your air at the fires straight ahead of you! Your breath has no effect, but the Chimera is able to squelch the fire!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "An ending.",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
+                        'msg': "You escape past before the fire has a chance to return to its former size and strength.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1728,10 +1672,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # Typically 4 messages long.
                     {
                         'msg': "But the worst is yet to come. An ominous hum overwhelms your ears as the air fills with thousands upon thousands of bees!",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
