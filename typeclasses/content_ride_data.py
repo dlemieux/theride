@@ -712,11 +712,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "",
+                        'msg': "You fire at each other and the bullets keep colliding in the air! You gain the upper hand and fire 3 shots directly at your target!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A transition out.",
+                        'msg': "\"Wow!\" you think, \"I've never seen VILLAIN do a matrix dodge before!\" You agree to a truce for now and are allowed to leave.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],
