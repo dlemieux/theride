@@ -100,20 +100,133 @@ DATA_MAIN_PROBLEMS = [
 
 # And you'll never believe it, but our efforts keep being thwarted by [villain]!
 DATA_VILLAIN = [
-    { "msg": "a mad scientist", },
-    { "msg": "a sentient robot", },
-    { "msg": "an angry ancient god", },
-    { "msg": "an alien", },
-    { "msg": "a vampire king", },
-    { "msg": "a mummy", },
-    { "msg": "a ghost", },
-    { "msg": "a company executive", },
-    { "msg": "a psychic child", },
-    { "msg": "a time traveler", },
-    { "msg": "an overachieving college student", }, # I've gotta maintain my magna cum laude status. I'll definitely get into grad school with this thesis
-    { "msg": "a knockoff brand 'Kaimera'", },
-    { "msg": "a pirate captain", },
-    { "msg": "a cursed object", },
+    {
+        "msg": "a mad scientist",
+        "defeat_events": [
+            {
+                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+                "delay": DEFAULT_EVENT_DELAY,
+            }
+        ],
+    },
+    {
+        "msg": "a sentient robot",
+        "defeat_events": [
+            {
+                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+                "delay": DEFAULT_EVENT_DELAY,
+            }
+        ],
+    },
+    {
+        "msg": "an angry ancient god",
+        "defeat_events": [
+            {
+                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+                "delay": DEFAULT_EVENT_DELAY,
+            }
+        ],
+    },
+    {
+        "msg": "an alien",
+        "defeat_events": [
+            {
+                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+                "delay": DEFAULT_EVENT_DELAY,
+            }
+        ],
+    },
+    {
+        "msg": "a vampire king",
+        "defeat_events": [
+            {
+                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+                "delay": DEFAULT_EVENT_DELAY,
+            }
+        ],
+    },
+    {
+        "msg": "a mummy",
+        "defeat_events": [
+            {
+                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+                "delay": DEFAULT_EVENT_DELAY,
+            }
+        ],
+    },
+    {
+        "msg": "a ghost",
+        "defeat_events": [
+            {
+                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+                "delay": DEFAULT_EVENT_DELAY,
+            }
+        ],
+    },
+    {
+        "msg": "a company executive",
+        "defeat_events": [
+            {
+                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+                "delay": DEFAULT_EVENT_DELAY,
+            }
+        ],
+    },
+    {
+        "msg": "a psychic child",
+        "defeat_events": [
+            {
+                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+                "delay": DEFAULT_EVENT_DELAY,
+            }
+        ],
+    },
+    {
+        "msg": "a time traveler",
+        "defeat_events": [
+            {
+                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+                "delay": DEFAULT_EVENT_DELAY,
+            }
+        ],
+    },
+    {
+        # I've gotta maintain my magna cum laude status. I'll definitely get into grad school with this thesis
+        "msg": "an overachieving college student",
+        "defeat_events": [
+            {
+                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+                "delay": DEFAULT_EVENT_DELAY,
+            }
+        ],
+    }, 
+    {
+        "msg": "a knockoff brand 'Kaimera'",
+        "defeat_events": [
+            {
+                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+                "delay": DEFAULT_EVENT_DELAY,
+            }
+        ],
+    },
+    {
+        "msg": "a pirate captain",
+        "defeat_events": [
+            {
+                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+                "delay": DEFAULT_EVENT_DELAY,
+            }
+        ],
+    },
+    {
+        "msg": "a cursed object",
+        "defeat_events": [
+            {
+                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+                "delay": DEFAULT_EVENT_DELAY,
+            }
+        ],
+    },
 ]
 
 DATA_RIDE_EVENT_SECTIONS = [
@@ -2051,7 +2164,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Or is it? A puff of smoke appears and you can see the outline of VILLAIN! The smoke dissipates away.",
+                        'msg': "Or is it? A puff of smoke appears in front of you, and as it dissipates you see VILLAIN!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -2065,10 +2178,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     {
                         'msg': "Hmmm...that's not a bad idea...",
                         'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "",
-                        'delay': DEFAULT_EVENT_DELAY * 5,
+                        'type': 'start_villain_battle',
                     },
                 ],
             },

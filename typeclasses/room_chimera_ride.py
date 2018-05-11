@@ -17,7 +17,7 @@ from typeclasses.content_ride_data import DEFAULT_EVENT_DELAY
 
 
 ADD_EVENT_NAME_PREFIX = True
-
+TEST_BATTLE = True
 
 class CmdRiderParticipate(Command):
     """
@@ -117,33 +117,42 @@ class ChimeraRideRoom(DefaultRoom):
             'delay': DEFAULT_EVENT_DELAY,
         })
 
-        # Set up all the sections
-        for section_info in DATA_RIDE_EVENT_SECTIONS:
-            # Choose the random scenario within the section options
-            section_option = random.choice(section_info['options'])
+        if TEST_BATTLE:
+            # Skip the middle sections
+            self.ride_events.append({
+                'msg': 'TEST: START BATTLE',
+                'delay': DEFAULT_EVENT_DELAY,
+                'type': 'start_villain_battle',
+            })
+        else:
+            # Set up all the sections
+            for section_info in DATA_RIDE_EVENT_SECTIONS:
+                # Choose the random scenario within the section options
+                section_option = random.choice(section_info['options'])
 
-            # All events in this section need to be added
-            add_event_name_first = True # Only add the debug info for the first event in an option
-            for single_event in section_option['events']:
+                # All events in this section need to be added
+                add_event_name_first = True # Only add the debug info for the first event in an option
+                for single_event in section_option['events']:
                     
-                if ADD_EVENT_NAME_PREFIX:
-                    if add_event_name_first:
-                        single_event['msg'] = "(%s->%s) %s" % (section_info['section_name'], section_option['option_name'], single_event['msg'])
-                        add_event_name_first = False
+                    if ADD_EVENT_NAME_PREFIX:
+                        if add_event_name_first:
+                            single_event['msg'] = "(%s->%s) %s" % (section_info['section_name'], section_option['option_name'], single_event['msg'])
+                            add_event_name_first = False
 
-                self.ride_events.append(single_event)
+                    self.ride_events.append(single_event)
 
-        self.ride_events.append({
+        self.ride_end_events = []
+        self.ride_end_events.append({
             'msg': "The line attendant appears before you. You did it! We no longer have to worry about VILLAIN, and it's all thanks to you! And I think we know how to solve our problem from earlier.",
             'delay': DEFAULT_EVENT_DELAY,
         })
 
-        self.ride_events.append({
+        self.ride_end_events.append({
             'msg': self.ride_problem['end_line'],
             'delay': DEFAULT_EVENT_DELAY,
         })
 
-        self.ride_events.append({
+        self.ride_end_events.append({
             'msg': "Everything is finally as it should be again. The Chimera brings you to the ride platform and grunts in thanks.\nThe line attendant beams with pride. \"Who knew a group of ROLE would save the day! See you next time.\" She waves happily as the shoulder harnesses lift and you are free to exit the ride.",
             'delay': DEFAULT_EVENT_DELAY,
         })
@@ -192,29 +201,104 @@ class ChimeraRideRoom(DefaultRoom):
             return DEFAULT_EVENT_DELAY # Slight delay with no text for people to enter
         else: # Running the events
 
+            # If the villain battle has started, then all rules are different
+            if hasattr(self, 'ride_villain_battle') and self.ride_villain_battle:
+                return self.handle_villain_battle()
+
             # See if we are out of events
             if len(self.ride_events) == 0:
-                return -1
+                # See if we still need to run through the ride end events
+                if len(self.ride_end_events) > 0:
+                    self.ride_events = self.ride_end_events
+                    self.ride_end_events = []
+                else:
+                    return -1 # Finished
 
             # We have more events
             cur_event = self.ride_events[0]
             self.ride_events = self.ride_events[1:] # Remove the front element
 
-            # Skip empty messages
-            if cur_event['msg'] == '':
-                return cur_event['delay']
+            # See if we are starting the villain battle!
+            if 'type' in cur_event and cur_event['type'] == 'start_villain_battle':
+                self.ride_villain_battle = {
+                    'start_time': datetime.datetime.utcnow(),
+                    'battle_start_time': None, # This is set when the first attack hits
+                    'health': 20,
+                    'state': 'idle',
+                    'idle_warning_delay': 5,
+                    'idle_warning_1': False,
+                    'idle_warning_2': False,
+                    'battle_length_seconds': 10,
+                }
 
             # Build the appropriate message to show the room
-            msg = ""
-            msg += "|y> auto-advance|n" + "\n"
-            
-            cur_event_msg = "%s" % (cur_event['msg'])
-            cur_event_msg = self.apply_special_dialog_rules(cur_event_msg)
-            msg += cur_event_msg
-
-            self.msg_contents(msg)
+            self.send_room_message(cur_event['msg'])
 
             return cur_event['delay']
+
+    def handle_villain_battle(self):
+        now = datetime.datetime.utcnow()
+
+        # Scenario where no one is touching anything
+        if self.ride_villain_battle['state'] == 'idle':
+            elapsed_since_start = now - self.ride_villain_battle['start_time']
+            elapsed_seconds = elapsed_since_start.seconds
+            
+            idle_warning_time = self.ride_villain_battle['idle_warning_delay']
+
+            if elapsed_seconds >= idle_warning_time * 1 and not self.ride_villain_battle['idle_warning_1']:
+                msg = "\"What? You're not even going to try and fight?\""
+                self.ride_villain_battle['idle_warning_1'] = True
+                self.send_room_message(msg)
+
+            if elapsed_seconds >= idle_warning_time * 2 and not self.ride_villain_battle['idle_warning_2']:
+                msg = "\"Are you waiting for me to foolishly explain my entire plot so you can escape and stop me or something?\""
+                self.ride_villain_battle['idle_warning_2'] = True
+                self.send_room_message(msg)
+
+            if elapsed_seconds >= idle_warning_time * 3:
+                msg = "Your pacifist response seems to have worked, as your nemesis dies of bordem in front of you."
+                self.ride_villain_battle['idle_warning_3'] = True
+                self.ride_villain_battle['state'] = 'did_not_fight'
+                self.send_room_message(msg)
+                return DEFAULT_EVENT_DELAY # Give them time to read
+
+        elif self.ride_villain_battle['state'] == 'battle':
+            elapsed = now - self.ride_villain_battle['battle_start_time']
+            if elapsed.seconds >= self.ride_villain_battle['battle_length_seconds']:
+                # They lost for taking too long
+                self.ride_villain_battle['state'] = 'villain_left'
+                msg = "I won't give you the satisfaction of beating me. I'm outta here!"
+                self.send_room_message(msg)
+
+        elif self.ride_villain_battle['state'] == 'did_not_fight' or self.ride_villain_battle['state'] == 'villain_left':
+            self.ride_villain_battle_results = self.ride_villain_battle
+            self.ride_villain_battle = None # Return to normal execution
+
+        elif self.ride_villain_battle['state'] == 'villain_killed':
+            # Queue up messages to be played
+            self.ride_events.append({
+                'msg': "You've done it!",
+                'delay': DEFAULT_EVENT_DELAY,
+            })
+
+            for single_event in self.ride_villain['defeat_events']:
+                self.ride_events.append(single_event)
+
+            # Clear the villain battle details so the messaging system resumes as normal
+            self.ride_villain_battle_results = self.ride_villain_battle # Store it in case we need it later
+            self.ride_villain_battle = None # Return to normal execution
+
+        return 0 # No delay, just keep us updated
+
+    def send_room_message(self, msg):
+        room_msg = ""
+        room_msg += "|y> auto-advance|n" + "\n"
+
+        msg = self.apply_special_dialog_rules(msg)
+        room_msg += msg
+
+        self.msg_contents(room_msg)
 
     def apply_special_dialog_rules(self, msg):
 

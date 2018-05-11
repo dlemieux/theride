@@ -162,12 +162,17 @@ class CmdBoardCar(Command):
         elif room_state == 1:
             if caller.db.chimera_line_index <= max_index_allowed:
                 # Ready to board!
-                caller.msg("You may now board. Enjoy!")
-
                 if boarding_zone:
                     #caller.msg("Boarding zone: %s" % boarding_zone.id)
                     #caller.location = boarding_zone # This moves the player, but they don't get the next look command
+                    caller.msg("You may now board. Enjoy!")
                     caller.move_to(boarding_zone)
+                else:
+                    points_reward = 5
+                    caller.db.pass_points = caller.db.pass_points + points_reward
+                    caller.msg("Sorry, the |rChimera|n ride has experienced a technical difficulty. You'll need to wait in line again.")
+                    caller.msg("You've been given |c%s|n park points for your inconvenience." % (points_reward))
+
             else:
                 caller.msg("It's not your turn yet!")
 
@@ -249,7 +254,7 @@ class ChimeraLineRoom(DefaultRoom):
                 self.last_ride_time = now # Update to current time
 
                 msg = "|y> Line Attendant: auto-message|n\n"
-                msg += "  The next car has arrived! Please [|gboard|n] if you are next in line!"
+                msg += "The next car has arrived! Please [|gboard|n] if you are next in line!"
                 self.msg_contents(msg)
 
                 # Make a whitelist for the people who can board
@@ -265,7 +270,7 @@ class ChimeraLineRoom(DefaultRoom):
             if seconds_elapsed >= self.db.boarding_time_delay:
                 # Announce that the car is leaving
                 msg = "|y> Line Attendant: auto-message|n\n"
-                msg += "  The car has left the station! Please wait for the next car to arrive."
+                msg += "The car has left the station! Please wait for the next car to arrive."
                 self.msg_contents(msg)
 
                 self.last_ride_time = now # Update to current time
@@ -373,13 +378,13 @@ class ChimeraLineRoom(DefaultRoom):
         if len(whitelist_riders) == 0:
             self.db.max_index_allowed = 0
 
-            message = "  That would be... no one! I'm all alone!"
+            message = "That would be... no one! I'm all alone!"
         else:
             last_index = len(whitelist_riders) - 1
             last_rider = whitelist_riders[last_index]
             self.db.max_index_allowed = last_rider['index']
 
-            message = "  That would be... %s!" % (", ".join(x['name'] for x in whitelist_riders))
+            message = "That would be... %s!" % (", ".join(x['name'] for x in whitelist_riders))
 
         self.msg_contents(message)
 
