@@ -78,7 +78,7 @@ DATA_MAIN_PROBLEMS = [
     },
     {
         "msg": "An artifact has been stolen!",
-        "end_line": "The stolen artifact was still on everyone's mind, and they did some research into where a theif may try to sell the rare artifact. The group put in a WANT ad in the park newsletter and immediately caught the thief.",
+        "end_line": "The stolen artifact was still on everyone's mind, and they did some research into where a thief may try to sell the rare artifact. The group put in a WANT ad in the park newsletter and immediately caught the thief.",
     },
     {
         "msg": "We've lost communication with a far off base!",
@@ -1284,7 +1284,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "After the song finishes the dancers return to their normal activities as if nothing happened, and the Chimear saunters on.",
+                        'msg': "After the song finishes the dancers return to their normal activities as if nothing happened, and the Chimera saunters on.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                 ],

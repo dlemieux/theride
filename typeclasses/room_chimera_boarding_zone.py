@@ -116,7 +116,7 @@ class ChimeraBoardingZone(DefaultRoom):
         elif index == 2:
             msg = ""
             msg += "|y> auto-advance|n" + "\n"
-            msg += "A massive chimera approaches from beneath the cart and you feel the entire thing raise up!"
+            msg += "A massive |rChimera|n approaches from beneath the cart and you feel the entire thing raise up!"
 
             self.msg_contents(msg)
 
@@ -124,8 +124,8 @@ class ChimeraBoardingZone(DefaultRoom):
         elif index == 3:
             msg = ""
             msg += "|y> auto-advance|n" + "\n"
-            msg += "As the chimera flexes its legs, you are tossed about easily like toy." + "\n"
-            msg += "Suddenly...the chimera leaps forward! And you're off!"
+            msg += "As the |rChimera|n flexes its legs, you are tossed about easily like a toy." + "\n"
+            msg += "Suddenly...the |rChimera|n leaps forward! And you're off!"
 
             self.msg_contents(msg)
 

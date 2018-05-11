@@ -108,7 +108,7 @@ class ChimeraRideRoom(DefaultRoom):
         })
 
         self.ride_events.append({
-            'msg': "You came to the park at a really special time. PROBLEM And hey, we could really use your help! But it seems like we're having some trouble for some reason.",
+            'msg': "You came to the park at an unusual time. PROBLEM And hey, we could really use your help! But it seems like we're having some trouble for some reason.",
             'delay': DEFAULT_EVENT_DELAY,
         })
 
@@ -134,7 +134,7 @@ class ChimeraRideRoom(DefaultRoom):
                 self.ride_events.append(single_event)
 
         self.ride_events.append({
-            'msg': "The line attendant appears before you. You did it! We no longer have to worry about VILLAIN, and it's all thanks to you!",
+            'msg': "The line attendant appears before you. You did it! We no longer have to worry about VILLAIN, and it's all thanks to you! And I think we know how to solve our problem from earlier.",
             'delay': DEFAULT_EVENT_DELAY,
         })
 
