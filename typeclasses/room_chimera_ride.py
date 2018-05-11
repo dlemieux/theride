@@ -120,7 +120,7 @@ class ChimeraRideRoom(DefaultRoom):
         if TEST_BATTLE:
             # Skip the middle sections
             self.ride_events.append({
-                'msg': 'TEST: START BATTLE',
+                'msg': "TEST: START BATTLE: \"You fools! You're just a bunch of ROLE. What are you going to do, ACTION me to death?\"",
                 'delay': DEFAULT_EVENT_DELAY,
                 'type': 'start_villain_battle',
             })
