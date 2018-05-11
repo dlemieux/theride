@@ -1927,10 +1927,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
                         'msg': "You briefly perceive a flash of light!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
@@ -1946,11 +1942,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Delighted that the danger is over, a ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
+                        'msg': "Delighted that the danger is over, an old time photographer hobbles over and begins to set up their gear. ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1969,11 +1961,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Delighted that the danger is over, a ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
+                        'msg': "Delighted that the danger is over, the Chimera runs toward the station, but ends up caught in the middle of a red carpet event!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1992,11 +1980,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Delighted that the danger is over, a ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
+                        'msg': "Delighted that the danger is over, a documentary film crew rushes out to interview everyone about the events.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -2019,10 +2003,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
                         'msg': "You briefly perceive a flash of light!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
@@ -2038,15 +2018,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Delighted that the danger is over, a ",
+                        'msg': "Delighted that the danger is over, a troupe of artists arrive and begin furiously mixing watercolor paints together.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "You briefly perceive a flash of light!",
+                        'msg': "You briefly perceive a flash of...paint!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -2061,11 +2037,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Delighted that the danger is over, a ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
+                        'msg': "Delighted that the danger is over, the Chimera pulls out a selfie stick and poses with you.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -2084,11 +2056,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Delighted that the danger is over, a ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
+                        'msg': "Delighted that the danger is over, an investigative reporter reveals themselves from beneath a blanket near your feet and switches their cell phone from audio recording mode to camera mode.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -2107,11 +2075,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Delighted that the danger is over, a ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
+                        'msg': "Delighted that the danger is over, all the security cameras in the park rotate to face you and the Chimera.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
