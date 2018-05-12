@@ -219,9 +219,9 @@ class LineLengthSign(DefaultObject):
         val = line_room.get_line_length()
 
         if val == 1:
-            return "The sign says: \"There is |c1|n person in line for the |rChimera|n.\""
+            return "The display reads: \"There is |c1|n person in line for the |rChimera|n.\""
         else:
-            return "The sign says: \"There are |c%s|n people in line for the |rChimera|n.\"" % (val)
+            return "The display reads: \"There are |c%s|n people in line for the |rChimera|n.\"" % (val)
 
 
 class ParkPass(DefaultObject):

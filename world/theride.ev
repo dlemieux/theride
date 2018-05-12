@@ -77,7 +77,7 @@ and the sounds of people having tons of fun.
 # Create the courtyard room
 @dig Courtyard;ride-room-03
 # Make a one way exit to the courtyard room
-@open courtyard = ride-room-03
+@open courtyard;c = ride-room-03
 # Set the description on the exit
 @desc courtyard = Proceed to the interior courtyard of the park!
 # Switch rooms
@@ -94,7 +94,7 @@ All around you are entrances to rides, shops, attractions, and more!
 
 
 # Create Construction Zone
-@dig Construction Zone = construction zone,courtyard
+@dig Construction Zone = construction zone;zone,courtyard;c
 #
 @desc construction zone = This leads to an area closed off for construction. Maybe they are building a new attraction?
 #
@@ -112,7 +112,7 @@ A nearby sign is advertising the attraction that will be built here soon.
 #
 @lock sign = get:false()
 #
-@desc sign = The sign says: "Coming soon! The Temple of the Phoenix!"
+@desc sign = The sign reads: "Coming soon! The Temple of the Phoenix!"
 
 ## Create fence with hole to look through
 @create/drop fence : objects.ConstructionFence
@@ -134,7 +134,7 @@ courtyard
 
 
 # Create Locker Room
-@dig Lockers = lockers,courtyard
+@dig Lockers = lockers,courtyard;c
 #
 @desc lockers = This leads to the lockers.
 #
@@ -148,12 +148,17 @@ to store their belongings so they don't lose items on the rides.
 #
 @desc courtyard = Return to the courtyard.
 
+# Create a broken kiosk
+@create/drop kiosk = objects.Heavy
+# Set the description
+@desc kiosk = A note placed over the screen says: "OUT OF ORDER"
+
 
 # Return to the courtyard
 courtyard
 
 # Create the Chimera gift shop
-@dig Gift Shop;ride-room-04 : room_chimera_gift_shop.ChimeraGiftShopRoom = gift shop,courtyard
+@dig Gift Shop;ride-room-04 : room_chimera_gift_shop.ChimeraGiftShopRoom = gift shop;gift;shop;g,courtyard;c
 #
 @desc gift shop = This leads to the gift shop for the Chimera ride!
 #
@@ -176,13 +181,13 @@ There are stuffed animals, hats, sunglasses, candy, and more!
 courtyard
 
 # Create Ride Entrance
-@dig ChimeraEntranceRoom = chimera ride entrance;entrance;ride,courtyard
+@dig Chimera Entrance Room = chimera ride entryway;entrance;ride;chimera;entry,courtyard;c
 #
-@desc chimera ride entrance = This leads to the |rChimera|n ride! It's supposed to be AMAZING!
+@desc chimera ride entryway = This leads to the |rChimera|n ride! It's supposed to be AMAZING!
 #
 chimera ride entrance
 #
-@desc ChimeraEntranceRoom =
+@desc Chimera Entrance Room =
 You have entered the area for the |rChimera|n ride.
 Many people are standing nearby in a line, which you are not in.
 #

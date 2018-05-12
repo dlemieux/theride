@@ -126,7 +126,7 @@ class ChimeraExitRoom(DefaultRoom):
         gift_shop_room = self.search("Chimera Gift Shop", global_search=True) # Fetch dynamically
 
         typeclass = "typeclasses.exits.Exit"
-        exit_obj = create_object(typeclass, "gift shop", self, aliases=["gift","shop"], destination=gift_shop_room)
+        exit_obj = create_object(typeclass, "gift shop", self, aliases=["gift","shop","g"], destination=gift_shop_room)
         exit_obj.db.desc = "The way to the gift shop."
 
         self.db.desc = desc
