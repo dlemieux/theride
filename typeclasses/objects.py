@@ -330,6 +330,26 @@ class CmdDestroyPass(Command):
         self.obj.destroy_pass(self.caller)
 
 
+class CmdSitOnBench(Command):
+    """
+    Usage:
+        sit on bench
+        
+    This is a test command which gets rid of your pass
+    """
+    key = "sit on bench"
+    aliases = ["sit"]
+    locks = "cmd:all()"
+    help_category = "The Ride"
+    
+    def func(self):
+        caller = self.caller
+        location = self.caller.location
+
+        caller.msg("Don't tell me you're tired already! You just got here!")
+        #location.msg_contents("|C%s|n sits on the bench." % (caller.name), exclude=[caller])
+
+
 class CmdSetPassSalesClerk(CmdSet):
     """
     The cmdset for the pass sales clerk.
@@ -340,6 +360,7 @@ class CmdSetPassSalesClerk(CmdSet):
         """Called at first creation of cmdset"""
         self.add(CmdBuyPass())
         self.add(CmdDestroyPass())
+        self.add(CmdSitOnBench()) # TODO: Ideally move this to be a command on a bench object, or on the Entrance room itself
 
         
 class PassSalesClerk(DefaultObject):

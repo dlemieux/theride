@@ -27,7 +27,7 @@ An assorment of people are milling about trying to get their tickets in order.
 #
 @lock bench = get:false()
 #
-@desc bench = A sturdy bench that is full of people waiting for the friends to arrive. It's always so hard to find a free seat!
+@desc bench = A sturdy bench full of people waiting for their friends to arrive.
 #
 @set bench/get_err_msg = It'd be rude to pick it up while others are still sitting.
 
