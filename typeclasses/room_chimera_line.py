@@ -229,7 +229,7 @@ class ChimeraLineRoom(DefaultRoom):
         now = datetime.datetime.utcnow()
 
         # See if this is the first ever time
-        if not hasattr(self, "last_ride_time"):
+        if not hasattr(self, "last_ride_time") or not self.last_ride_time:
             #self.msg_contents("Setting last ride time")
             self.last_ride_time = now
         #else:

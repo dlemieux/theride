@@ -123,7 +123,7 @@ class ChimeraExitRoom(DefaultRoom):
         self.cmdset.add_default(CmdSetChimeraExit)
 
         # Set up an exit in the room that they can take
-        gift_shop_room = self.search("ChimeraGiftShop", global_search=True) # Fetch dynamically
+        gift_shop_room = self.search("Chimera Gift Shop", global_search=True) # Fetch dynamically
 
         typeclass = "typeclasses.exits.Exit"
         exit_obj = create_object(typeclass, "gift shop", self, aliases=["gift","shop"], destination=gift_shop_room)

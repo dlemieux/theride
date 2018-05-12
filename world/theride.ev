@@ -16,9 +16,11 @@
 ride-entrance-01
 #
 @desc ride-room-01 =
-From over a loudspeaker you hear: "Welcome to The Ride! Enjoy your stay!"
-This theme park has been in operation for many years, attracting young and old from far and wide.
-An assorment of people are milling about trying to get their tickets in order.
+Excitement builds in your heart as you look up at the massive gate to the park.
+The wrought iron bars stretch up so high they almost touch the clouds.
+Sculptures of mystical beasts are interwoven into gate as well. It would take hours to identify them all.
+Looking miniscule by comparison, a park worker stands directly in front of the gate and stares at you.
+To the right, another park worker waves at you gleefully from a small booth.
 #
 @desc ride-exit-01 = The final exit to The Ride.
 
@@ -55,7 +57,7 @@ create/drop Gatekeeper : objects.ParkAttendant
 @set Gatekeeper/talk_to_msg = Hello! If you have already purchased your |mpass|n from the Clerk,\nthen enter the [|gwalkway|n] to get into the park!
 
 # Create Walkway Room
-@dig WalkwayRoom;ride-room-02 : room_walkway.WalkwayRoom
+@dig Moving Walkway;ride-room-02 : room_walkway.WalkwayRoom
 # Create one way exit to the walkway room
 @open walkway : exits.ParkEntranceExit = ride-room-02
 #
@@ -73,15 +75,15 @@ and the sounds of people having tons of fun.
 @create/drop tv : room_walkway.WalkwayTv
 
 # Create the courtyard room
-@dig CourtyardRoom;ride-room-03
+@dig Courtyard;ride-room-03
 # Make a one way exit to the courtyard room
 @open courtyard = ride-room-03
 # Set the description on the exit
 @desc courtyard = Proceed to the interior courtyard of the park!
 # Switch rooms
 courtyard
-# Set CourtyardRoom description
-@desc CourtyardRoom =
+# Set Courtyard description
+@desc Courtyard =
 You arrive in a massive circular courtyard, filled with possibilities!
 All around you are entrances to rides, shops, attractions, and more!
 
@@ -92,13 +94,13 @@ All around you are entrances to rides, shops, attractions, and more!
 
 
 # Create Construction Zone
-@dig ConstructionZoneRoom = construction zone,courtyard
+@dig Construction Zone = construction zone,courtyard
 #
 @desc construction zone = This leads to an area closed off for construction. Maybe they are building a new attraction?
 #
 construction zone
 #
-@desc ConstructionZoneRoom
+@desc Construction Zone =
 You are standing in a dusty pathway that looks like it is currently being worked on.
 Tools and supplies are strewn about, and there is a fence blocking off people from going any farther.
 A nearby sign is advertising the attraction that will be built here soon.
@@ -132,13 +134,13 @@ courtyard
 
 
 # Create Locker Room
-@dig LockerRoom = lockers,courtyard
+@dig Lockers = lockers,courtyard
 #
 @desc lockers = This leads to the lockers.
 #
 lockers
 #
-@desc LockerRoom =
+@desc Lockers =
 The room is filled with THOUSANDS of lockers.
 Big ones, small ones, and everything in between.
 A sign on the wall says that anyone with a park pass can rent a locker
@@ -151,7 +153,7 @@ to store their belongings so they don't lose items on the rides.
 courtyard
 
 # Create the Chimera gift shop
-@dig ChimeraGiftShop;ride-room-04 : room_chimera_gift_shop.ChimeraGiftShopRoom = gift shop,courtyard
+@dig Gift Shop;ride-room-04 : room_chimera_gift_shop.ChimeraGiftShopRoom = gift shop,courtyard
 #
 @desc gift shop = This leads to the gift shop for the Chimera ride!
 #
@@ -196,7 +198,7 @@ The sign says: "Your safety is our primary concern! If you are prone to motion s
 @create/drop line length display : objects.LineLengthSign
 
 # Create the line room
-@dig ChimeraLineRoom : room_chimera_line.ChimeraLineRoom = join the line;line;join,leave the line;leave
+@dig Waiting in Line : room_chimera_line.ChimeraLineRoom = join the line;line;join,leave the line;leave
 #
 @desc join the line = Go here to step in line for the |rChimera|n ride.
 #
@@ -204,7 +206,7 @@ join the line
 #
 @desc leave the line = If you leave then you will lose your place in the line!
 #
-@desc ChimeraLineRoom =
+@desc Waiting in Line =
 You are standing in line for the |rChimera|n ride. Use [|gline length|n] to view your position in line.
 There are a few displays on the walls which are meant to keep you entertained
 while you wait. A few vendors are hanging around hoping people

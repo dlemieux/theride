@@ -87,7 +87,7 @@ class ChimeraBoardingZone(DefaultRoom):
             else: # Nothing left to do in here
                 if len(self.contents) > 0:
                     # Create a room for the exit
-                    new_ride_room = create_object(ChimeraRideRoom, key="Chimera Ride Room")
+                    new_ride_room = create_object(ChimeraRideRoom, key="Chimera Ride")
 
                     # Move all players into the ride room
                     for rider in self.contents:
