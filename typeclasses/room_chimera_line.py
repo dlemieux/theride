@@ -146,7 +146,7 @@ class CmdBoardCar(Command):
     Command to board the car
     """
     key = "board"
-    #aliases = ["h", "?"]
+    aliases = ["b"]
     locks = "cmd:all()"
     help_category = "The Ride"
 

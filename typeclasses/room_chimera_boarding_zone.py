@@ -46,9 +46,9 @@ class CmdSetBoardingZone(CmdSet):
 
 class ChimeraBoardingZone(DefaultRoom):
     task_messages = [
-        "You may talk amongst yourselves while I verify the integrity of your restraints...",
-        "Please entertain each other and pay no mind to the loose bolts I'll be fixing with this wrench...",
-        "Be careful as you move about the car. Any human remains...I mean belongings...will be removed shortly...",
+        "Ride Attendant: \"You may talk amongst yourselves while I verify the integrity of your restraints...\"",
+        "Ride Attendant: \"Please entertain each other and pay no mind to the loose bolts I'll be fixing with this wrench...\"",
+        "Ride Attendant: \"Be careful as you move about the car. Any human remains...I mean belongings...will be removed shortly...\"",
         ]
 
     def at_object_creation(self):
@@ -106,8 +106,8 @@ class ChimeraBoardingZone(DefaultRoom):
         elif index == 1:
             msg = ""
             msg += "|y>|n" + "\n"
-            msg += "Welcome to the boarding zone!" + "\n"
-            msg += "Just get in your seats and the ride will begin shortly." + "\n"
+            msg += "Ride Attendant: \"Welcome to the boarding zone!\n"
+            msg += "                Just get in your seats and the ride will begin shortly.\"\n"
 
             self.msg_contents(msg)
             return delay

@@ -181,7 +181,7 @@ There are stuffed animals, hats, sunglasses, candy, and more!
 courtyard
 
 # Create Ride Entrance
-@dig Chimera Entrance Room = chimera ride entryway;entrance;ride;chimera;entry,courtyard;c
+@dig Chimera Entrance Room = chimera ride entryway;entrance;ride;chimera;entry;r,courtyard;c
 #
 @desc chimera ride entryway = This leads to the |rChimera|n ride! It's supposed to be AMAZING!
 #
