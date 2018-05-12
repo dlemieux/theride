@@ -17,9 +17,9 @@ class WalkwayRoom(DefaultRoom):
     """
 
     messages = (
-        "  |WIntercom: Welcome to The Park!|n",
-        "  |WIntercom: By participating in rides and attractions you can earn Park Points!|n",
-        "  |WIntercom: Spend your Park Points at any gift shop to get wonderful prizes!|n",
+        "Intercom: \"Welcome to The Park!\"",
+        "Intercom: \"By participating in rides and attractions you can earn Park Points!\"",
+        "Intercom: \"Spend your Park Points at any gift shop to get wonderful prizes!\"",
         )
     cur_message_index = 0
 
