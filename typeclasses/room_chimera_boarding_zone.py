@@ -7,6 +7,7 @@ from evennia import DefaultRoom
 from evennia import DefaultExit
 from evennia import TICKER_HANDLER
 
+from typeclasses.config_all import *
 from typeclasses.room_chimera_ride import ChimeraRideRoom
 
 class CmdSuggestRideTopic(Command):
@@ -98,31 +99,36 @@ class ChimeraBoardingZone(DefaultRoom):
 
     # Returns the number of seconds to wait until the next event
     def send_message(self, index):
-        delay = 5
+        delay = 5 # Make sure this totals over 15 seconds of boarding time for people in the line room
 
         if index == 0:
             return delay # Slight delay with no text for people to enter
         elif index == 1:
             msg = ""
-            msg += "|y> auto-advance|n" + "\n"
+            msg += "|y>|n" + "\n"
             msg += "Welcome to the boarding zone!" + "\n"
             msg += "Just get in your seats and the ride will begin shortly." + "\n"
-
-            msg += random.choice(self.task_messages)
 
             self.msg_contents(msg)
             return delay
         elif index == 2:
             msg = ""
-            msg += "|y> auto-advance|n" + "\n"
+            msg += "|y>|n" + "\n"
+            msg += random.choice(self.task_messages)
+
+            self.msg_contents(msg)
+            return delay
+        elif index == 3:
+            msg = ""
+            msg += "|y>|n" + "\n"
             msg += "A massive |rChimera|n approaches from beneath the cart and you feel the entire thing raise up!"
 
             self.msg_contents(msg)
 
             return delay
-        elif index == 3:
+        elif index == 4:
             msg = ""
-            msg += "|y> auto-advance|n" + "\n"
+            msg += "|y>|n" + "\n"
             msg += "As the |rChimera|n flexes its legs, you are tossed about easily like a toy." + "\n"
             msg += "Suddenly...the |rChimera|n leaps forward! And you're off!"
 

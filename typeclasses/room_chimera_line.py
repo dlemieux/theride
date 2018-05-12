@@ -7,8 +7,8 @@ from evennia import DefaultRoom
 from evennia import DefaultExit
 from evennia import TICKER_HANDLER
 
+from typeclasses.config_all import *
 from typeclasses.room_chimera_boarding_zone import ChimeraBoardingZone
-
 
 class CmdPlayGame(Command):
     """
@@ -28,7 +28,7 @@ class CmdPlayGame(Command):
             return
 
         # Start a new game
-        answer = random.randint(1, 100)
+        answer = random.randint(GUESS_NUMBER_GAME_MIN, GUESS_NUMBER_GAME_MAX)
         location.db.number_game_answer = answer
         location.db.number_game_started = True
 
@@ -112,7 +112,7 @@ class CmdBuyHotDog(Command):
     help_category = "The Ride"
 
     def func(self):
-        hot_dog_price = 2
+        hot_dog_price = HOT_DOG_PRICE
 
         caller = self.caller;
         location = caller.location
@@ -204,9 +204,9 @@ class ChimeraLineRoom(DefaultRoom):
         TICKER_HANDLER.add(interval=self.db.interval, callback=self.update_loop, idstring="the_ride")
 
         # Constants
-        self.db.between_cars_delay = 15 # Value in seconds
-        self.db.boarding_time_delay = 10 # Seconds to board the current car
-        self.db.riders_per_car = 4
+        self.db.between_cars_delay = LINE_ROOM_BETWEEN_CARS_DELAY # Value in seconds
+        self.db.boarding_time_delay = LINE_ROOM_BOARD_TIME_DELAY # Seconds to board the current car
+        self.db.riders_per_car = LINE_ROOM_PEOPLE_PER_CAR
 
         self.db.next_ticket_number = 1
         self.db.room_state = 0
@@ -253,7 +253,7 @@ class ChimeraLineRoom(DefaultRoom):
 
                 self.last_ride_time = now # Update to current time
 
-                msg = "|y> Line Attendant: auto-message|n\n"
+                msg = "|y>|n\n"
                 msg += "The next car has arrived! Please [|gboard|n] if you are next in line!"
                 self.msg_contents(msg)
 
@@ -269,7 +269,7 @@ class ChimeraLineRoom(DefaultRoom):
             # See if you should keep waiting, or move the car on and wait again in state 0
             if seconds_elapsed >= self.db.boarding_time_delay:
                 # Announce that the car is leaving
-                msg = "|y> Line Attendant: auto-message|n\n"
+                msg = "|y>|n\n"
                 msg += "The car has left the station! Please wait for the next car to arrive."
                 self.msg_contents(msg)
 

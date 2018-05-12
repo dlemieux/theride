@@ -14,7 +14,7 @@ from evennia import DefaultRoom
 from evennia import DefaultExit
 from evennia import TICKER_HANDLER
 
-from typeclasses.room_chimera_boarding_zone import ChimeraBoardingZone
+from typeclasses.config_all import *
 
 class Room(DefaultRoom):
     """

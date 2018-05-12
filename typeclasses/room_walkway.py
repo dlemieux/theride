@@ -7,6 +7,8 @@ from evennia import DefaultRoom, DefaultObject
 from evennia import DefaultExit
 from evennia import TICKER_HANDLER
 
+from typeclasses.config_all import *
+
 class WalkwayRoom(DefaultRoom):
     """
     This is the walkway from the Entrance to the Courtyard.
@@ -15,9 +17,9 @@ class WalkwayRoom(DefaultRoom):
     """
 
     messages = (
-        "  |WWelcome to The Park!|n",
-        "  |WBy participating in rides and attractions you can earn Park Points!|n",
-        "  |WSpend your Park Points at any gift shop to get wonderful prizes!|n",
+        "  |WIntercom: Welcome to The Park!|n",
+        "  |WIntercom: By participating in rides and attractions you can earn Park Points!|n",
+        "  |WIntercom: Spend your Park Points at any gift shop to get wonderful prizes!|n",
         )
     cur_message_index = 0
 
@@ -32,7 +34,7 @@ class WalkwayRoom(DefaultRoom):
         
         #self.msg_contents(self.contents) # This is a list of all things in the room
         
-        message = "|y> Intercom: auto-advance\n"
+        message = "|y>|n\n"
         message += self.messages[self.cur_message_index]
 
         self.cur_message_index = (self.cur_message_index + 1) % len(self.messages)

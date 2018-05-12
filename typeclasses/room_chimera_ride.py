@@ -7,6 +7,7 @@ from evennia import DefaultRoom
 from evennia import DefaultExit
 from evennia import TICKER_HANDLER
 
+from typeclasses.config_all import *
 from typeclasses.room_chimera_exit import ChimeraExitRoom
 
 from typeclasses.content_ride_data import DATA_ROLES
@@ -380,7 +381,7 @@ class ChimeraRideRoom(DefaultRoom):
 
     def send_room_message(self, msg):
         room_msg = ""
-        room_msg += "|y> auto-advance|n" + "\n"
+        room_msg += "|y>|n" + "\n"
 
         msg = self.apply_special_dialog_rules(msg)
         room_msg += msg

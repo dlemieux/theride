@@ -7,6 +7,7 @@ from evennia import DefaultRoom, DefaultObject
 from evennia import DefaultExit
 from evennia import TICKER_HANDLER
 
+from typeclasses.config_all import *
 
 GIFT_SHOP_ITEMS = [
     {

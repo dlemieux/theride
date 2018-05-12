@@ -7,7 +7,8 @@ from evennia import DefaultRoom, DefaultObject
 from evennia import DefaultExit
 from evennia import TICKER_HANDLER
 
-PHOTO_PRICE = 2
+from typeclasses.config_all import *
+
 
 class CmdReadAlbum(Command):
     """

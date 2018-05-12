@@ -19,6 +19,8 @@ from evennia import Command
 from evennia import create_object
 from evennia import DefaultObject
 
+from typeclasses.config_all import *
+
 class Object(DefaultObject):
     """
     This is the root typeclass object, implementing an in-game Evennia

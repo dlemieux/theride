@@ -1,4 +1,6 @@
 
+
+from typeclasses.config_all import *
 from typeclasses.content_art import *
 
 # Config

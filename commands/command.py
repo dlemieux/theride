@@ -10,6 +10,8 @@ import random
 from evennia import CmdSet
 from evennia import Command as BaseCommand
 
+from typeclasses.config_all import *
+
 # from evennia import default_cmds
 
 class Command(BaseCommand):
