@@ -8,7 +8,7 @@ LINE_ROOM_DISPLAY_SECONDS_ELAPSED = False
 GUESS_NUMBER_GAME_MIN = 1
 GUESS_NUMBER_GAME_MAX = 100
 
-HOT_DOG_PRICE = 2
+HOT_DOG_PRICE = 2 # Note: The vendor has a hard code talk_to_msg that shows the price in theride.ev
 
 # Chimera Exit Room
 PHOTO_PRICE = 2

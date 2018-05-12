@@ -55,6 +55,7 @@ class CmdGuessNumber(Command):
 
         if not self.args:
             caller.msg("guess <number>")
+            return
 
         # See if a game is running
         if not location.db.number_game_started:
@@ -117,15 +118,21 @@ class CmdBuyHotDog(Command):
         caller = self.caller;
         location = caller.location
 
+        purchase_message = [
+            "You eat the hot dog and exclaim loudly about how that was the best hot dog you've ever had!",
+            "You smell the freshly cooked hot dog and your mouth immediately starts to water. Within seconds it's gone and you are thoroughly content.",
+            "The vendor hands over the hot dog and you drop it on the floor. 5 second rule!",
+        ]
+
         # Check if the user has enough money
         player_points = caller.db.pass_points
         
         if player_points < hot_dog_price:
-            caller.msg("Hot Dog Vendor: \"Gee, I'd love to give you a hot dog but you don't have the %s points!\nAnd I gotta make a living here.\"" % (hot_dog_price))
+            caller.msg("Hot Dog Vendor: \"Gee, I'd love to give you a hot dog but you don't have |c%s|n points!\nAnd I gotta make a living here.\"" % (hot_dog_price))
         else:
             caller_msg = ""
-            caller_msg += "(%s points were deducted from your account)\n" % (hot_dog_price)
-            caller_msg += "You eat the hot dog and exclaim loudly about how that was the best hot dog you've ever had!"
+            caller_msg += "(|c%s|n points were deducted from your account)\n" % (hot_dog_price)
+            caller_msg += random.choice(purchase_message)
 
             room_msg = "  |C%s ate a hot dog. So tasty!|n" % (caller.name)
 

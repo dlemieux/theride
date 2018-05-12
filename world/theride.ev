@@ -229,7 +229,7 @@ will purchase their wares to help pass the time.
 #
 @desc Hot Dog Vendor = The vendor is selling hot dogs to people in line. Try [|gbuy hot dog|n] to get one for yourself!
 #
-@set Hot Dog Vendor/talk_to_msg = Howdy there! Would you like to buy a hot dog! It only costs 2 points! \nType [|gbuy hot dog|n] and I'll have one made up for you in a jiffy!
+@set Hot Dog Vendor/talk_to_msg = Hot Dog Vendor: "Howdy there! Would you like to buy a hot dog! It only costs |c2|n points!\n                Type [|gbuy hot dog|n] and I'll have one made up for you in a jiffy!"
 
 ## Create the boarding zone
 #@dig ChimeraBoardingRoom;ride-room-05
