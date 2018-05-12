@@ -238,6 +238,7 @@ class ParkPass(DefaultObject):
         self.db.drop_err_msg = "The Park Pass is the most important item you own! Don't be so careless!"
         # Make sure they can't drop the pass
         self.locks.add("drop:false()")
+        self.locks.add("give:false()")
         
         # Set custom properties to store for the user
         #self.db.park_points = 0

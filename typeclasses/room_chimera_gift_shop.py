@@ -54,7 +54,7 @@ GIFT_SHOP_ITEMS = [
             },
             {
                 'names': ['Sunglasses', 'sunglass'],
-                'desc': "If you wear them, you won't be able to see what people are emoting.",
+                'desc': "You'll always look cool. Even at night.",
             },
             {
                 'names': ['Pegasus Pencil', 'pencil'],
@@ -62,7 +62,7 @@ GIFT_SHOP_ITEMS = [
             },
             {
                 'names': ['Headphones', 'head phones'],
-                'desc': "If you wear them, you won't be able to hear what people are saying.",
+                'desc': "Perfect for pretending you can't hear what others are saying!",
             },
             {
                 'names': ['Wyvern Onesie', 'onesie'],
@@ -177,6 +177,7 @@ class GiftShopItem(DefaultObject):
         # lock the object down by default
         self.locks.add("get:false()")
         self.locks.add("drop:false()")
+        self.locks.add("give:all()")
         
         self.db.get_err_msg = "Security guard: \"Hey! Is that yours? Better leave it right where it is.\""
         self.db.drop_err_msg = "Security guard: \"Wait up! I think you dropped this! Good thing I was around.\""
@@ -247,7 +248,7 @@ class CmdBuyGiftShopObject(Command):
         new_item = create_object(GiftShopItem, key=target_name, location=caller) # Receive item
         new_item.db.desc = target_info['desc']
 
-        msg = "Sales Clerk: \"Here you are! Enjoy your |m%s|n!\n|c%s|n points have been deducted from your park pass. Your new balance is |c%s|n." % (target_name, target_cost, caller.db.pass_points)
+        msg = "Sales Clerk: \"Here you are! Enjoy your |m%s|n!\"\n|c%s|n points have been deducted from your park pass. Your new balance is |c%s|n." % (target_name, target_cost, caller.db.pass_points)
         caller.msg(msg)
 
 

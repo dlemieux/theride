@@ -107,6 +107,8 @@ class PhotoAlbum(DefaultObject):
         self.db.is_photo_album = True # Used to detect albums in another command
 
         self.locks.add("drop:false()")
+        self.locks.add("give:false()")
+
         # Add command set for people who hold an album
         self.cmdset.add_default(CmdSetPhotoAlbum)
 

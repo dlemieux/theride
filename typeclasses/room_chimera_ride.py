@@ -14,11 +14,7 @@ from typeclasses.content_ride_data import DATA_ROLES
 from typeclasses.content_ride_data import DATA_MAIN_PROBLEMS
 from typeclasses.content_ride_data import DATA_VILLAIN
 from typeclasses.content_ride_data import DATA_RIDE_EVENT_SECTIONS
-from typeclasses.content_ride_data import DEFAULT_EVENT_DELAY
 
-
-ADD_EVENT_NAME_PREFIX = True
-TEST_BATTLE = False
 
 class CmdRiderParticipate(Command):
     """
@@ -51,7 +47,7 @@ class CmdRiderParticipate(Command):
         
         # If no battle is taking place, simply show the command as normal
         if not hasattr(location, 'ride_villain_battle') or not location.ride_villain_battle:
-            msg = "  |c%s|n %s!" % (caller.name, action_msg)
+            msg = "|c%s|n %s!" % (caller.name, action_msg)
             location.msg_contents(msg)
             return
 
@@ -181,34 +177,34 @@ class ChimeraRideRoom(DefaultRoom):
         # Set up the initial story setup
         self.ride_events.append({
             'msg': "Thanks for joining us on the ride today. Now, according to my notes, you're a group of ROLE? Wow!",
-            'delay': DEFAULT_EVENT_DELAY,
+            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
         })
 
         self.ride_events.append({
             'msg': "Well remember to ACTION when the time is right.",
-            'delay': DEFAULT_EVENT_DELAY,
+            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
         })
 
         self.ride_events.append({
             'msg': "You came to the park at an unusual time. PROBLEM And hey, we could really use your help! But it seems like we're having some trouble for some reason.",
-            'delay': DEFAULT_EVENT_DELAY,
+            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
         })
 
         self.ride_events.append({
             'msg': "And you'll never believe it, but our efforts keep being thwarted by VILLAIN!",
-            'delay': DEFAULT_EVENT_DELAY,
+            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
         })
 
-        if TEST_BATTLE:
+        if CHIMERA_RIDE_TEST_BATTLE:
             # Skip the middle sections
             
             self.ride_events.append({
                 'msg': "VILLAIN_PICTURE",
-                'delay': DEFAULT_EVENT_DELAY,
+                'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
             })
             self.ride_events.append({
                 'msg': "TEST: START BATTLE: \"You fools! You're just a bunch of ROLE. What are you going to do, ACTION me to death?\"",
-                'delay': DEFAULT_EVENT_DELAY,
+                'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                 'type': 'start_villain_battle',
             })
         else:
@@ -221,7 +217,7 @@ class ChimeraRideRoom(DefaultRoom):
                 add_event_name_first = True # Only add the debug info for the first event in an option
                 for single_event in section_option['events']:
                     
-                    if ADD_EVENT_NAME_PREFIX:
+                    if CHIMERA_RIDE_ADD_EVENT_NAME_PREFIX:
                         if add_event_name_first:
                             single_event['msg'] = "(%s->%s) %s" % (section_info['section_name'], section_option['option_name'], single_event['msg'])
                             add_event_name_first = False
@@ -231,17 +227,17 @@ class ChimeraRideRoom(DefaultRoom):
         self.ride_end_events = []
         self.ride_end_events.append({
             'msg': "The line attendant appears before you. You did it! We no longer have to worry about VILLAIN, and it's all thanks to you! And I think we know how to solve our problem from earlier.",
-            'delay': DEFAULT_EVENT_DELAY,
+            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
         })
 
         self.ride_end_events.append({
             'msg': self.ride_problem['end_line'],
-            'delay': DEFAULT_EVENT_DELAY,
+            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
         })
 
         self.ride_end_events.append({
             'msg': "Everything is finally as it should be again. The Chimera brings you to the ride platform and grunts in thanks.\nThe line attendant beams with pride. \"Who knew a group of ROLE would save the day! See you next time.\" She waves happily as the shoulder harnesses lift and you are free to exit the ride.",
-            'delay': DEFAULT_EVENT_DELAY,
+            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
         })
 
     def update_loop(self):
@@ -285,7 +281,7 @@ class ChimeraRideRoom(DefaultRoom):
     def send_message(self, index):
         if index == 0:
 
-            return DEFAULT_EVENT_DELAY # Slight delay with no text for people to enter
+            return CHIMERA_RIDE_DEFAULT_EVENT_DELAY # Slight delay with no text for people to enter
         else: # Running the events
 
             # If the villain battle has started, then all rules are different
@@ -349,7 +345,7 @@ class ChimeraRideRoom(DefaultRoom):
                 self.ride_villain_battle['idle_warning_3'] = True
                 self.ride_villain_battle['state'] = 'did_not_fight'
                 self.send_room_message(msg)
-                return DEFAULT_EVENT_DELAY # Give them time to read
+                return CHIMERA_RIDE_DEFAULT_EVENT_DELAY # Give them time to read
 
         elif self.ride_villain_battle['state'] == 'battle':
             elapsed = now - self.ride_villain_battle['battle_start_time']
@@ -367,7 +363,7 @@ class ChimeraRideRoom(DefaultRoom):
             # Queue up messages to be played
             self.ride_events.append({
                 'msg': "You've done it!",
-                'delay': DEFAULT_EVENT_DELAY,
+                'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
             })
 
             for single_event in self.ride_villain['defeat_events']:

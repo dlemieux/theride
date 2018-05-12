@@ -10,6 +10,11 @@ GUESS_NUMBER_GAME_MAX = 100
 
 HOT_DOG_PRICE = 2 # Note: The vendor has a hard code talk_to_msg that shows the price in theride.ev
 
+# Chimera Ride Room
+CHIMERA_RIDE_DEFAULT_EVENT_DELAY = 3
+CHIMERA_RIDE_TEST_BATTLE = False
+CHIMERA_RIDE_ADD_EVENT_NAME_PREFIX = False
+
 # Chimera Exit Room
 PHOTO_PRICE = 2
 
