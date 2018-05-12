@@ -339,7 +339,7 @@ class ChimeraGiftShopRoom(DefaultRoom):
     def return_appearance(self, looker, **kwargs):
         msg = ""
 
-        msg += "You are standing in a gift shop with shelves of merchandising lining every wall.\n"
+        msg += "You are standing in a gift shop with shelves of merchandise lining every wall.\n"
 
         # For each shelf
         for shelf_info in GIFT_SHOP_ITEMS:

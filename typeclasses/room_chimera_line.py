@@ -238,11 +238,7 @@ class ChimeraLineRoom(DefaultRoom):
         time_elapsed = now - self.last_ride_time
         seconds_elapsed = time_elapsed.seconds
 
-        log_enabled = False
-        if hasattr(self, 'db') and hasattr(self.db, 'log_enabled') and self.db.log_enabled:
-            log_enabled = True
-
-        if log_enabled:
+        if LINE_ROOM_DISPLAY_SECONDS_ELAPSED:
             self.msg_contents("Seconds elapsed: %s" % seconds_elapsed)
 
         # Determine whether we are waiting for ride to return or waiting for people to board, or sending off the people after time out
