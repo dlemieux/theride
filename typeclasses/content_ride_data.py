@@ -50,7 +50,7 @@ DATA_MAIN_PROBLEMS = [
     },
     {
         "msg": "Our Chimera wants to take a nap but it has insomnia!",
-        "end_line": "The Chimera seems to have become so tired from all the action that its actually starting to fall asleep. Normally this would be exactly what we want, but the passangers are still in a cart strapped to the Chimera's back.",
+        "end_line": "The Chimera seems to have become so tired from all the action that its actually starting to fall asleep. Normally this would be exactly what we want, but the passangers are still in a cart strapped to the Chimera|r's|n back.",
     },
     {
         "msg": "Our Chimera lost its memory!",
@@ -267,10 +267,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
                         'msg': "The line attendant acts quickly, and pulls out a laser which burns holes through the pipes.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
@@ -287,10 +283,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # Typically 4 messages long.
                     {
                         'msg': "Suddenly, the ground rumbles, and you realize that the Chimera is actually standing on the tongue of a giant monster! And the mouth of this monster is closing fast!",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -313,10 +305,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
                         'msg': "The line attendant acts quickly, pulling out a giant pair of scissors. Like the ones you'd find at a ribbon cutting ceremony! These giant scissors are cutting away all the webs, but the giant spider is rushing towards the group fast!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
@@ -336,11 +324,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "The line attendant acts quickly, and straps a bunch of springs to the Chimera's feed. *BOOOOIIINNGGG* The Chimera pops right out of the pit!",
+                        'msg': "The line attendant acts quickly, and straps a bunch of springs to the Chimera|r's|n feed. *BOOOOIIINNGGG* The Chimera pops right out of the pit!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -363,10 +347,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
                         'msg': "The line attendant acts quickly, and screams for help at the top of their lungs!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
@@ -383,10 +363,6 @@ DATA_RIDE_EVENT_SECTIONS = [
             #        # Typically 4 messages long.
             #        {
             #            'msg': "Suddenly, ",
-            #            'delay': DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': '',
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
             #        {
@@ -409,10 +385,6 @@ DATA_RIDE_EVENT_SECTIONS = [
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
             #        {
-            #            'msg': '',
-            #            'delay': DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
             #            'msg': "The line attendant acts quickly, ",
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
@@ -429,10 +401,6 @@ DATA_RIDE_EVENT_SECTIONS = [
             #        # Typically 4 messages long.
             #        {
             #            'msg': "Suddenly, ",
-            #            'delay': DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': '',
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
             #        {
@@ -455,10 +423,6 @@ DATA_RIDE_EVENT_SECTIONS = [
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
             #        {
-            #            'msg': '',
-            #            'delay': DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
             #            'msg': "The line attendant acts quickly, ",
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
@@ -475,10 +439,6 @@ DATA_RIDE_EVENT_SECTIONS = [
             #        # Typically 4 messages long.
             #        {
             #            'msg': "Suddenly, ",
-            #            'delay': DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': '',
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
             #        {
@@ -501,10 +461,6 @@ DATA_RIDE_EVENT_SECTIONS = [
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
             #        {
-            #            'msg': '',
-            #            'delay': DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
             #            'msg': "The line attendant acts quickly, ",
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
@@ -521,10 +477,6 @@ DATA_RIDE_EVENT_SECTIONS = [
             #        # Typically 4 messages long.
             #        {
             #            'msg': "Suddenly, ",
-            #            'delay': DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': '',
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
             #        {
@@ -547,10 +499,6 @@ DATA_RIDE_EVENT_SECTIONS = [
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
             #        {
-            #            'msg': '',
-            #            'delay': DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
             #            'msg': "The line attendant acts quickly, ",
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
@@ -567,10 +515,6 @@ DATA_RIDE_EVENT_SECTIONS = [
             #        # Typically 4 messages long.
             #        {
             #            'msg': "Suddenly, ",
-            #            'delay': DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': '',
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
             #        {
@@ -593,10 +537,6 @@ DATA_RIDE_EVENT_SECTIONS = [
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
             #        {
-            #            'msg': '',
-            #            'delay': DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
             #            'msg': "The line attendant acts quickly, ",
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
@@ -613,10 +553,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # Typically 4 messages long.
                     {
                         'msg': "Suddenly, the bars of a cage wrap around you and the Chimera. A chain lifts your new cell high above the ground!",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -645,10 +581,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
                         'msg': "With its magical powers, it summons a bright and shiny rainbow!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
@@ -665,10 +597,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # Typically 4 messages long.
                     {
                         'msg': "The Chimera has anticipated this type of danger!",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -691,10 +619,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
                         'msg': "With its magical powers, it summons ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
@@ -711,10 +635,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # Typically 4 messages long.
                     {
                         'msg': "The Chimera has anticipated this type of danger!",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -737,10 +657,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
                         'msg': "With its magical powers, it summons ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
@@ -757,10 +673,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # Typically 4 messages long.
                     {
                         'msg': "The Chimera has anticipated this type of danger!",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -783,10 +695,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
                         'msg': "With its magical powers, it summons ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
@@ -803,10 +711,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # Typically 4 messages long.
                     {
                         'msg': "The Chimera has anticipated this type of danger!",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -839,10 +743,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
                         'msg': "You fire at each other and the bullets keep colliding in the air! You gain the upper hand and fire 3 shots directly at your target!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
@@ -866,14 +766,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
                         'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
@@ -890,14 +782,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                     },
                     {
                         'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a game of poker!\"",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': " ",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -920,14 +804,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': " ",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
                         'msg': "A transition out.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
@@ -944,10 +820,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                     },
                     {
                         'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a battle of wits!\"",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -974,10 +846,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
                         'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
@@ -998,10 +866,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                     },
                     {
                         'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a lip sync contest!\"",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1028,10 +892,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
                         'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
@@ -1052,10 +912,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                     },
                     {
                         'msg': "A challenge rings out in the air: \"Let's see if you can best me... at an arm wrestling contest!\"",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1082,10 +938,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
                         'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
@@ -1106,10 +958,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                     },
                     {
                         'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a contest of riddles!\"",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1136,10 +984,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
                         'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
@@ -1160,10 +1004,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                     },
                     {
                         'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a first to laugh contest!\"",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1190,10 +1030,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
                         'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
@@ -1217,10 +1053,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
                         'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
@@ -1241,10 +1073,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                     },
                     {
                         'msg': "A challenge rings out in the air: \"Let's see if you can best me... at an ugly sweater contest!\"",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1292,10 +1120,6 @@ DATA_RIDE_EVENT_SECTIONS = [
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
             #        {
-            #            'msg': '',
-            #            'delay': DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
             #            'msg': "An ending.",
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
@@ -1315,10 +1139,6 @@ DATA_RIDE_EVENT_SECTIONS = [
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
             #        {
-            #            'msg': '',
-            #            'delay': DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
             #            'msg': "An ending.",
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
@@ -1335,10 +1155,6 @@ DATA_RIDE_EVENT_SECTIONS = [
             #        # Typically 4 messages long.
             #        {
             #            'msg': "The challenge is finally over. ",
-            #            'delay': DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': '',
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
             #        {
@@ -1430,10 +1246,6 @@ DATA_RIDE_EVENT_SECTIONS = [
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
             #        {
-            #            'msg': '',
-            #            'delay': DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
             #            'msg': "An ending.",
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
@@ -1450,10 +1262,6 @@ DATA_RIDE_EVENT_SECTIONS = [
             #        # Typically 4 messages long.
             #        {
             #            'msg': "The challenge is finally over. ",
-            #            'delay': DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': '',
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
             #        {
@@ -1476,10 +1284,6 @@ DATA_RIDE_EVENT_SECTIONS = [
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
             #        {
-            #            'msg': '',
-            #            'delay': DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
             #            'msg': "An ending.",
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
@@ -1499,7 +1303,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "Within, the startled inhabitants leap to their feet, knocking over a board covered in dice and miniatures. You've interrupted a night of Caverns and Chimeras!",
+                        'msg': "Within, the startled inhabitants leap to their feet, knocking over a board covered in dice and miniatures. You've interrupted a night of Caverns and Chimera|rs|n!",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1865,14 +1669,6 @@ DATA_RIDE_EVENT_SECTIONS = [
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
             #        {
-            #            'msg': '',
-            #            'delay': DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "",
-            #            'delay': DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
             #            'msg': "A transition out.",
             #            'delay': DEFAULT_EVENT_DELAY,
             #        },
@@ -1934,10 +1730,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': '',
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
                         'msg': "An ending.",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
@@ -1954,10 +1746,6 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # Typically 4 messages long.
                     {
                         'msg': "You can never trust VILLAIN! There's one more obstacle between you and them!",
-                        'delay': DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': '',
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {

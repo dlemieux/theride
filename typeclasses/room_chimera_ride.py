@@ -345,7 +345,7 @@ class ChimeraRideRoom(DefaultRoom):
                 self.send_room_message(msg)
 
             if elapsed_seconds >= idle_warning_time * 3:
-                msg = "Your pacifist response seems to have worked, as your nemesis dies of bordem in front of you."
+                msg = "Your pacifist response seems to have worked, as your nemesis dies of boredom in front of you."
                 self.ride_villain_battle['idle_warning_3'] = True
                 self.ride_villain_battle['state'] = 'did_not_fight'
                 self.send_room_message(msg)
@@ -356,7 +356,7 @@ class ChimeraRideRoom(DefaultRoom):
             if elapsed.seconds >= self.ride_villain_battle['battle_length_seconds']:
                 # They lost for taking too long
                 self.ride_villain_battle['state'] = 'villain_left'
-                msg = "I won't give you the satisfaction of beating me. I'm outta here!"
+                msg = "\"I won't give you the satisfaction of beating me. I'm outta here!\""
                 self.send_room_message(msg)
 
         elif self.ride_villain_battle['state'] == 'did_not_fight' or self.ride_villain_battle['state'] == 'villain_left':
