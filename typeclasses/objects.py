@@ -284,7 +284,12 @@ class CmdBuyPass(Command):
             
             yield 3
             
+
             homeLocation = yield("       Okay, question one. What town are you from?")
+
+            # Loop until the give a valid answer
+            while len(homeLocation.strip()) == 0:
+                homeLocation = yield("       Pardon? What town are you from?")
             
             # Trim the name of the home location in case it is too long
             maxHomeLength = 40
