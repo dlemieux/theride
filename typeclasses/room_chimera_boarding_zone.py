@@ -54,11 +54,10 @@ class ChimeraBoardingZone(DefaultRoom):
         super(ChimeraBoardingZone, self).at_object_creation()
 
         desc = ""
-        desc += "You are in a dark room that has the ride car in the middle.\n"
-        desc += "The ride will begin shortly.\nYou can use [|gsuggest <feature>|n] to encourage different events to happen during your ride, IF the attendant feels like helping you out."
+        desc += "You are in a dark room that has the ride car in the middle. The ride will begin shortly."
         self.db.desc = desc
 
-        self.cmdset.add_default(CmdSetBoardingZone)
+        #self.cmdset.add_default(CmdSetBoardingZone)
 
         self.db.interval = 1 # Every X seconds it updates the room
         TICKER_HANDLER.add(interval=self.db.interval, callback=self.update_loop, idstring="the_ride")
