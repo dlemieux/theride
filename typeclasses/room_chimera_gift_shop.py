@@ -37,7 +37,7 @@ GIFT_SHOP_ITEMS = [
                 'desc': "It tastes different with every bite.",
             },
             {
-                'names': ['Souvenir Park map', 'map'],
+                'names': ['Souvenir Park Map', 'map'],
                 'desc': "An illustration of the park from above.",
             },
             {
@@ -85,43 +85,43 @@ GIFT_SHOP_ITEMS = [
         'item price': 20,
         'items': [
             {
-                'names': ['Chimera Canteen'],
+                'names': ['Chimera Canteen', 'canteen'],
                 'desc': "Helps you quench your thirst throughout your visit.",
             },
             {
-                'names': ['The Guidebook to Chimera Training'],
+                'names': ['The Guidebook to Chimera Training', 'guidebook'],
                 'desc': "It's the ultimate guide to starting your own career in Mythical Beast Management!",
             },
             {
-                'names': ['Scaly Shirt'],
+                'names': ['Scaly Shirt', 'shirt'],
                 'desc': "Show off your inner reptile with this patterned tee!",
             },
             {
-                'names': ['Baseball Cap'],
+                'names': ['Baseball Cap', 'cap', 'hat'],
                 'desc': "It's even got horns!",
             },
             {
-                'names': ['Unicorn Pillow'],
+                'names': ['Unicorn Pillow', 'pillow'],
                 'desc': "Everyone loves unicorns, even though they don't exist.",
             },
             {
-                'names': ['Chimera Coaster Set'],
+                'names': ['Chimera Coaster Set', 'coaster', 'coasters', 'coaster set'],
                 'desc': "Keeps your tables dry and your drinks elevated! Fun at parties.",
             },
             {
-                'names': ['Selkie Scarf'],
+                'names': ['Selkie Scarf', 'scarf'],
                 'desc': "Seals in your natural warmth.",
             },
             {
-                'names': ['Umbrose Umbrella'],
+                'names': ['Umbrose Umbrella', 'umbrella'],
                 'desc': "Useful in both sun and rain.",
             },
             {
-                'names': ['Chimera Plush Toy'],
+                'names': ['Chimera Plush Toy', 'plush', 'plush toy'],
                 'desc': "It's softer and more huggable than a real Chimera.",
             },
             {
-                'names': ['Chia-Mera Pet'],
+                'names': ['Chia-Mera Pet', 'chia', 'chia-mera', 'pet'],
                 'desc': "The leaves of your plant will look like its hair!",
             },
         ],
@@ -141,15 +141,15 @@ GIFT_SHOP_ITEMS = [
                 'desc': "Every time you solve a side, it seems to gain one?!",
             },
             {
-                'names': ['Musical Snowglobe'],
+                'names': ['Musical Snowglobe', 'snowglobe', 'snow globe'],
                 'desc': "Wind it up and watch it snow on a miniature version of the park!",
             },
             {
-                'names': ['Chimera Chronometer'],
+                'names': ['Chimera Chronometer', 'chronometer'],
                 'desc': "Never run out of time again with this classic instrument.",
             },
             {
-                'names': ['Chimera Figurine'],
+                'names': ['Chimera Figurine', 'figurine'],
                 'desc': "A collector's replica carved with care. Not a toy!",
             },
         ],
@@ -161,7 +161,7 @@ GIFT_SHOP_ITEMS = [
         'item price': 100,
         'items': [
             {
-                'names': ['Lucky Charm'],
+                'names': ['Lucky Charm', 'luck charm'],
                 'desc': "Holding on to this might make your day a little better. Might.",
             },
         ],
