@@ -34,7 +34,7 @@ class CmdPlayGame(Command):
 
         game_start_msg = ""
         game_start_msg += "Line Attendant: \"Okay everybody! Let's play the number game!\n"
-        game_start_msg += "                Use [|gguess <number>|n] to guess a number between 1 and 100. Go!\""
+        game_start_msg += "                Use [|gguess <number>|n] to guess a number between %s and %s. Go!\"" % (GUESS_NUMBER_GAME_MIN, GUESS_NUMBER_GAME_MAX)
 
         location.msg_contents(game_start_msg)
 
