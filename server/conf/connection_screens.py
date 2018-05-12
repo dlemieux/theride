@@ -22,16 +22,22 @@ CONNECTION_SCREEN = """
 |b==============================================================|n
  Welcome to |g{}|n!
 
- This game was created as a submission for the |gEnter the (Multi-User) Dungeon|n gamejam.
+ This game was created as a submission for the |gEnter the (Multi-User) Dungeon|n game jam.
+ To play, you will need to type commands in the prompt area at the bottom of the screen.
 
- If you have an existing account, connect to it by typing:
-      |yconnect <username> <password>|n
- If you need to create an account, type (without the <>'s):
-      |ycreate <username> <password>|n
+ If you haven't visited the park before, you need to create an account.
+ Type the following (without the <>'s):
+       |ycreate <username> <password>|n
 
- If you have spaces in your username, enclose it in quotes.
- Enter |ghelp|n for more info. |glook|n will re-show this screen.
+If you have visited before, welcome back! You can join again by typing (again without the <>'s):
+       |yconnect <username> <password>|n
 
- Enjoy!
+If you have spaces in your username, you can enclose it in quotes.
+
+For further information about us, visit |chttps://www.prettysmartgames.com/|n
+You can also follow us at twitter |c@PrettySmartNews|n
+Or check out the code at |chttps://github.com/dlemieux/theride|n
+
+Type |yhelp|n for more info. Or |ylook|n to read this info once more.
 |b==============================================================|n""" \
     .format(settings.SERVERNAME, utils.get_evennia_version())
