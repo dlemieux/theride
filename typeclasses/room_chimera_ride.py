@@ -17,7 +17,7 @@ from typeclasses.content_ride_data import DEFAULT_EVENT_DELAY
 
 
 ADD_EVENT_NAME_PREFIX = True
-TEST_BATTLE = True
+TEST_BATTLE = False
 
 class CmdRiderParticipate(Command):
     """
@@ -200,6 +200,11 @@ class ChimeraRideRoom(DefaultRoom):
 
         if TEST_BATTLE:
             # Skip the middle sections
+            
+            self.ride_events.append({
+                'msg': "VILLAIN_PICTURE",
+                'delay': DEFAULT_EVENT_DELAY,
+            })
             self.ride_events.append({
                 'msg': "TEST: START BATTLE: \"You fools! You're just a bunch of ROLE. What are you going to do, ACTION me to death?\"",
                 'delay': DEFAULT_EVENT_DELAY,
@@ -389,9 +394,9 @@ class ChimeraRideRoom(DefaultRoom):
         action_name = self.ride_role['command_name']
         problem_desc = self.ride_problem['msg']
 
-        # VILLAIN: Example 'a ghost'
-        villain_replace = "|c%s|n" % (villain_name)
-        msg = msg.replace('VILLAIN', villain_replace)
+        villain_picture = self.ride_villain['picture']
+        villain_picture = villain_picture.replace("\n", "", 1) # Strip the leading newline
+        villain_picture = villain_picture.replace("|", "||") # Escape the | character
 
         # ROLE: Example 'Students'
         role_replace = "|c%s|n" % (role_name)
@@ -403,6 +408,13 @@ class ChimeraRideRoom(DefaultRoom):
 
         # PROBLEM: Example 'The Chimera has insomnia!'
         msg = msg.replace('PROBLEM', problem_desc)
+
+        # VILLAIN_PICTURE
+        msg = msg.replace('VILLAIN_PICTURE', villain_picture)
+
+        # VILLAIN: Example 'a ghost'
+        villain_replace = "|c%s|n" % (villain_name)
+        msg = msg.replace('VILLAIN', villain_replace)
 
         # Chimera
         msg = msg.replace('Chimera', '|rChimera|n')

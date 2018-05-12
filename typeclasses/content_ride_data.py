@@ -1,4 +1,6 @@
 
+from typeclasses.content_art import *
+
 # Config
 DEFAULT_EVENT_DELAY = 1
 
@@ -102,6 +104,7 @@ DATA_MAIN_PROBLEMS = [
 DATA_VILLAIN = [
     {
         "msg": "a mad scientist",
+        "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
                 "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
@@ -111,6 +114,7 @@ DATA_VILLAIN = [
     },
     {
         "msg": "a sentient robot",
+        "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
                 "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
@@ -120,6 +124,7 @@ DATA_VILLAIN = [
     },
     {
         "msg": "an angry ancient god",
+        "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
                 "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
@@ -129,6 +134,7 @@ DATA_VILLAIN = [
     },
     {
         "msg": "an alien",
+        "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
                 "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
@@ -138,6 +144,7 @@ DATA_VILLAIN = [
     },
     {
         "msg": "a vampire king",
+        "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
                 "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
@@ -147,6 +154,7 @@ DATA_VILLAIN = [
     },
     {
         "msg": "a mummy",
+        "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
                 "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
@@ -156,6 +164,7 @@ DATA_VILLAIN = [
     },
     {
         "msg": "a ghost",
+        "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
                 "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
@@ -165,6 +174,7 @@ DATA_VILLAIN = [
     },
     {
         "msg": "a company executive",
+        "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
                 "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
@@ -174,6 +184,7 @@ DATA_VILLAIN = [
     },
     {
         "msg": "a psychic child",
+        "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
                 "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
@@ -183,6 +194,7 @@ DATA_VILLAIN = [
     },
     {
         "msg": "a time traveler",
+        "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
                 "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
@@ -193,6 +205,7 @@ DATA_VILLAIN = [
     {
         # I've gotta maintain my magna cum laude status. I'll definitely get into grad school with this thesis
         "msg": "an overachieving college student",
+        "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
                 "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
@@ -202,6 +215,7 @@ DATA_VILLAIN = [
     }, 
     {
         "msg": "a knockoff brand 'Kaimera'",
+        "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
                 "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
@@ -211,6 +225,7 @@ DATA_VILLAIN = [
     },
     {
         "msg": "a pirate captain",
+        "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
                 "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
@@ -220,6 +235,7 @@ DATA_VILLAIN = [
     },
     {
         "msg": "a cursed object",
+        "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
                 "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
@@ -2165,6 +2181,10 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # Typically 4 messages long.
                     {
                         'msg': "Or is it? A puff of smoke appears in front of you, and as it dissipates you see VILLAIN!",
+                        'delay': DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "VILLAIN_PICTURE",
                         'delay': DEFAULT_EVENT_DELAY,
                     },
                     {

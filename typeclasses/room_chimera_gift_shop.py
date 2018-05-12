@@ -20,7 +20,7 @@ GIFT_SHOP_ITEMS = [
                 'desc': "Aren't they cute when they're little? 1/50th Scale.",
             },
             {
-                'names': ['Sourvenir Pin', 'pin'],
+                'names': ['Souvenir Pin', 'pin'],
                 'desc': "Proudly identifies you as a \"Thrill Seeker!\"",
             },
             {
@@ -28,11 +28,11 @@ GIFT_SHOP_ITEMS = [
                 'desc': "Changes color depending on your drink's temperature.",
             },
             {
-                'names': ['Flip Flops', 'flip flop'],
+                'names': ['Flip Flops', 'flip flop', 'flops', 'flop', 'flips', 'flip'],
                 'desc': "The squishy soles are meant to withstand multiple hours of standing in line.",
             },
             {
-                'names': ['Cottom Candy'],
+                'names': ['Cotton Candy'],
                 'desc': "It tastes different with every bite.",
             },
             {
