@@ -255,6 +255,8 @@ class CmdTalkTo(Command):
         # Do the action
         if target.db.talk_to_msg:
             caller.msg(target.db.talk_to_msg)
+        elif target.db.is_player:
+            caller.msg("This is another human player. Use [|gsay <message>|n] or [|gwhisper <person> = <message>|n] to send a message.")
         else:
             caller.msg("They have nothing to say.")
 
