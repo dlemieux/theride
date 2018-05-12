@@ -231,14 +231,14 @@ class CmdBuyGiftShopObject(Command):
 
         # Is that object on the 'for-sale' list?
         if not target_info:
-            caller.msg("We don't have anything like that here.")
+            caller.msg("Sales Clerk: \"We don't have anything like that here.\"")
             return
 
         # Can the player afford it?
         target_cost = target_shelf_info['item price']
         player_can_afford = caller.db.pass_points >= target_cost
         if not player_can_afford:
-            caller.msg("I'm sorry, you cannot afford that item. It costs |c%s|n points and you have |c%s|n points." % (target_cost, caller.db.pass_points))
+            caller.msg("Sales Clerk: \"I'm sorry, you cannot afford that item. It costs |c%s|n points and you have |c%s|n points.\"" % (target_cost, caller.db.pass_points))
             return
 
         # Give the player their item and take their points
@@ -247,7 +247,7 @@ class CmdBuyGiftShopObject(Command):
         new_item = create_object(GiftShopItem, key=target_name, location=caller) # Receive item
         new_item.db.desc = target_info['desc']
 
-        msg = "Store attendant: \"Here you are! Enjoy your |m%s|n!\n|c%s|n points have been deducted from your park pass. Your new balance is |c%s|n." % (target_name, target_cost, caller.db.pass_points)
+        msg = "Sales Clerk: \"Here you are! Enjoy your |m%s|n!\n|c%s|n points have been deducted from your park pass. Your new balance is |c%s|n." % (target_name, target_cost, caller.db.pass_points)
         caller.msg(msg)
 
 
