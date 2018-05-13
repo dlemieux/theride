@@ -149,9 +149,9 @@ to store their belongings so they don't lose items on the rides.
 @desc courtyard = Return to the courtyard.
 
 # Create a broken kiosk
-@create/drop kiosk = objects.Heavy
+@create/drop kiosk : objects.Heavy
 # Set the description
-@desc kiosk = A note placed over the screen says: "OUT OF ORDER"
+@desc kiosk = A note placed over the screen reads: "OUT OF ORDER"
 
 
 # Return to the courtyard
