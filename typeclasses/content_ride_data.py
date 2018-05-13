@@ -40,64 +40,64 @@ DATA_MAIN_PROBLEMS = [
     },
     {
         "msg": "The Chimera needs exercise!",
-        "end_line": "The Chimera lets out the most exaggerated yawn you've ever heard, completely wiped from your adventures.",
+        "end_line": "The Chimera stretches out its legs, completely wiped from your adventures.",
     },
     {
-        "msg": "Our Chimera is hungry!",
-        "end_line": "Suddenly, a giant piece of Chimera food dropped from the heavens! The now ravenous Chimera swiped it from the air and started chowing down on that sweet meat.\nThe slurping and tearing sounds clearly indicated the Chimera was pleased with this outcome.",
+        "msg": "The Chimera is hungry!",
+        "end_line": "A chef wheels in an enormous cart containing an equally enormous metal dome. With some difficulty, the chef lifts the dome to reveal a plate of pungent, wet food. The Chimera flicks its tail in appreciation and begins to chow down. The room fills with the sounds of slurping and munching.",
     },
     {
-        "msg": "Our Chimera wants to take a nap but it has insomnia!",
-        "end_line": "The Chimera seems to have become so tired from all the action that its actually starting to fall asleep. Normally this would be exactly what we want, but the passengers are still in a cart strapped to the Chimera|r's|n back.",
+        "msg": "The Chimera wants to take a nap but it has insomnia!",
+        "end_line": "The Chimera is so tuckered out from all the action that its actually starting to fall asleep. With you still attached to its back!",
     },
-    {
-        "msg": "Our Chimera lost its memory!",
-        "end_line": "The Chimera, still confused from having lost its memory, started heading into a secret cave nearby but forgot to duck its head and smashed it against the rocks!\nRocks and tiny debris were falling down, but the Chimera seemed relieved. That must have jolted back all of its memories! Huzzah!",
-    },
-    {
-        "msg": "A new ride is malfunctioning!",
-        "end_line": "The malfunctioning ride we've been trying to fix was now even more rickety! And as a cart ran along its tracks the final screws came loose and the cart went soaring into the air, untethered, full of screaming passengers!\nThe Chimera leaps up and wrapped the ride cart in its tail, landing softly and lowering the cart.",
-    },
-    {
-        "msg": "Someone hacked the park security network!",
-        "end_line": "The security network seemed completely lost. It was still hacked and no one could do anything about it! The Chimera suddenly had an idea, and ran over to pull out the mainframe cord. Holding the cord in its teeth for a few seconds, it then plugged it back in. The reboot worked! The hacker was kicked out! And never heard from again.",
-    },
+    #{
+    #   "msg": "The Chimera lost its memory!",
+    #    "end_line": "The Chimera, still confused from having lost its memory, started heading into a secret cave nearby but forgot to duck its head and smashed it against the rocks!\nRocks and tiny debris were falling down, but the Chimera seemed relieved. That must have jolted back all of its memories! Huzzah!",
+    #},
+    #{
+    #    "msg": "A new ride is malfunctioning!",
+    #    "end_line": "The malfunctioning ride we've been trying to fix was now even more rickety! And as a cart ran along its tracks the final screws came loose and the cart went soaring into the air, untethered, full of screaming passengers!\nThe Chimera leaps up and wrapped the ride cart in its tail, landing softly and lowering the cart.",
+    #},
+    #{
+    #    "msg": "Someone hacked the park security network!",
+    #    "end_line": "The security network seemed completely lost. It was still hacked and no one could do anything about it! The Chimera suddenly had an idea, and ran over to pull out the mainframe cord. Holding the cord in its teeth for a few seconds, it then plugged it back in. The reboot worked! The hacker was kicked out! And never heard from again.",
+    #},
     {
         "msg": "There's a bad storm coming!",
-        "end_line": "The Chimera ran all over the park and the riders warned everyone of the incoming storm, and they were all able to prepare adequately. The park was saved!",
+        "end_line": "The Chimera takes you to the Labyrinth of Lockers. After punching in its PIN, a locker opens and hundreds of Chimera-themed umbrellas pour out! You distribute them to the park guests before the rain hits.",
     },
+    #{
+    #    "msg": "The park is running out of money!",
+    #    "end_line": "Luckily, this amazing journey was being documented the whole time, and a famous film company wants to buy the rights so they can make a movie! The park will earn all the money it needs to keep operating!",
+    #},
+    #{
+    #    "msg": "Someone's been trying to kidnap the Chimera!",
+    #    "end_line": "The Chimera Kidnapper suddenly appeared and lunged at the Chimera with a large brown sack to steal it away! Unfortunately, they grossly underestimated the size of a Chimera and the sack merely covered its front paw. The very paw that proceeded to smack the kidnapper up into the sky, soaring away. Looks like the Chimera Kidnapper is blasting off agaaaaiiiiin!",
+    #},
+    #{
+    #    "msg": "Booby traps have been placed around the park!",
+    #    "end_line": "As it turns out, the booby traps placed around the park were just trial versions, and disabled themselves after the 30-minute free period! The park was saved!",
+    #},
+    #{
+    #    "msg": "An artifact has been stolen!",
+    #    "end_line": "The ride attendant pulls out a tablet and shows you the fake classified ad they made requesting an artifact like the one that was stolen. The group put in a WANT ad in the park newsletter and immediately caught the thief.",
+    #},
+    #{
+    #    "msg": "We've lost communication with a remote park!",
+    #    "end_line": "The ride attendant points to a communication tower the Chimera accidentaly bumped into on the way in. With the antenna in a new position, the signal from the remote park was received once more!",
+    #},
+    #{
+    #    "msg": "We have to rescue a cat up a tree!",
+    #   "end_line": "Everyone remembers that the cat is still stuck in the tree and start calling out to the cat to reassure it that they'll rescue the cat soon. The cat yawns, and leaps down out of the tree and onto the ground unharmed, because obviously it was a cat and being in a tree isn't a problem.",
+    #},
     {
-        "msg": "The park is running out of money!",
-        "end_line": "Luckily, this amazing journey was being documented the whole time, and a famous film company wants to buy the rights so they can make a movie! The park will earn all the money it needs to keep operating!",
+        "msg": "We're scouting out a new territory for the park!",
+        "end_line": "It turns out that the Chimera was wearing a GPS unit this whole time. Your adventuring managed to map out the whole territory!",
     },
-    {
-        "msg": "Someone's been trying to kidnap the Chimera!",
-        "end_line": "The Chimera Kidnapper suddenly appeared and lunged at the Chimera with a large brown sack to steal it away! Unfortunately, they grossly underestimated the size of a Chimera and the sack merely covered its front paw. The very paw that proceeded to smack the kidnapper up into the sky, soaring away. Looks like the Chimera Kidnapper is blasting off agaaaaiiiiin!",
-    },
-    {
-        "msg": "Booby traps have been placed around the park!",
-        "end_line": "As it turns out, the booby traps placed around the park were just trial versions, and disabled themselves after the 30-minute free period! The park was saved!",
-    },
-    {
-        "msg": "An artifact has been stolen!",
-        "end_line": "The stolen artifact was still on everyone's mind, and they did some research into where a thief may try to sell the rare artifact. The group put in a WANT ad in the park newsletter and immediately caught the thief.",
-    },
-    {
-        "msg": "We've lost communication with a remote base!",
-        "end_line": "The Chimera leapt high into the air and was knocked around by high winds! When it landed, it hit an antenna on the communications building, which amazingly fixed the signal coming from the remote base! Communications were restored!",
-    },
-    {
-        "msg": "We have to rescue a cat up a tree!",
-        "end_line": "Everyone remembers that the cat is still stuck in the tree and start calling out to the cat to reassure it that they'll rescue the cat soon. The cat yawns, and leaps down out of the tree and onto the ground unharmed, because obviously it was a cat and being in a tree isn't a problem.",
-    },
-    {
-        "msg": "We're scouting out a new territory!",
-        "end_line": "After all that adventuring, it looks like we've managed to map out the whole territory. Great work everyone!",
-    },
-    {
-        "msg": "We found a treasure map, but don't know how to decipher it!",
-        "end_line": "Suddenly, the meaning of the treasure map was all so obvious. All the clues, Xs, riddles, and compass marks became one, and then, became nothing. There was no treasure this group could not find. And with this knowledge, there was no need to dig up the treasure, because the real treasure, was friendship.",
-    },
+    #{
+    #    "msg": "We found a treasure map, but don't know how to decipher it!",
+    #    "end_line": "Suddenly, the meaning of the treasure map was all so obvious. All the clues, Xs, riddles, and compass marks became one, and then, became nothing. There was no treasure this group could not find. And with this knowledge, there was no need to dig up the treasure, because the real treasure, was friendship.",
+    #},
 ]
 
 # And you'll never believe it, but our efforts keep being thwarted by [villain]!
@@ -137,7 +137,7 @@ DATA_VILLAIN = [
         "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
-                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+                "msg": "The alien",
                 "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
             }
         ],
@@ -147,7 +147,7 @@ DATA_VILLAIN = [
         "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
-                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+                "msg": "The blood drains from the vampire king's face as he realizes he is about to perish. \"This sucks!\" he exclaims in an unrefined manner. Then, he turns to dust.",
                 "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
             }
         ],
@@ -197,7 +197,7 @@ DATA_VILLAIN = [
         "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
-                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+                "msg": "The time traveler curses as a device on her wrist beeps insistently. \"\" Then, she blinks out of this timeline.",
                 "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
             }
         ],
@@ -208,7 +208,7 @@ DATA_VILLAIN = [
         "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
-                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+                "msg": "The overachieving college student stumbles to the ground. \"But now I'll never finish my thesis,\" she sobs. The thought is enough to knock her unconscious.",
                 "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
             }
         ],
@@ -238,7 +238,7 @@ DATA_VILLAIN = [
         "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
-                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+                "msg": "A crack appears in the side of the cursed object. \"My evil plan is falling apart!\" it laments. Then, it shatters into a million pieces.",
                 "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
             }
         ],
@@ -745,7 +745,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "\"Wow!\" you think, \"I've never seen VILLAIN do a Matrix dodge before!\" You agree to a truce for now and are allowed to leave.",
+                        'msg': "Wow, you think, I've never seen VILLAIN do a Matrix dodge before! You agree to a truce for now and are allowed to leave.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -769,25 +769,29 @@ DATA_RIDE_EVENT_SECTIONS = [
             #        },
             #    ],
             #},
-            #{
-            #    'option_name': 'game of poker',
-            #    'events': [
-            #        # The events list is all the events that will be shown in order.
-            #        # Typically 4 messages long.
-            #        {
-            #            'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a game of poker!\"",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "A transition out.",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #    ],
-            #},
+            {
+                'option_name': 'game of poker',
+                'events': [
+                    # The events list is all the events that will be shown in order.
+                    # Typically 4 messages long.
+                    {
+                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a game of poker!\"",
+                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "The Chimera settles in at a casino table and peeks at your cards. You don't even have a pair, but your poker faces are so bad that your opponent folds, assuming you are secretly geniuses!",
+                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+                    },
+					{
+                        'msg': "Wow, you think, I've never seen VILLAIN knock over a tower of poker chips in anger before! You agree to a truce for now and are allowed to leave.",
+                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+                    },
+                ],
+            },
             #{
             #    'option_name': 'race',
             #    'events': [
@@ -853,29 +857,29 @@ DATA_RIDE_EVENT_SECTIONS = [
             #        },
             #    ],
             #},
-            #{
-            #    'option_name': 'lip sync contest',
-            #    'events': [
-            #        # The events list is all the events that will be shown in order.
-            #        # Typically 4 messages long.
-            #        {
-            #            'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a lip sync contest!\"",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "An ending.",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "A transition out.",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #    ],
-            #},
+            {
+                'option_name': 'lip sync contest',
+                'events': [
+                    # The events list is all the events that will be shown in order.
+                    # Typically 4 messages long.
+                    {
+                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a lip sync contest!\"",
+                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "Unfortunately, you should never underestimate the comedic potential of a Chimera perfectly moving its mouth and dancing to American pop classics!",
+                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "Wow, you think, I've never seen VILLAIN lose because they weren\'t funnier than the competition! You agree to a truce for now and are allowed to leave.",
+                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+                    },
+                ],
+            },
             #{
             #    'option_name': 'paintball',
             #    'events': [
@@ -899,28 +903,28 @@ DATA_RIDE_EVENT_SECTIONS = [
             #        },
             #    ],
             #},
-            #{
-            #    'option_name': 'arm wrestling',
-            #    'events': [
-            #        # The events list is all the events that will be shown in order.
-            #        # Typically 4 messages long.
-            #        {
-            #            'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "A challenge rings out in the air: \"Let's see if you can best me... at an arm wrestling contest!\"",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "An ending.",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "A transition out.",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #    ],
+            {
+                'option_name': 'arm wrestling',
+                'events': [
+                    # The events list is all the events that will be shown in order.
+                    # Typically 4 messages long.
+                    {
+                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at an arm wrestling contest!\"",
+                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "It quickly becomes clear, however, that both the Chimera and the challenger have arm issues that prevent a contest from happening.",
+                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+                    },
+                    {
+                        'msg': "Wow, you think, I've never seen VILLAIN become insecure over arm comparisons. You agree to a truce for now and are allowed to leave.",
+                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+                    },
+                ],
             #},
             #{
             #    'option_name': 'staring contest',
