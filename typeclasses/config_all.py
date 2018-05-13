@@ -1,6 +1,7 @@
 
 # Game config
 GAME_HELP_CATEGORY = "Mythari Park"
+GAME_FEEDBACK_LOG_FILE_PATH = "D:/logs/mythari_park_feedback.log"
 
 # Line Room
 LINE_ROOM_BETWEEN_CARS_DELAY = 30

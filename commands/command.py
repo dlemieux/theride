@@ -6,6 +6,7 @@ Commands describe the input the account can do to the game.
 """
 
 import random
+import datetime
 
 from evennia import CmdSet
 from evennia import Command as BaseCommand
@@ -260,6 +261,7 @@ class CmdTalkTo(Command):
         else:
             caller.msg("They have nothing to say.")
 
+
 class CmdAttack(Command):
     """
     Attack a target.
@@ -423,4 +425,53 @@ class CmdReadPass(Command):
         details += "|n" # Return to normal color
 
         caller.msg(details)
+
+
+class CmdFeedback(Command):
+    """
+    Give feedback about the game.
+
+    Usage:
+      feedback <your feedback>
+
+    Submit feedback to the game creators so they can make the game even better!
+    """    
+    key = "feedback"
+    help_category = GAME_HELP_CATEGORY
+    locks = "cmd:all()"
+
+    def func(self):
+        caller = self.caller
+
+        if not self.args:
+            caller.msg("feedback <your feedback>")
+            return
+
+        try:
+            self.save_feedback(caller, self.args)
+            caller.msg("Thank you %s for submitting your feedback!" % (caller.name))
+        except Exception:
+            caller.msg("Failed to submit feedback due to technical difficulties.")
+
+    def save_feedback(self, caller, msg):
+
+        if not msg:
+            return # Nothing to log
+
+        msg = msg.strip()
+        if len(msg) == 0:
+            return # Nothing to log
+
+        time_str = datetime.datetime.utcnow().strftime("%B %d, %Y %I:%M %p (UTC)")
+
+        location_name = 'None'
+        if caller.location:
+            location_name = caller.location.name
+
+        log_msg = "%s\t%s\t%s\t%s\n" % (time_str, caller.name, location_name, msg)
+        #caller.msg(log_msg)
+
+        file = open(GAME_FEEDBACK_LOG_FILE_PATH, 'a')
+        file.write(log_msg)
+        file.close()
 
