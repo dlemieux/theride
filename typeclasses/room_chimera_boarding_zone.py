@@ -109,7 +109,7 @@ class ChimeraBoardingZone(DefaultRoom):
             msg = ""
             msg += "|y>|n" + "\n"
             msg += "Ride Attendant: \"Welcome to the boarding zone!\n"
-            msg += "                Just get in your seats and the ride will begin shortly.\"\n"
+            msg += "                Please get in your seats and the ride will begin shortly.\"\n"
 
             self.msg_contents(msg)
             return delay

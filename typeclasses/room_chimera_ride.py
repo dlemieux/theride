@@ -280,9 +280,13 @@ class ChimeraRideRoom(DefaultRoom):
     # Returns the number of seconds to wait until the next event
     def send_message(self, index):
         if index == 0:
-
             return CHIMERA_RIDE_DEFAULT_EVENT_DELAY # Slight delay with no text for people to enter
         else: # Running the events
+
+            # Detect a server crash
+            if not hasattr(self, 'ride_role'):
+                self.msg_contents("Ride attendant: \"Sorry, we had to perform maintenance on the ride and need you to exit for now. We hope you get back in line to fully experience the wonders of the |rChimera|n!\"")
+                return -1 # Trigger the end
 
             # If the villain battle has started, then all rules are different
             if hasattr(self, 'ride_villain_battle') and self.ride_villain_battle:
