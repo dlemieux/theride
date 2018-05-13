@@ -1,5 +1,6 @@
 
 # Game config
+GAME_TITLE = "Mythari Park"
 GAME_HELP_CATEGORY = "Mythari Park"
 GAME_FEEDBACK_LOG_FILE_PATH = "D:/logs/mythari_park_feedback.log"
 
