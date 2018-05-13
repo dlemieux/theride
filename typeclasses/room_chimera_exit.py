@@ -35,6 +35,10 @@ class CmdReadAlbum(Command):
         caller.msg(msg)
 
     def build_photo_string(self, photo_info):
+        # Guard against None objects
+        if not photo_info:
+            return ""
+
         date_string = "|mDate:|n " + photo_info['created_date']
 
         rider_names = "|mRiders:|n " + ", ".join(photo_info['rider_list'])
@@ -203,14 +207,19 @@ class ChimeraExitRoom(DefaultRoom):
         if not self.db.players_arrived:
             return
 
+        # Might be None if server reloaded
+        if not self.cur_photo_info:
+            player.msg("\"Sorry, the photo didn't turn out due to a technical difficulty. Try again next time and it should be cleared up!\"")
+            return
+
         # Check if they have enough money
         if player.db.pass_points > PHOTO_PRICE:
             player.db.pass_points = player.db.pass_points - PHOTO_PRICE
             self.give_player_photo(player, self.cur_photo_info)
 
-            player.msg("Here you go! Use [|gread album|n] to check it out!")
+            player.msg("\"Here you go! Use [|gread album|n] to check it out!\"")
         else:
-            player.msg("You cannot afford the photo!")
+            player.msg("\"You cannot afford the photo!\"")
 
     def give_player_album(self, player):
         create_object(PhotoAlbum, key="Photo Album", location=player)
@@ -221,8 +230,8 @@ class ChimeraExitRoom(DefaultRoom):
 
         photoInfo = {
             'created_date': stringDate,
-            'rider_list': rider_list
-            }
+            'rider_list': rider_list,
+        }
 
         return photoInfo
 
