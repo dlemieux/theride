@@ -32,6 +32,8 @@ To the right, another park worker waves at you gleefully from a small booth.
 @desc bench = A sturdy bench full of people waiting for their friends to arrive.
 #
 @set bench/get_err_msg = It'd be rude to pick it up while others are still sitting.
+# Set display order
+@set bench/display_order = 3
 
 # Add a heavy rock to the entrance
 @create/drop rock : objects.Heavy
@@ -39,6 +41,8 @@ To the right, another park worker waves at you gleefully from a small booth.
 @desc rock = There's a giant theme park ahead of you, and you're here looking at a rock.
 #
 @set rock/consider_msg = It doesn't look good.
+# Set display order
+@set rock/display_order = 4
 
 # Create the Park Pass Sales Clerk in the Entrance
 @create/drop Clerk : objects.PassSalesClerk
@@ -48,6 +52,8 @@ To the right, another park worker waves at you gleefully from a small booth.
 @set Clerk/talk_to_msg = Hello! Welcome to the park! If you would like to [|gbuy a pass|n], then you just have to ask!
 #
 @set Clerk/consider_msg = You would be evenly matched.
+# Set display order
+@set Clerk/display_order = 2
 
 # Create the gatekeeper
 create/drop Gatekeeper : objects.ParkAttendant
@@ -55,6 +61,8 @@ create/drop Gatekeeper : objects.ParkAttendant
 @desc Gatekeeper = The Gatekeeper is doing a good job of keeping people out of the park if they haven't purchased their pass.
 #
 @set Gatekeeper/talk_to_msg = Hello! If you have already purchased your |mpass|n from the Clerk,\nthen enter the [|gwalkway|n] to get into the park!
+# Set display order
+@set Gatekeeper/display_order = 1
 
 # Create Walkway Room
 @dig Moving Walkway;ride-room-02 : room_walkway.WalkwayRoom
@@ -91,12 +99,16 @@ All around you are entrances to rides, shops, attractions, and more!
 @open exit park = ride-room-01
 #
 @desc exit park = Leave the park.
+# Set display order
+@set exit park/display_order  = 5
 
 
 # Create Construction Zone
 @dig Construction Zone = construction zone;zone,courtyard;c
 #
 @desc construction zone = This leads to an area closed off for construction. Maybe they are building a new attraction?
+# Set display order
+@set construction zone/display_order  = 3
 #
 construction zone
 #
@@ -113,6 +125,8 @@ A nearby sign is advertising the attraction that will be built here soon.
 @lock sign = get:false()
 #
 @desc sign = The sign reads: "Coming soon! The Temple of the Phoenix!"
+# Set display order
+@set fence/display_order = 1
 
 ## Create fence with hole to look through
 @create/drop fence : objects.ConstructionFence
@@ -120,6 +134,8 @@ A nearby sign is advertising the attraction that will be built here soon.
 @lock fence = get:false()
 #
 @desc fence = The fence looks sturdy, although there is a tiny hole that you might be able to look through.
+# Set display order
+@set fence/display_order = 2
 
 # Create the hole
 @create/drop hole in fence;hole
@@ -127,6 +143,8 @@ A nearby sign is advertising the attraction that will be built here soon.
 @lock hole in fence = "get:false();view:attr('look_fence')"
 #
 @desc hole in fence = You peek through the hole and see wonderous things!
+# Set display order
+@set hole in fence/display_order = 3
 
 
 # Return to the courtyard
@@ -137,6 +155,8 @@ courtyard
 @dig Lockers = lockers,courtyard;c
 #
 @desc lockers = This leads to the lockers.
+# Set display order
+@set lockers/display_order = 2
 #
 lockers
 #
@@ -161,6 +181,8 @@ courtyard
 @dig Gift Shop;ride-room-04 : room_chimera_gift_shop.ChimeraGiftShopRoom = gift shop;gift;shop;g,courtyard;c
 #
 @desc gift shop = This leads to the gift shop for the Chimera ride!
+# Set display order
+@set gift shop/display_order  = 4
 #
 gift shop
 #
@@ -184,6 +206,8 @@ courtyard
 @dig Chimera Entrance Room = chimera ride entryway;entrance;ride;chimera;entry;r,courtyard;c
 #
 @desc chimera ride entryway = This leads to the |rChimera|n ride! It's supposed to be AMAZING!
+# Set display order
+@set chimera ride entryway/display_order = 1
 #
 chimera ride entrance
 #
