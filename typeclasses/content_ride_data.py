@@ -35,12 +35,12 @@ DATA_ROLES = [
 # You came to the park at a really special time. [main problem]. And hey, we could really use your help! But it seems like we're having some trouble for some reason.
 DATA_MAIN_PROBLEMS = [
     {
-        "msg": "Our Chimera is sick!",
-        "end_line": "The Chimera coughed up a hairball and turned around to look at the group. Turns out there was nothing wrong with it the whole time!",
+        "msg": "The Chimera may be catching a cold!",
+        "end_line": "A veternarian enters carrying a person-sized syringe labeled ANTIBIOTICS. The Chimera eyes it suspiciously, but allows itself to be injected.",
     },
     {
-        "msg": "Our Chimera needs exercise!",
-        "end_line": "The Chimera was finally tuckered out and had been sufficiently exercised.",
+        "msg": "The Chimera needs exercise!",
+        "end_line": "The Chimera lets out the most exaggerated yawn you've ever heard, completely wiped from your adventures.",
     },
     {
         "msg": "Our Chimera is hungry!",
@@ -48,7 +48,7 @@ DATA_MAIN_PROBLEMS = [
     },
     {
         "msg": "Our Chimera wants to take a nap but it has insomnia!",
-        "end_line": "The Chimera seems to have become so tired from all the action that its actually starting to fall asleep. Normally this would be exactly what we want, but the passangers are still in a cart strapped to the Chimera|r's|n back.",
+        "end_line": "The Chimera seems to have become so tired from all the action that its actually starting to fall asleep. Normally this would be exactly what we want, but the passengers are still in a cart strapped to the Chimera|r's|n back.",
     },
     {
         "msg": "Our Chimera lost its memory!",
@@ -56,7 +56,7 @@ DATA_MAIN_PROBLEMS = [
     },
     {
         "msg": "A new ride is malfunctioning!",
-        "end_line": "The malfunctioning ride we've been trying to fix was now even more rickety! And as a cart ran along its tracks the final screws came loose and the cart went soaring into the air, untethered, full of screaming passengers!\nThe Chimera leaps up and wrapped the ride cart in its tail, landing softing and lowering the cart.",
+        "end_line": "The malfunctioning ride we've been trying to fix was now even more rickety! And as a cart ran along its tracks the final screws came loose and the cart went soaring into the air, untethered, full of screaming passengers!\nThe Chimera leaps up and wrapped the ride cart in its tail, landing softly and lowering the cart.",
     },
     {
         "msg": "Someone hacked the park security network!",
@@ -76,19 +76,19 @@ DATA_MAIN_PROBLEMS = [
     },
     {
         "msg": "Booby traps have been placed around the park!",
-        "end_line": "As it turns out, the booby traps placed around the park were just trial versions, and disabled themselves after the 30 minute free period! The park was saved!",
+        "end_line": "As it turns out, the booby traps placed around the park were just trial versions, and disabled themselves after the 30-minute free period! The park was saved!",
     },
     {
         "msg": "An artifact has been stolen!",
         "end_line": "The stolen artifact was still on everyone's mind, and they did some research into where a thief may try to sell the rare artifact. The group put in a WANT ad in the park newsletter and immediately caught the thief.",
     },
     {
-        "msg": "We've lost communication with a far off base!",
-        "end_line": "The Chimera leapt high into the air and was knocked around by high winds! When it landed, it hit an antenna on the communications building, which amazingly fixed the signal coming from the far off base! Communications were restored!",
+        "msg": "We've lost communication with a remote base!",
+        "end_line": "The Chimera leapt high into the air and was knocked around by high winds! When it landed, it hit an antenna on the communications building, which amazingly fixed the signal coming from the remote base! Communications were restored!",
     },
     {
         "msg": "We have to rescue a cat up a tree!",
-        "end_line": "Everyone remembers that the cat is still stuck in the tree and start calling out to the cat to reassure it that they'll resuce the cat soon. The cat yawns, and leaps down out of the tree and onto the ground unharmed, because obviously it was a cat and being in a tree isn't a problem.",
+        "end_line": "Everyone remembers that the cat is still stuck in the tree and start calling out to the cat to reassure it that they'll rescue the cat soon. The cat yawns, and leaps down out of the tree and onto the ground unharmed, because obviously it was a cat and being in a tree isn't a problem.",
     },
     {
         "msg": "We're scouting out a new territory!",
@@ -265,7 +265,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "The line attendant acts quickly, and pulls out a laser which burns holes through the pipes.",
+                        'msg': "The ride attendant acts quickly, and pulls out a laser which burns holes through the pipes.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -284,11 +284,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "The line attendant acts quickly, and pours lemon juice on the tongue of the monster! The group is spit out of its mouth with blazing speed!",
+                        'msg': "The ride attendant acts quickly, and pours lemon juice on the tongue of the monster! The group is spit out of its mouth with blazing speed!",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "The Chimera is finally able to get its barings and does a controlled landing.",
+                        'msg': "The Chimera is finally able to get its bearings and does a controlled landing.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -303,7 +303,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "The line attendant acts quickly, pulling out a giant pair of scissors. Like the ones you'd find at a ribbon cutting ceremony! These giant scissors are cutting away all the webs, but the giant spider is rushing towards the group fast!",
+                        'msg': "The ride attendant acts quickly, pulling out a giant pair of scissors. Like the ones you'd find at a ribbon cutting ceremony! These giant scissors are cutting away all the webs, but the giant spider is rushing towards the group fast!",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -318,15 +318,15 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Suddenly, the Chimera falls through the fake carpet it was walking on and falls into a deep pit! \"How could this happen!\" you ask. \"It's the oldest trick in the book!\"",
+                        'msg': "Suddenly, the Chimera falls through the fake carpet it was walking on and falls into a deep pit! How could this happen, you think. It's the oldest trick in the book!",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "The line attendant acts quickly, and straps a bunch of springs to the Chimera|r's|n feed. *BOOOOIIINNGGG* The Chimera pops right out of the pit!",
+                        'msg': "The ride attendant acts quickly, and throws down a large spring. *BOOOOIIINNGGG* The Chimera pops right out of the trap!",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "The group continues on the ride with the Chimera bouncing extra high with every step.",
+                        'msg': "On the way out, however, the spring got entangled in its tail. You continue onward with an extra bounce to each step.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -345,11 +345,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "The line attendant acts quickly, and screams for help at the top of their lungs!",
+                        'msg': "The ride attendant acts quickly, and screams for help at the top of their lungs!",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A group of construction workers show up and quickly excavate all the sand around you. Apparently, they are planning to make a new sand pit in the children's center of the park.\nAlas, you are free!",
+                        'msg': "A group of construction workers show up and quickly excavate all the sand around you. Apparently, they were planning to make a sand pit in the children's section anyways.\nFinally, you are free!",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -554,7 +554,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "The line attendant acts quickly, pulling on the bottom of the chain until you swing like a pendulum, right through the roof!",
+                        'msg': "The ride attendant acts quickly, pulling on the bottom of the chain until you swing like a pendulum, right through the roof!",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -745,7 +745,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "\"Wow!\" you think, \"I've never seen VILLAIN do a matrix dodge before!\" You agree to a truce for now and are allowed to leave.",
+                        'msg': "\"Wow!\" you think, \"I've never seen VILLAIN do a Matrix dodge before!\" You agree to a truce for now and are allowed to leave.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1043,7 +1043,7 @@ DATA_RIDE_EVENT_SECTIONS = [
             #        # The events list is all the events that will be shown in order.
             #        # Typically 4 messages long.
             #        {
-            #            'msg': "EManiacal laughter fills the air as VILLAIN appears before you.",
+            #            'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
             #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
             #        },
             #        {
@@ -1103,7 +1103,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "The Chimera finally makes its way through to the other side. Missing a few tufts of hair to the more passionate of fans.",
+                        'msg': "The Chimera finally makes its way through to the other side. Although, it is missing a few tufts of hair thanks to the some especially passionate fans.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1175,7 +1175,7 @@ DATA_RIDE_EVENT_SECTIONS = [
             #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
             #        },
             #        {
-            #            'msg': 'A parade spontaneously errupts around you, complete with musicians, ',
+            #            'msg': 'A parade spontaneously erupts around you, complete with musicians, ',
             #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
             #        },
             #        {
@@ -1198,11 +1198,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'The park security guard shakes their head disapprovingly, and starts writing you up a ticket for theft of park property.\n"No park equipment, or Chimera\'s, are permitted to leave the park!" the guard says. "You all are going away for a loooong time."',
+                        'msg': 'The park security guard shakes their head disapprovingly, and starts writing you up a ticket for theft of park property.\n"No park equipment, or Chimera|rs|n, are permitted to leave the park without permission!" the guard says. "I\'m putting you away for a loooong time."',
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "No, it's just an illusion! You focus your thoughts, and the world around you starts to dissolve.",
+                        'msg': "This can\'t be happening! No, really, it\'s just an illusion! You focus your thoughts, and the world around you starts to dissolve.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1217,15 +1217,15 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "The challenge is finally over. The Chimera slows down to a trot and walks among a group of mild mannered adults in the park's Main Street.",
+                        'msg': "The challenge is finally over. The Chimera slows down to a trot and weaves through a group of mild-mannered adults gathered in the courtyard.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'Suddenly, the Chimera stops moving, and everything around you freezes still! All time appears to has stopped as people are frozen mid-stride, and the murmoring of voices has completely disappeared.',
+                        'msg': 'Suddenly, the Chimera stops moving, and everything around you freezes still! All time appears to has stopped as people are frozen mid-stride, and the murmuring of voices has completely disappeared.',
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "You start to hear a song faintly being played over speakers, and then it fades in louder and louder as the group around you begins doing choreographed dancing and singing. You've been caught in the middle of a flash mob! And the Chimera knows the moves too!",
+                        'msg': "You hear a song faintly being played over speakers, and then it fades in louder and louder as the group around you begins doing choreographed dancing and singing. You've been caught in the middle of a flash mob! And the Chimera knows the moves too!",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1297,7 +1297,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "The challenge is finally over. The Chimera lumbers away and crashes into the side of a surburban home. ",
+                        'msg': "The challenge is finally over. The Chimera lumbers away and crashes into the side of a suburban home. ",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1315,7 +1315,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                 ],
             },
             {
-                'option_name': 'inside a pixellated video game',
+                'option_name': 'inside a pixelated video game',
                 'events': [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
@@ -1328,11 +1328,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "The only way out is to die on purpose. Spotting a tall cliff, the Chimera launches itself off into a free fall!",
+                        'msg': "The only way out is to lose your virtual lives! Spotting a tall cliff, the Chimera launches itself off into a free fall!",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "You feel the cells of your body de-pixellating as you return to the physical plane.",
+                        'msg': "You feel the cells of your body de-pixelating as you return to the physical plane.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1353,11 +1353,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'The Chimera dives to the left. Dives to the right. Pulls a rope-a-dope against the side and jukes around the tornado unscathed!',
+                        'msg': 'The Chimera dives to the left. Dives to the right. Pulls a rope-a-dope against the side of a barn and jukes around the tornado unscathed!',
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "Now that you are thoroughly nausiated, the Chimera saunters away proudly.",
+                        'msg': "Now that you are thoroughly nauseated, the Chimera saunters away proudly.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1406,15 +1406,15 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "But the worst is yet to come. The volcano on the park grounds starts to erupt boiling hot lava!",
+                        'msg': "But the worst is yet to come. The volcano on the park grounds is erupting boiling hot lava!",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "The Chimera thinks quickly, and diverts all the water cannons in the water park towards the mouth of the volcano. All you can hear is the sizzling of water as it evaporates.",
+                        'msg': "The Chimera thinks quickly, and diverts all the faucets in the bathrooms towards the mouth of the volcano. All you can hear is the sizzling of steam as water meets lava!",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "With the volcano quelched, you are able to continue on.",
+                        'msg': "With the volcano thoroughly doused, you are able to continue on.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1425,7 +1425,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "But the worst is yet to come. For at this very moment, the stock market was crashing to its lowest point in 30 years!",
+                        'msg': "But the worst is yet to come. For at this very moment, the stock market is crashing to its lowest point in 30 years!",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1433,7 +1433,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "A voice over the park's loudspeaker that they have finished their disaster preparedness test and people may resume their regularly scheduled activities. Whew! Disaster averted for another day!",
+                        'msg': "A voice over the park's loudspeaker clarifies that this was only a disaster preparedness test and people may resume what they were doing. Whew! Disaster averted for another day!",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1604,7 +1604,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "You escape past before the fire has a chance to return to its former size and strength.",
+                        'msg': "You escape before the fire has a chance to return to its former size and strength.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1682,7 +1682,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': 'The sky rips open as a rip in time appears. Objects from past and future centuries begin to spew out, coating the landscape as if it\'s the world\'s biggest yard sale.',
+                        'msg': 'The sky rips open as a rift in time appears. Objects from past and future centuries begin to spew out, turning the landscape into the world\'s biggest yard sale.',
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1799,7 +1799,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "Now it's surely time for a happy ending.",
+                        'msg': "It seems that your adventure is coming to an end.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1810,7 +1810,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Delighted that the danger is over, an old time photographer hobbles over and begins to set up their gear.",
+                        'msg': "Delighted that the danger is over, an old-time photographer hobbles over and sets up an antique camera.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1818,7 +1818,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "Now it's surely time for a happy ending.",
+                        'msg': "It seems that your adventure is coming to an end.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1837,7 +1837,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "Now it's surely time for a happy ending.",
+                        'msg': "It seems that your adventure is coming to an end.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1848,7 +1848,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Delighted that the danger is over, a documentary film crew rushes out to interview everyone about the events.",
+                        'msg': "Delighted that the danger is over, a documentary film crew rushes out to interview everyone involved.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1856,7 +1856,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "Now it's surely time for a happy ending.",
+                        'msg': "It seems that your adventure is coming to an end.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1875,7 +1875,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "Now it's surely time for a happy ending.",
+                        'msg': "It seems that your adventure is coming to an end.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1894,7 +1894,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "Now it's surely time for a happy ending.",
+                        'msg': "It seems that your adventure is coming to an end.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1913,7 +1913,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "Now it's surely time for a happy ending.",
+                        'msg': "It seems that your adventure is coming to an end.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1924,7 +1924,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "Delighted that the danger is over, an investigative reporter reveals themselves from beneath a blanket near your feet and switches their cell phone from audio recording mode to camera mode.",
+                        'msg': "Delighted that the danger is over, an investigative reporter leans out from behind a bush and presses a hidden button on their eyeglasses.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1932,7 +1932,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "Now it's surely time for a happy ending.",
+                        'msg': "It seems that your adventure is coming to an end.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1951,7 +1951,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "Now it's surely time for a happy ending.",
+                        'msg': "It seems that your adventure is coming to an end.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -1980,7 +1980,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "\"Muwahahahahahahah!\"",
+                        'msg': "\"MWA HA HA HA HA!\"",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
