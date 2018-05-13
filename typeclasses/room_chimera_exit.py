@@ -209,7 +209,7 @@ class ChimeraExitRoom(DefaultRoom):
 
         # Might be None if server reloaded
         if not self.cur_photo_info:
-            player.msg("\"Sorry, the photo didn't turn out due to a technical difficulty. Try again next time and it should be cleared up!\"")
+            player.msg("Photo Clerk: \"Sorry, the photo didn't turn out due to a technical difficulty. Try again next time and it should be cleared up!\"")
             return
 
         # Check if they have enough money
@@ -217,9 +217,9 @@ class ChimeraExitRoom(DefaultRoom):
             player.db.pass_points = player.db.pass_points - PHOTO_PRICE
             self.give_player_photo(player, self.cur_photo_info)
 
-            player.msg("\"Here you go! Use [|gread album|n] to check it out!\"")
+            player.msg("Photo Clerk: \"Here you go! Use [|gread album|n] to check it out!\"")
         else:
-            player.msg("\"You cannot afford the photo!\"")
+            player.msg("Photo Clerk: \"You cannot afford the photo!\"")
 
     def give_player_album(self, player):
         create_object(PhotoAlbum, key="Photo Album", location=player)
