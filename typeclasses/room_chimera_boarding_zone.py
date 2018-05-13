@@ -48,7 +48,7 @@ class ChimeraBoardingZone(DefaultRoom):
     task_messages = [
         "Ride Attendant: \"You may talk amongst yourselves while I verify the integrity of your restraints...\"",
         "Ride Attendant: \"Please entertain each other and pay no mind to the loose bolts I'll be fixing with this wrench...\"",
-        "Ride Attendant: \"Be careful as you move about the car. Any human remains...I mean belongings...will be removed shortly...\"",
+        "Ride Attendant: \"Be careful as you move about the cart. Any human remains...I mean belongings...will be removed shortly...\"",
         ]
 
     def at_object_creation(self):
