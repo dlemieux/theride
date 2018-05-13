@@ -230,6 +230,8 @@ The sign says: "Your safety is our primary concern! If you are prone to motion s
 @dig Waiting in Line : room_chimera_line.ChimeraLineRoom = join the line;line;join,leave the line;leave
 #
 @desc join the line = Go here to step in line for the |rChimera|n ride.
+# Set display order
+@set join the line/display_order = 1
 #
 join the line
 #

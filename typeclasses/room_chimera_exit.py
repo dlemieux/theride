@@ -113,6 +113,21 @@ class PhotoAlbum(DefaultObject):
         self.cmdset.add_default(CmdSetPhotoAlbum)
 
 
+class PhotoClerk(DefaultObject):
+    "Photo Clerk"
+    def at_object_creation(self):
+        "Called whenever a new object is created"
+        
+        # lock the object down by default
+        self.locks.add("get:false()")
+        
+        self.db.desc = "A clerk is stand"
+        self.db.talk_to_msg = "Describe buying a photo."
+
+        self.db.get_err_msg = "No touching!"
+        self.db.consider_msg = "You wouldn't stand a chance."
+
+
 class ChimeraExitRoom(DefaultRoom):
     cur_photo_info = None
     
