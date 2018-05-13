@@ -575,7 +575,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "The Chimera has anticipated this type of danger!",
+                        'msg': "The Chimera tries to show off by running even faster.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -588,139 +588,139 @@ DATA_RIDE_EVENT_SECTIONS = [
                     },
                 ],
             },
-            {
-                'option_name': 'follow a white rabbit',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "The Chimera has anticipated this type of danger!",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "With its magical powers, it summons ",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'wolves scent their way out',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "The Chimera has anticipated this type of danger!",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "With its magical powers, it summons ",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'red string of fate',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "The Chimera has anticipated this type of danger!",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "With its magical powers, it summons ",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'circus',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "The Chimera has anticipated this type of danger!",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "With its magical powers, it summons ",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'head towards a bright light',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "The Chimera has anticipated this type of danger!",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "With its magical powers, it summons ",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'sledding',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "The Chimera has anticipated this type of danger!",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "With its magical powers, it summons ",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'taken out with a trash heap',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "The Chimera has anticipated this type of danger!",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "With its magical powers, it summons ",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
+            #{
+            #    'option_name': 'follow a white rabbit',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "The Chimera has anticipated this type of danger!",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "With its magical powers, it summons ",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'wolves scent their way out',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "The Chimera has anticipated this type of danger!",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "With its magical powers, it summons ",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'red string of fate',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "The Chimera has anticipated this type of danger!",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "With its magical powers, it summons ",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'circus',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "The Chimera has anticipated this type of danger!",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "With its magical powers, it summons ",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'head towards a bright light',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "The Chimera has anticipated this type of danger!",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "With its magical powers, it summons ",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'sledding',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "The Chimera has anticipated this type of danger!",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "With its magical powers, it summons ",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'taken out with a trash heap',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "The Chimera has anticipated this type of danger!",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "With its magical powers, it summons ",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
         ],
     }, # Escape from trap
     {
@@ -750,339 +750,339 @@ DATA_RIDE_EVENT_SECTIONS = [
                     },
                 ],
             },
-            {
-                'option_name': 'triathlon',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a triathlon!\"",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'game of poker',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a game of poker!\"",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'race',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a foot race!\"",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'battle of wits',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a battle of wits!\"",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'dance battle',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a dance battle!\"",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'lip sync contest',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a lip sync contest!\"",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'paintball',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a paintball contest!\"",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'arm wrestling',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at an arm wrestling contest!\"",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'staring contest',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a staring contest!\"",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'riddle',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a contest of riddles!\"",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'strength contest',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a strength contest!\"",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'first to laugh contest',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a first to laugh contest!\"",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'archery',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at an archery contest!\"",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'writing contest',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "EManiacal laughter fills the air as VILLAIN appears before you.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a writing contest!\"",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'ugly sweater contest',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A challenge rings out in the air: \"Let's see if you can best me... at an ugly sweater contest!\"",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
+            #{
+            #    'option_name': 'triathlon',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a triathlon!\"",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'game of poker',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a game of poker!\"",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'race',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a foot race!\"",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'battle of wits',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a battle of wits!\"",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'dance battle',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a dance battle!\"",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'lip sync contest',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a lip sync contest!\"",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'paintball',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a paintball contest!\"",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'arm wrestling',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A challenge rings out in the air: \"Let's see if you can best me... at an arm wrestling contest!\"",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'staring contest',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a staring contest!\"",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'riddle',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a contest of riddles!\"",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'strength contest',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a strength contest!\"",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'first to laugh contest',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a first to laugh contest!\"",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'archery',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A challenge rings out in the air: \"Let's see if you can best me... at an archery contest!\"",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'writing contest',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "EManiacal laughter fills the air as VILLAIN appears before you.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A challenge rings out in the air: \"Let's see if you can best me... at a writing contest!\"",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'ugly sweater contest',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "Maniacal laughter fills the air as VILLAIN appears before you.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A challenge rings out in the air: \"Let's see if you can best me... at an ugly sweater contest!\"",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
         ],
     }, # Villain challenge
     {
@@ -1718,44 +1718,44 @@ DATA_RIDE_EVENT_SECTIONS = [
                     },
                 ],
             },
-            {
-                'option_name': 'solar eclipse',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "You can never trust VILLAIN! There's one more obstacle between you and them!",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            {
-                'option_name': 'drought',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "You can never trust VILLAIN! There's one more obstacle between you and them!",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "An ending.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "A transition out.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
+            #{
+            #    'option_name': 'solar eclipse',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "You can never trust VILLAIN! There's one more obstacle between you and them!",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
+            #{
+            #    'option_name': 'drought',
+            #    'events': [
+            #        # The events list is all the events that will be shown in order.
+            #        # Typically 4 messages long.
+            #        {
+            #            'msg': "You can never trust VILLAIN! There's one more obstacle between you and them!",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "An ending.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #        {
+            #            'msg': "A transition out.",
+            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            #        },
+            #    ],
+            #},
             {
                 'option_name': 'plants die from locusts',
                 'events': [
