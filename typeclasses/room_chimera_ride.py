@@ -151,7 +151,7 @@ class ChimeraRideRoom(DefaultRoom):
         super(ChimeraRideRoom, self).at_object_creation()
 
         desc = ""
-        desc += "You are now on the ride."
+        desc += "You are strapped into a cart on the back of a mythical creature!"
         self.db.desc = desc
 
         self.cmdset.add_default(CmdSetChimeraRide)

@@ -125,8 +125,8 @@ class PhotoClerk(DefaultObject):
         # lock the object down by default
         self.locks.add("get:false()")
         
-        self.db.desc = "A clerk is stand"
-        self.db.talk_to_msg = "Describe buying a photo."
+        self.db.desc = "The photo clerk has a degree in photojournalism and once was in the same room as a Pulitzer Prize winner. But you don't care about that. To you, this is only the person that sells you photos."
+        self.db.talk_to_msg = "Photo Clerk: \"Don't you want to remember this ride forever? For only |c%s|n points, you can! Just tell me you want to [|gbuy photo|n] and I'll get you one!\"" % (PHOTO_PRICE)
 
         self.db.get_err_msg = "No touching!"
         self.db.consider_msg = "You wouldn't stand a chance."
@@ -142,7 +142,7 @@ class ChimeraExitRoom(DefaultRoom):
         super(ChimeraExitRoom, self).at_object_creation()
 
         desc = ""
-        desc += "Thank you for riding!"
+        desc += "The exit zone looks very similar to the boarding zone: a dark, featureless room with a structure set up to support your ride cart. By the time you've stepped down from the platform, the |rChimera|n has already retreated back to its home. There, it will relax until the next time it wants to go for a ride."
 
         self.cmdset.add_default(CmdSetChimeraExit)
 

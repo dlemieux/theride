@@ -44,9 +44,11 @@ class WalkwayRoom(DefaultRoom):
 
 class WalkwayTv(DefaultObject):
     messages = (
-        "Several well known celebrities are making attempts at humor to get you in the mood for fun at the park!",
-        "The tv is showing a sweeping overhead video of the park.",
-        "There are pictures of smiling people, kids, adults, and even pets! Everyone loves this park!",
+        "Smiling people gather at the gate. \"Mythari Park is the world's best mythical creature safari and theme park!\"",
+        "A park trainer pours kibble into a trough as several three-headed dogs gather. \"Our staff works tirelessly around the clock to ensure our creatures are happy and healthy.\"",
+        "A group of school children looks on in awe as a dragon snorts out smoke rings. \"Our legendary animals have willingly chosen to find sanctuary here due to their love of humans!\"",
+        "A beast made of scales, fur and feathers is being fitted with a cart full of seats. \"Visit our most popular ride: the |rChimera|n! A shapeshifting adventure on a shapeshifting creature!\"",
+        "A screen full of flames. \"Coming Soon... The Temple of the Phoenix!\"",
         )
     
     def at_object_creation(self):

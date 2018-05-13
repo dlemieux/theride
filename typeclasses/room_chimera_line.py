@@ -119,9 +119,13 @@ class CmdBuyHotDog(Command):
         location = caller.location
 
         purchase_message = [
-            "You eat the hot dog and exclaim loudly about how that was the best hot dog you've ever had!",
-            "You smell the freshly cooked hot dog and your mouth immediately starts to water. Within seconds it's gone and you are thoroughly content.",
-            "The vendor hands over the hot dog and you drop it on the floor. 5 second rule!",
+            "Inside the bun is a corn dog. You gobble it up before anyone notes the delicious mistake.",
+            "This bratwurst is coated in onions and cream cheese! You savor every bite.",
+            "A frankfurter topped with sauerkraut, potato salad and mustard. It's just as flavorful as it sounds.",
+            "The bun of this hot dog is made of bagel dough, with a thin layer of mustard coating the inside. You devour it while it's still warm.",
+            "A layer of cheddar cheese tops off this chili dog. You have to lick all your fingers clean afterwards, but you don't really mind.",
+            "Sometimes a classic hot dog is best. Nothing on this one but relish and mustard. Still tastes amazing.",
+            "The hottest hot dog you've ever eaten: raw jalapenos, sriracha, and buffalo sauce. Your mouth burns, your eyes water. And it was all worth it.",
         ]
 
         # Check if the user has enough money
@@ -165,7 +169,7 @@ class CmdBoardCar(Command):
 
         # If room state is 0, then we are still waiting for a car to arrive
         if room_state == 0:
-            caller.msg("You cannot board because a car has not arrived on the track yet.")
+            caller.msg("You have to wait your turn. When your name is called, then you can [|gboard|n]!")
         elif room_state == 1:
             if caller.db.chimera_line_index <= max_index_allowed:
                 # Ready to board!

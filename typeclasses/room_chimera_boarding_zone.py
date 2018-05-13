@@ -55,7 +55,9 @@ class ChimeraBoardingZone(DefaultRoom):
         super(ChimeraBoardingZone, self).at_object_creation()
 
         desc = ""
-        desc += "You are in a dark room that has the ride car in the middle. The ride will begin shortly."
+        desc += "You enter a dark room. You can't quite make out how large it is, or how many exits it has. In front of you is a ride cart, the kind you might see on a wooden roller coaster. Except this cart isn't attached to a track; it's balanced on a structure above a dark tunnel.\n\n"
+        desc += "A ride attendant appears and gestures for you to sit in the cart and pull down the shoulder harness."
+
         self.db.desc = desc
 
         #self.cmdset.add_default(CmdSetBoardingZone)

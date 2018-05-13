@@ -218,10 +218,7 @@ class LineLengthSign(DefaultObject):
         line_room = self.search("Waiting in Line", global_search=True) # Room 213
         val = line_room.get_line_length()
 
-        if val == 1:
-            return "The display reads: \"There is |c1|n person in line for the |rChimera|n.\""
-        else:
-            return "The display reads: \"There are |c%s|n people in line for the |rChimera|n.\"" % (val)
+        return "The display reads: \"People ahead of you in line: |c%s|n\"" % (val)
 
 
 class ParkPass(DefaultObject):

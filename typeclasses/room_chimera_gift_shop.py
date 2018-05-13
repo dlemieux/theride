@@ -12,8 +12,8 @@ from typeclasses.config_all import *
 GIFT_SHOP_ITEMS = [
     {
         'key': 'small',
-        'shelf command name': 'left shelf',
-        'shelf description': '|cSmall|n gifts for your friends! Only |c%s|n points!',
+        'shelf command name': 'bottom shelf',
+        'shelf description': 'These |csmall|n gifts only cost |c%s|n points!',
         'item price': 10,
         'items': [
             {
@@ -81,7 +81,7 @@ GIFT_SHOP_ITEMS = [
     {
         'key': 'medium',
         'shelf command name': 'middle shelf',
-        'shelf description': 'These |cmedium|n items are fantastic merchandise for |c%s|n points!',
+        'shelf description': '|cMedium|n-sized merchandise for |c%s|n points!',
         'item price': 20,
         'items': [
             {
@@ -129,7 +129,7 @@ GIFT_SHOP_ITEMS = [
     {
         'key': 'large',
         'shelf command name': 'top shelf',
-        'shelf description': 'Really nice |clarge|n items for |c%s|n points!',
+        'shelf description': '|cLarge|n items can be yours for |c%s|n points!',
         'item price': 50,
         'items': [
             {
@@ -156,8 +156,8 @@ GIFT_SHOP_ITEMS = [
     },
     {
         'key': 'legendary',
-        'shelf command name': 'behind the counter',
-        'shelf description': 'Purchase these |clegendary|n, one of a kind items for |c%s|n points!',
+        'shelf command name': 'glass display case',
+        'shelf description': 'This |clegendary|n item costs |c%s|n points!',
         'item price': 100,
         'items': [
             {
@@ -256,8 +256,8 @@ class CmdShelfSmall(Command):
     """
     Look at the small item shelf.
     """
-    key = "left shelf"
-    aliases = ["left", "small", "small shelf"]
+    key = "bottom shelf"
+    aliases = ["bottom", "small", "small shelf"]
     help_category = "The Ride"
     locks = "cmd:all()"
 
@@ -304,8 +304,8 @@ class CmdShelfLegendary(Command):
     """
     Look at the legendary item shelf.
     """
-    key = "behind the counter"
-    aliases = ["behind", 'counter', 'legendary', 'legend', 'legendary shelf']
+    key = "glass display case"
+    aliases = ["glass", 'display case', 'legendary', 'legend', 'legendary shelf']
     help_category = "The Ride"
     locks = "cmd:all()"
 
@@ -340,7 +340,7 @@ class ChimeraGiftShopRoom(DefaultRoom):
     def return_appearance(self, looker, **kwargs):
         msg = ""
 
-        msg += "You are standing in a gift shop with shelves of merchandise lining every wall.\n"
+        msg += "The famous |rChimera|n Ride Gift Shop. It used to be a Shoppe, at least until pixies ate the last two letters of the sign and no one has bothered to repair it yet. This is where you can cash in your park points!\n"
 
         # For each shelf
         for shelf_info in GIFT_SHOP_ITEMS:

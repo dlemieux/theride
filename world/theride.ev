@@ -15,12 +15,10 @@
 #
 ride-entrance-01
 #
-@desc ride-room-01 =
-Excitement builds in your heart as you look up at the massive gate to the park.
-The wrought iron bars stretch up so high they almost touch the clouds.
-Sculptures of mystical beasts are interwoven into gate as well. It would take hours to identify them all.
-Looking miniscule by comparison, a park worker stands directly in front of the gate and stares at you.
-To the right, another park worker waves at you gleefully from a small booth.
+@desc Entrance =
+Excitement builds in your heart as you look up at the massive gate to Mythari Park. The wrought iron bars stretch up so high they almost touch the clouds. Sculptures of mystical beasts are interwoven into the gate as well. It would take hours to identify them all. 
+
+Looking miniscule by comparison, a park worker stands directly in front of the gate and stares at you. To the right, another park worker waves at you gleefully from a small booth.
 #
 @desc ride-exit-01 = The final exit to The Ride.
 
@@ -47,7 +45,7 @@ To the right, another park worker waves at you gleefully from a small booth.
 # Create the Park Pass Sales Clerk in the Entrance
 @create/drop Clerk : objects.PassSalesClerk
 #
-@desc Clerk = The pass sales clerk for the park. This is where you can [|gbuy a pass|n]!
+@desc Clerk = This clerk is responsible for selling park passes. You should try to [|gbuy a pass|n] from them.
 #
 @set Clerk/talk_to_msg = Hello! Welcome to the park! If you would like to [|gbuy a pass|n], then you just have to ask!
 #
@@ -58,9 +56,9 @@ To the right, another park worker waves at you gleefully from a small booth.
 # Create the gatekeeper
 create/drop Gatekeeper : objects.ParkAttendant
 #
-@desc Gatekeeper = The Gatekeeper is doing a good job of keeping people out of the park if they haven't purchased their pass.
+@desc Gatekeeper = The gatekeeper is guarding a much smaller gate that's cut into the larger one. It takes a lot less time to open one that's human-sized! Their sole job is to keep out people who haven't bought a pass.
 #
-@set Gatekeeper/talk_to_msg = Hello! If you have already purchased your |mpass|n from the Clerk,\nthen enter the [|gwalkway|n] to get into the park!
+@set Gatekeeper/talk_to_msg = Hello! If you have already purchased your |mpass|n from the Clerk, then enter the [|gwalkway|n] to get into the park!
 # Set display order
 @set Gatekeeper/display_order = 1
 
@@ -73,11 +71,10 @@ create/drop Gatekeeper : objects.ParkAttendant
 #
 @tel ride-room-02
 #
-@desc ride-room-02 =
-You are standing on a moving walkway that carries you past
-several televisions mounted high on the walls.
-You can already start to sense the faint smell of popcorn up ahead,
-and the sounds of people having tons of fun.
+@desc Moving Walkway =
+You find yourself standing on a moving walkway in a tunnel-like room, slowly ascending towards a brightly lit doorway. The air faintly smells like popcorn.
+
+Lining the walls are many television screens flashing different segments on loop. You can look at each tv as you drift by. When you're ready to move on, you can head to the courtyard.
 
 # Create a special tv object
 @create/drop tv : room_walkway.WalkwayTv
@@ -92,8 +89,9 @@ and the sounds of people having tons of fun.
 courtyard
 # Set Courtyard description
 @desc Courtyard =
-You arrive in a massive circular courtyard, filled with possibilities!
-All around you are entrances to rides, shops, attractions, and more!
+The central courtyard connects to all other areas of Mythari Park. A circle of paved bricks is surrounded by trees. Orchestral music is pumped out through hidden speakers. Wooden handmade signs label the dirt paths which extend outward from where you stand.
+
+Despite the promotional material, most of the park is still under construction. It's still very popular, however, due to the |rChimera|n ride!
 
 # Create an exit out of the park
 @open exit park = ride-room-01
@@ -142,7 +140,7 @@ A nearby sign is advertising the attraction that will be built here soon.
 #
 @lock hole in fence = "get:false();view:attr('look_fence')"
 #
-@desc hole in fence = You peek through the hole and see wonderous things!
+@desc hole in fence = Beyond the stacked concrete pylons and mounds of dirt, there's a building with an open doorway. If you squint, you can make out moving shapes in the darkness of the room's interior. Occasionally, a flicker of flame lights the room, and you can see several construction workers conversing with a large creature just out of your sight.
 # Set display order
 @set hole in fence/display_order = 3
 
@@ -160,11 +158,7 @@ courtyard
 #
 lockers
 #
-@desc Lockers =
-The room is filled with THOUSANDS of lockers.
-Big ones, small ones, and everything in between.
-A sign on the wall says that anyone with a park pass can rent a locker
-to store their belongings so they don't lose items on the rides.
+@desc Lockers = You enter the Labyrinth of Lockers, a maze of identical, locked cabinets that can hold all your merchandise! You could start wandering around within the maze, but each path looks identical. Best to stay near the entrance unless you know where you're going.
 #
 @desc courtyard = Return to the courtyard.
 
@@ -203,7 +197,7 @@ There are stuffed animals, hats, sunglasses, candy, and more!
 courtyard
 
 # Create Ride Entrance
-@dig Chimera Entrance Room = chimera ride entryway;entrance;ride;chimera;entry;r;entryway,courtyard;c
+@dig Chimera Ride Entryway = chimera ride entryway;entrance;ride;chimera;entry;r;entryway,courtyard;c
 #
 @desc chimera ride entryway = This leads to the |rChimera|n ride! It's supposed to be AMAZING!
 # Set display order
@@ -211,17 +205,17 @@ courtyard
 #
 chimera ride entrance
 #
-@desc Chimera Entrance Room =
-You have entered the area for the |rChimera|n ride.
-Many people are standing nearby in a line, which you are not in.
+@desc Chimera Ride Entryway =
+You are in front of the line for the |rChimera|n! A holographic display forms an archway above the start of the queue. It shifts every few minutes, forming different potential scenarios you might experience on the ride. It's amazing that these friendly |rChimeras|n are willing to be ridden by thrill-seeking guests!
+
+If you dare to enter, you should get in line. Looking at the nearby safety information or the wait time display could also be useful.
 #
 @desc courtyard = Return to the courtyard.
 
 # Sign with safety info
 @create/drop safety sign : objects.Heavy
 #
-@desc safety sign =
-The sign says: "Your safety is our primary concern! If you are prone to motion sickness or dislike unpredictable twists and turns, ride at your own risk!"
+@desc safety sign = The sign reads: "Warning! This is an action-packed thrill ride where you will be strapped to the back of a mythical monster! If you suffer from any of these conditions, ride at your own risk: Cryptozoophobia, Acrophobia, Trypophobia, Enochlophobia, Apiphobia, Pyrophobia, Phasmophobia, Chronophobia, Puberty, Self-Consciousness, Motion Sickness, Dizziness... for a full list of all possible concerning conditions, see Guest Services."
 
 # Digital counter for how many people in line
 @create/drop line length display : objects.LineLengthSign
