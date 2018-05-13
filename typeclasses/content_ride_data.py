@@ -56,7 +56,7 @@ DATA_MAIN_PROBLEMS = [
     },
     {
         "msg": "A new ride is malfunctioning!",
-        "end_line": "The malfunctiong ride we've been trying to fix was now even more rickety! And as a cart ran along its tracks the final screws came loose and the cart went soaring into the air, untethered, full of screaming passengers!\nThe Chimera leaps up and wrapped the ride cart in its tail, landing softing and lowering the cart.",
+        "end_line": "The malfunctioning ride we've been trying to fix was now even more rickety! And as a cart ran along its tracks the final screws came loose and the cart went soaring into the air, untethered, full of screaming passengers!\nThe Chimera leaps up and wrapped the ride cart in its tail, landing softing and lowering the cart.",
     },
     {
         "msg": "Someone hacked the park security network!",
@@ -1217,7 +1217,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "The challenge is finally over. The Chimera slows down to a trot and walks among a group of mild manered adults in the park's Main Street.",
+                        'msg': "The challenge is finally over. The Chimera slows down to a trot and walks among a group of mild mannered adults in the park's Main Street.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
@@ -1577,7 +1577,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                     # The events list is all the events that will be shown in order.
                     # Typically 4 messages long.
                     {
-                        'msg': "But the worst is yet to come. A meteriorite has crashed into the wave pool in the park, and caused a massive tidal wave to thrash over the park!",
+                        'msg': "But the worst is yet to come. A meteorite has crashed into the wave pool in the park, and caused a massive tidal wave to thrash over the park!",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {

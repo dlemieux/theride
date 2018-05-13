@@ -8,6 +8,7 @@ for allowing Characters to traverse the exit to its destination.
 """
 from evennia import DefaultExit
 
+from typeclasses.config_all import *
 
 class Exit(DefaultExit):
     """
@@ -48,7 +49,7 @@ class ParkEntranceExit(DefaultExit):
 
     def at_traverse(self, traveller, target_loc):
         traveller.msg("You proudly flass your park pass for the Gatekeeper.")
-        traveller.msg("The Gatekeeper acknowledges with a nod, and let's you pass through.")
+        traveller.msg("The Gatekeeper acknowledges with a nod, and lets you pass through.")
 
         super(ParkEntranceExit, self).at_traverse(traveller, target_loc)
 

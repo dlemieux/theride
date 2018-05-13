@@ -349,7 +349,7 @@ class CmdHelpNewbie(Command):
 
         string = ""
         string += "\n"
-        string += "Welcome to The Ride: THE GAME!\n"
+        string += "Welcome to Mythari Park!\n"
         string += "You're going to do great! Have fun looking around the theme park and riding the |rChimera|n!\n"
         string += "\n"
         string += "Commands:\n"

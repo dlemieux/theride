@@ -127,6 +127,9 @@ class PhotoClerk(DefaultObject):
         self.db.get_err_msg = "No touching!"
         self.db.consider_msg = "You wouldn't stand a chance."
 
+    def at_before_move(self, destination, **kwargs):
+        self.delete() # Doesn't need to live if the room is changed
+
 
 class ChimeraExitRoom(DefaultRoom):
     cur_photo_info = None
@@ -148,6 +151,9 @@ class ChimeraExitRoom(DefaultRoom):
 
         self.db.desc = desc
         self.db.players_arrived = False
+
+        # Create the photo clerk in the room
+        create_object(PhotoClerk, key="Photo Clerk", aliases=["clerk"], location=self)
 
         self.db.interval = 10 # Every X seconds it updates the room
         TICKER_HANDLER.add(interval=self.db.interval, callback=self.update_loop, idstring="the_ride")

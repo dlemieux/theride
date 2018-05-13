@@ -273,37 +273,47 @@ class CmdBuyPass(Command):
         # Option 2 to allow the use of yield statements
         caller = self.caller
         if caller.db.has_season_pass:
-            caller.msg("Pass Sales Clerk: Oh hey! How's that pass working out for ya?")
-            caller.msg("                  You won't ever need another one. That's a lifetime guarantee!")
-            caller.msg("                  (You can use [|gi|n] to view your inventory)")
+            msg = ""
+            msg += "Pass Sales Clerk: Oh hey! How's that pass working out for ya?\n"
+            msg += "                  You won't ever need another one. That's a lifetime guarantee!\n"
+            msg += "                  (You can use [|gi|n] to view your inventory)"
+
+            caller.msg(msg)
         else:
             # give the player a pass
-            caller.msg("Clerk: Alright! We'll have you all set up in a jiffy!")
-            caller.msg("       The pass itself costs |r$9999|n. I'm sure you have that right?")
-            caller.msg("       Just a few details to collect first...")
-            caller.msg("       *The clerk rummages around*")
+            msg = ""
+            msg += "The Clerk begins to bustle around, glad to have a purpose.\n"
+            msg += "Clerk: \"Alright! We'll have you all set up in a jiffy!\n"
+            msg += "       The pass itself costs |r$9999|n. I'm sure you have that right?\n"
+            msg += "       Just a few details to collect first...\"\n"
+            msg += "       *The clerk rummages around*"
+
+            caller.msg(msg)
             
             yield 3
             
 
-            homeLocation = yield("       Okay, question one. What town are you from?")
+            homeLocation = yield("       \"Okay, question one. What town are you from?\"")
 
             # Loop until the give a valid answer
             while len(homeLocation.strip()) == 0:
-                homeLocation = yield("       Pardon? What town are you from?")
+                homeLocation = yield("       \"Pardon? What town are you from?\"")
             
             # Trim the name of the home location in case it is too long
             maxHomeLength = 40
             if len(homeLocation) > maxHomeLength:
                 homeLocation = homeLocation[:maxHomeLength]
 
-            caller.msg("       %s eh... wait... what did you say?" % (homeLocation))
-            caller.msg("       Are you THE |g%s from %s|n! I'm your biggest fan!" % (caller.name, homeLocation))
-            caller.msg("       Please take this pass for free and enjoy the park! It's an honor!")
-            caller.msg("       *The Clerk shouts into the crowd*")
-            caller.msg("       Hey everyone! Make way for |g%s from %s|n!" % (caller.name, homeLocation))
-            caller.msg("       Here you go! *hands you a pass*")
-            caller.msg("       (You can use [|gi|n] to view your inventory)")
+            msg = ""
+            msg += "       \"%s eh... wait... what did you say?\n" % (homeLocation)
+            msg += "       Are you THE |g%s from %s|n? I'm your biggest fan!\n" % (caller.name, homeLocation)
+            msg += "       Please take this pass for free and enjoy the park! It's an honor!\"\n"
+            msg += "       *The Clerk shouts into the crowd*\n"
+            msg += "       \"Hey everyone! Make way for |g%s from %s|n!\"\n" % (caller.name, homeLocation)
+            msg += "       \"Here you go!\" *hands you a pass*\n"
+            msg += "       (You can use [|gi|n] to view your inventory)"
+
+            caller.msg(msg)
 
             # Set the properties for the pass
             caller.db.has_season_pass = True # maybe store the date they became a pass holder
