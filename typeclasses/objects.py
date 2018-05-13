@@ -215,7 +215,7 @@ class LineLengthSign(DefaultObject):
 
     def return_appearance(self, looker, **kwargs):
         # Get the real value from the other room
-        line_room = self.search("Waiting in Line", global_search=True) # Room 213
+        line_room = self.search(MAP_LINE_ROOM_OBJECT_NAME, global_search=True) # Room 213
         val = line_room.get_line_length()
 
         return "The display reads: \"People ahead of you in line: |c%s|n\"" % (val)

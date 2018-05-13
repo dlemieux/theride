@@ -4,6 +4,9 @@ GAME_TITLE = "Mythari Park"
 GAME_HELP_CATEGORY = "Mythari Park"
 GAME_FEEDBACK_LOG_FILE_PATH = "D:/logs/mythari_park_feedback.log"
 
+MAP_LINE_ROOM_OBJECT_NAME = "Waiting in Line"
+MAP_GIFT_SHOP_OBJECT_NAME = "Chimera Gift Shop"
+
 # Line Room
 LINE_ROOM_BETWEEN_CARS_DELAY = 30
 LINE_ROOM_BOARD_TIME_DELAY = 15
@@ -23,6 +26,5 @@ CHIMERA_RIDE_ADD_EVENT_NAME_PREFIX = False
 # Chimera Exit Room
 PHOTO_PRICE = 2
 PHOTO_ALBUM_MAX_NAME_LENGTH = 100
-
 
 
