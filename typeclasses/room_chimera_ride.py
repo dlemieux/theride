@@ -226,7 +226,7 @@ class ChimeraRideRoom(DefaultRoom):
 
         self.ride_end_events = []
         self.ride_end_events.append({
-            'msg': "The line attendant appears before you. You did it! We no longer have to worry about VILLAIN, and it's all thanks to you! And I think we know how to solve our problem from earlier.",
+            'msg': "The ride attendant appears once more.\nRide Attendant: \"You did it! We no longer have to worry about VILLAIN, and it\'s all thanks to you! And I think we've even solved our problem from earlier.\"",
             'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
         })
 
@@ -236,7 +236,7 @@ class ChimeraRideRoom(DefaultRoom):
         })
 
         self.ride_end_events.append({
-            'msg': "Everything is finally as it should be again. The Chimera brings you to the ride platform and grunts in thanks.\nThe line attendant beams with pride. \"Who knew a group of ROLE would save the day! See you next time.\" She waves happily as the shoulder harnesses lift and you are free to exit the ride.",
+            'msg': "Everything is finally as it should be. The Chimera lowers itself on the exit platform and grunts in appreciation.\nRide Attendant: \"Who knew a group of ROLE would save the day! Join us again some time.\"\nThey wave happily as the shoulder harnesses lift and you are finally free to exit.",
             'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
         })
 
