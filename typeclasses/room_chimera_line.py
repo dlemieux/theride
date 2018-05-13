@@ -16,7 +16,7 @@ class CmdPlayGame(Command):
     """
     key = "play game"
     locks = "cmd:all()"
-    help_category = "The Ride"
+    help_category = GAME_HELP_CATEGORY
 
     def func(self):
         caller = self.caller
@@ -47,7 +47,7 @@ class CmdGuessNumber(Command):
     """
     key = "guess"
     locks = "cmd:all()"
-    help_category = "The Ride"
+    help_category = GAME_HELP_CATEGORY
 
     def func(self):
         caller = self.caller
@@ -94,7 +94,7 @@ class CmdLineLength(Command):
     key = "line length"
     aliases = ["line", "length", "line order", "order"]
     locks = "cmd:all()"
-    help_category = "The Ride"
+    help_category = GAME_HELP_CATEGORY
 
     def func(self):
         caller = self.caller
@@ -110,7 +110,7 @@ class CmdBuyHotDog(Command):
     key = "buy hot dog"
     aliases = ["buy dog","buy hot"]
     locks = "cmd:all()"
-    help_category = "The Ride"
+    help_category = GAME_HELP_CATEGORY
 
     def func(self):
         hot_dog_price = HOT_DOG_PRICE
@@ -152,7 +152,7 @@ class CmdBoardCar(Command):
     key = "board"
     aliases = ["b"]
     locks = "cmd:all()"
-    help_category = "The Ride"
+    help_category = GAME_HELP_CATEGORY
 
     def func(self):
         """Implements the command."""

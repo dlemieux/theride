@@ -1,4 +1,7 @@
 
+# Game config
+GAME_HELP_CATEGORY = "Mythari Park"
+
 # Line Room
 LINE_ROOM_BETWEEN_CARS_DELAY = 30
 LINE_ROOM_BOARD_TIME_DELAY = 15

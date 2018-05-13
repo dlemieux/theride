@@ -201,7 +201,7 @@ class CmdConsider(Command):
     key = "consider"
     aliases = ["cons"]
     locks = "cmd:all()"
-    help_category = "The Ride"
+    help_category = "General"
     arg_regex = r"\s|$"
 
     def func(self):
@@ -236,7 +236,7 @@ class CmdTalkTo(Command):
     key = "talk to"
     aliases = ["talk"]
     locks = "cmd:all()"
-    help_category = "The Ride"
+    help_category = "General"
     arg_regex = r"\s|$"
 
     def func(self):
@@ -270,63 +270,30 @@ class CmdAttack(Command):
     Attack a target.
     """    
     key = "attack"
-    help_category = "The Ride"
+    aliases = ["cast", "kill"]
+    help_category = "General"
     locks = "cmd:all()"
 
     def func(self):
         caller = self.caller
+        cmdstring = self.cmdstring
 
         if not self.args:
-            caller.msg("attack <target>")
+            if cmdstring == 'attack':
+                caller.msg("attack <target>")
+            elif cmdstring == 'cast':
+                caller.msg("cast <spell> at <target>")
+            elif cmdstring == 'kill':
+                caller.msg("kill <target>")
             return
 
-        caller.msg("Security Guard: \"Excuuuuse me! We'll have none of that!\"")
-
-
-class CmdCastMagic(Command):
-    """
-    Cast a magic spell.
-
-    Usage:
-      cast <spell> at <target>
-
-    Cast a magic spell at a target.
-    """    
-    key = "cast"
-    help_category = "The Ride"
-    locks = "cmd:all()"
-
-    def func(self):
-        caller = self.caller
-
-        if not self.args:
-            caller.msg("cast <spell> at <target>")
-            return
-
-        caller.msg("*The security guard taps you on the shoulder*\nSecurity Guard: \"And just what do you think you're doing?\"")
-
-
-class CmdKill(Command):
-    """
-    Try to kill a target.
-
-    Usage:
-      kill <target>
-
-    Try to kill a target.
-    """    
-    key = "kill"
-    help_category = "The Ride"
-    locks = "cmd:all()"
-
-    def func(self):
-        caller = self.caller
-
-        if not self.args:
-            caller.msg("kill <target>")
-            return
-
-        caller.msg("Security Guard: \"Did you really think you'd get away with that?\"")
+        # They used the command
+        if cmdstring == 'attack':
+            caller.msg("Security Guard: \"Excuuuuse me! We'll have none of that!\"")
+        elif cmdstring == 'cast':
+            caller.msg("*The security guard taps you on the shoulder*\nSecurity Guard: \"And just what do you think you're doing?\"")
+        elif cmdstring == 'kill':
+            caller.msg("Security Guard: \"Did you really think you'd get away with that?\"")
 
 
 class CmdHelpNewbie(Command):
@@ -341,7 +308,7 @@ class CmdHelpNewbie(Command):
     key = "help newbie"
     aliases = ["help new", "newbie"]
     #priority = 1
-    help_category = "The Ride"
+    help_category = GAME_HELP_CATEGORY
     locks = "cmd:all()"
 
     def func(self):
@@ -379,7 +346,7 @@ class CmdExits(Command):
     List the exits from this location.
     """    
     key = "exits"
-    help_category = "The Ride"
+    help_category = "General"
     locks = "cmd:all()"
 
     def func(self):
@@ -422,7 +389,7 @@ class CmdReadPass(Command):
     Displays the details associated with your park pass.
     """    
     key = "read pass"
-    help_category = "The Ride"
+    help_category = GAME_HELP_CATEGORY
     locks = "cmd:all()"
 
     def func(self):

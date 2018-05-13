@@ -192,7 +192,7 @@ class CmdBuyGiftShopObject(Command):
     """
     key = "buy"
     aliases = ["purchase"]
-    help_category = "The Ride"
+    help_category = GAME_HELP_CATEGORY
     locks = "cmd:all()"
 
     def func(self):
@@ -258,7 +258,7 @@ class CmdShelfSmall(Command):
     """
     key = "bottom shelf"
     aliases = ["bottom", "small", "small shelf"]
-    help_category = "The Ride"
+    help_category = GAME_HELP_CATEGORY
     locks = "cmd:all()"
 
     def func(self):
@@ -274,7 +274,7 @@ class CmdShelfMedium(Command):
     """
     key = "middle shelf"
     aliases = ["middle", 'medium', 'medium shelf']
-    help_category = "The Ride"
+    help_category = GAME_HELP_CATEGORY
     locks = "cmd:all()"
 
     def func(self):
@@ -290,7 +290,7 @@ class CmdShelfLarge(Command):
     """
     key = "top shelf"
     aliases = ["top", 'large', 'large shelf']
-    help_category = "The Ride"
+    help_category = GAME_HELP_CATEGORY
     locks = "cmd:all()"
 
     def func(self):
@@ -306,7 +306,7 @@ class CmdShelfLegendary(Command):
     """
     key = "glass display case"
     aliases = ["glass", 'display case', 'legendary', 'legend', 'legendary shelf']
-    help_category = "The Ride"
+    help_category = GAME_HELP_CATEGORY
     locks = "cmd:all()"
 
     def func(self):

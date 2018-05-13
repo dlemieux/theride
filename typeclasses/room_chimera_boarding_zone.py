@@ -19,7 +19,7 @@ class CmdSuggestRideTopic(Command):
     key = "suggest"
     #aliases = ["h", "?"]
     locks = "cmd:all()"
-    help_category = "The Ride"
+    help_category = GAME_HELP_CATEGORY
 
     def func(self):
         """Implements the command."""

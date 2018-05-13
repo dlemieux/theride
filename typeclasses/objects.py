@@ -253,7 +253,7 @@ class CmdBuyPass(Command):
     key = "buy pass"
     aliases = ["buy season pass", "buy a pass", "buy a park pass", "buy park pass", "buy"]
     locks = "cmd:all()"
-    help_category = "The Ride"
+    help_category = GAME_HELP_CATEGORY
     
     def func(self):
         """
@@ -332,7 +332,7 @@ class CmdDestroyPass(Command):
     """
     key = "destroy pass"
     locks = "cmd:perm(Developer)"
-    help_category = "The Ride"
+    help_category = GAME_HELP_CATEGORY
     
     def func(self):
         self.obj.destroy_pass(self.caller)
@@ -348,7 +348,7 @@ class CmdSitOnBench(Command):
     key = "sit on bench"
     aliases = ["sit"]
     locks = "cmd:all()"
-    help_category = "The Ride"
+    help_category = GAME_HELP_CATEGORY
     
     def func(self):
         caller = self.caller

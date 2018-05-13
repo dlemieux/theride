@@ -19,7 +19,7 @@ class CmdReadAlbum(Command):
     """
     key = "read album"
     aliases = ["read photos", "read photo", "view album", "view photos", "view photo"]
-    help_category = "The Ride"
+    help_category = GAME_HELP_CATEGORY
     locks = "cmd:all()"
 
     def func(self):
@@ -92,7 +92,7 @@ class CmdBuyPhoto(Command):
       buy photo
     """
     key = "buy photo"
-    help_category = "The Ride"
+    help_category = GAME_HELP_CATEGORY
     locks = "cmd:all()"
 
     def func(self):

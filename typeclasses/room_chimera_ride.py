@@ -23,7 +23,7 @@ class CmdRiderParticipate(Command):
     key = "participate"
     aliases = list(x['command_name'] for x in DATA_ROLES)
     locks = "cmd:all()"
-    help_category = "The Ride"
+    help_category = GAME_HELP_CATEGORY
 
     def func(self):
         """Implements the command."""
