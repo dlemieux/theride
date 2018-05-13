@@ -39,21 +39,46 @@ class CmdReadAlbum(Command):
         if not photo_info:
             return ""
 
+        rider_list = photo_info['rider_list']
+        if not rider_list or len(rider_list) == 0:
+            return "" # Should not happen with 0 riders. Ignore invalid photo.
+
+        # Build date string
         date_string = "|mDate:|n " + photo_info['created_date']
+        date_string_len = len(date_string) - 4 # Remove formatting characters
 
-        rider_names = "|mRiders:|n " + ", ".join(photo_info['rider_list'])
+        # Trim all the rider names
+        trimmed_names = []
+        for rider_name in rider_list:
+            if len(rider_name) > PHOTO_ALBUM_MAX_NAME_LENGTH:
+                trimmed_names.append(rider_name[:PHOTO_ALBUM_MAX_NAME_LENGTH])
+            else:
+                trimmed_names.append(rider_name)
+        rider_list = trimmed_names
 
-        max_name_length = 200
-        if len(rider_names) > max_name_length:
-            rider_names = rider_names[:max_name_length]
+        # Build first rider string
+        riders_string = "|mRiders:|n %s" % (rider_list[0])
+        riders_string_len = len(riders_string) - 4 # Remove formatting characters
 
-        maxRowSize = max(len(rider_names), len(date_string))
+        # Build the other rider strings
+        other_rider_strings_list = []
+        for rider_name in rider_list[1:]:
+            other_rider_strings_list.append("        %s" % (rider_name))
+        
+        # Determine max among the single lines
+        maxRowSize = max(date_string_len, riders_string_len)
+        for other_rider in other_rider_strings_list:
+            maxRowSize = max(maxRowSize, len(other_rider))
 
         msg = "|c" # Set the color
-        msg += "==%s==\n" % ("=".ljust(maxRowSize, '='))
-        msg += "| |w%s|c |\n" % (date_string.ljust(maxRowSize + 4))
-        msg += "| |w%s|c |\n" % (rider_names.ljust(maxRowSize + 4))
-        msg += "==%s==\n" % ("=".ljust(maxRowSize, '='))
+        msg += ("==%s==" % ("=".ljust(maxRowSize, '='))) + "\n"
+        msg += ("| |w%s|c |" % (date_string.ljust(maxRowSize + 4))) + "\n" # Date line
+        msg += ("| |w%s|c |" % (riders_string.ljust(maxRowSize + 4))) + "\n" # First rider
+
+        for other_rider in other_rider_strings_list:
+            msg += ("| |w%s|c |" % (other_rider.ljust(maxRowSize))) + "\n" # Other riders
+
+        msg += ("==%s==" % ("=".ljust(maxRowSize, '='))) + "\n"
         msg += "|n" # Return to normal color
 
         return msg
