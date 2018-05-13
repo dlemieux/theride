@@ -184,6 +184,8 @@ class CmdBoardCar(Command):
                     caller.msg("Sorry, the |rChimera|n ride has experienced a technical difficulty. You'll need to wait in line again.")
                     caller.msg("You've been given |c%s|n park points for your inconvenience." % (points_reward))
 
+                    location.reset_room_after_reload()
+
             else:
                 caller.msg("It's not your turn yet!")
 
@@ -223,10 +225,6 @@ class ChimeraLineRoom(DefaultRoom):
         self.db.room_state = 0
 
         self.cmdset.add_default(CmdSetLineRoom)
-
-    #def at_object_leave(self, moved_obj, target_location, **kwargs):
-        #self.msg_contents("ChimeraLineRoom: object leave")
-        #return super(ChimeraLineRoom, self).at_object_leave(moved_obj, target_location, **kwargs)
 
     def at_object_receive(self, moved_obj, source_location, **kwargs):
         #self.msg_contents("ChimeraLineRoom: object receive")
@@ -286,8 +284,6 @@ class ChimeraLineRoom(DefaultRoom):
                 self.reset_lazy_riders()
 
                 self.db.room_state = 0 # Switch back to the waiting state
-
-        #self.msg_contents(self.contents) # This is a list of all things in the room
     
     def create_new_boarding_zone(self):
         new_boarding_zone = create_object(ChimeraBoardingZone, key="Boarding Zone")
@@ -295,7 +291,6 @@ class ChimeraLineRoom(DefaultRoom):
         self.cur_boarding_zone = new_boarding_zone
         #self.msg_contents("Created new boarding zone: %s" % new_boarding_zone.id)
         
-
     def get_line_length(self):
         num_people = 0
         for item in self.contents:
@@ -341,7 +336,6 @@ class ChimeraLineRoom(DefaultRoom):
 
         msg = "\n".join(x['name'] for x in sorted_riders)
         caller.msg(msg)
-
 
     def build_rider_list(self):
         # Build the list of the top n people who can board
@@ -406,4 +400,10 @@ class ChimeraLineRoom(DefaultRoom):
                 # that will clobber this one
                 rider['obj'].db.chimera_line_index = self.db.next_ticket_number
                 self.db.next_ticket_number = self.db.next_ticket_number + 1
+
+    def reset_room_after_reload(self):
+        # Need to fix the room enough so people can't spam the board command to get more money
+        # Go back to no car in the station
+        self.last_ride_time = datetime.datetime.utcnow()
+        self.db.room_state = 0
         
