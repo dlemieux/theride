@@ -176,16 +176,16 @@ DATA_VILLAIN = [
             }
         ],
     },
-    #{
-    #    "msg": "a company executive",
-    #    "picture": PICTURE_GENERIC,
-    #    "defeat_events": [
-    #        {
-    #            "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
-    #            "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-    #        }
-    #    ],
-    #},
+    {
+        "msg": "a company executive",
+        "picture": PICTURE_GENERIC,
+        "defeat_events": [
+            {
+                "msg": "The company executive suddenly holds up a finger to the group as if to wait a moment. You overhear him wispering into his cellphone, \"What do you mean the shareholder meeting has been moved up two hours!? I'm on my way!\". And with that, he's gone.",
+                "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            }
+        ],
+    },
     {
         "msg": "a psychic child",
         "picture": PICTURE_GENERIC,
@@ -217,26 +217,26 @@ DATA_VILLAIN = [
             }
         ],
     }, 
-    #{
-    #    "msg": "a knockoff brand 'Kaimera'",
-    #    "picture": PICTURE_GENERIC,
-    #    "defeat_events": [
-    #        {
-    #            "msg": "The Kaimera begins to look rather foolish as you notice the tape covering it's costume.",
-    #            "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-    #        }
-    #    ],
-    #},
-    #{
-    #    "msg": "a pirate captain",
-    #    "picture": PICTURE_GENERIC,
-    #    "defeat_events": [
-    #        {
-    #            "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
-    #            "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-    #        }
-    #    ],
-    #},
+    {
+        "msg": "a knockoff brand 'Kaimera'",
+        "picture": PICTURE_GENERIC,
+        "defeat_events": [
+            { # Supposed to be a person in a Kaimera costume
+                "msg": "The Kaimera appears quite defeated, and its tail seems to have fallen off leaving a tiny velcro patch where it should be. The Kaimera quickly turns around to run, and you pretend not to notice the zipper down its back.",
+                "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            }
+        ],
+    },
+    {
+        "msg": "a pirate captain",
+        "picture": PICTURE_GENERIC,
+        "defeat_events": [
+            {
+                "msg": "The defeated pirate captain now lay on the ground, with his peg leg in two pieces off to the side. \"Arr! Look what ya did to me good peg leg!\" he shrieked. Then, he clambered up to his foot and hopped away.",
+                "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            }
+        ],
+    },
     {
         "msg": "a cursed object",
         "picture": PICTURE_GENERIC,
