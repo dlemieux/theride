@@ -442,6 +442,12 @@ class CmdFeedback(Command):
     help_category = GAME_HELP_CATEGORY
     locks = "cmd:all()"
 
+    thank_you_options = [
+        "Thank you for submitting your feedback!",
+        "Thanks for being awesome!",
+        "Thank you for helping us make the game better!",
+    ]
+
     def func(self):
         caller = self.caller
 
@@ -451,7 +457,8 @@ class CmdFeedback(Command):
 
         try:
             self.save_feedback(caller, self.args)
-            caller.msg("Thank you %s for submitting your feedback!" % (caller.name))
+            thank_you_msg = random.choice(thank_you_options)
+            caller.msg(thank_you_msg)
         except Exception:
             caller.msg("Failed to submit feedback due to technical difficulties.")
 
