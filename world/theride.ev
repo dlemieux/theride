@@ -52,6 +52,8 @@ Looking miniscule by comparison, a park worker stands directly in front of the g
 @set Clerk/consider_msg = You would be evenly matched.
 # Set display order
 @set Clerk/display_order = 2
+# Get error message
+@set Clerk/get_err_msg = No touching!
 
 # Create the gatekeeper
 create/drop Gatekeeper : objects.ParkAttendant
@@ -78,6 +80,8 @@ Lining the walls are many television screens flashing different segments on loop
 
 # Create a special tv object
 @create/drop tv : room_walkway.WalkwayTv
+# Set the get fail message
+@set tv/get_err_msg = That is too high up to reach.
 
 # Create the courtyard room
 @dig Courtyard;ride-room-03
@@ -124,7 +128,9 @@ A nearby sign is advertising the attraction that will be built here soon.
 #
 @desc sign = The sign reads: "Coming soon! The Temple of the Phoenix!"
 # Set display order
-@set fence/display_order = 1
+@set sign/display_order = 1
+# Get error message
+@set sign/get_err_msg = The sign is fastened down to the ground.
 
 ## Create fence with hole to look through
 @create/drop fence : objects.ConstructionFence
@@ -134,6 +140,8 @@ A nearby sign is advertising the attraction that will be built here soon.
 @desc fence = The fence looks sturdy, although there is a tiny hole that you might be able to look through.
 # Set display order
 @set fence/display_order = 2
+# Get error message
+@set fence/get_err_msg = You can't carry around a fence.
 
 # Create the hole
 @create/drop hole in fence;hole
@@ -143,6 +151,8 @@ A nearby sign is advertising the attraction that will be built here soon.
 @desc hole in fence = Beyond the stacked concrete pylons and mounds of dirt, there's a building with an open doorway. If you squint, you can make out moving shapes in the darkness of the room's interior. Occasionally, a flicker of flame lights the room, and you can see several construction workers conversing with a large creature just out of your sight.
 # Set display order
 @set hole in fence/display_order = 3
+# Get error message
+@set hole in fence/get_err_msg = How would that even work?
 
 
 # Return to the courtyard
