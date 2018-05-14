@@ -102,46 +102,50 @@ DATA_MAIN_PROBLEMS = [
 
 # And you'll never believe it, but our efforts keep being thwarted by [villain]!
 DATA_VILLAIN = [
-    #{
-    #    "msg": "a mad scientist",
-    #    "picture": PICTURE_GENERIC,
-    #    "defeat_events": [
-    #        {
-    #            "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
-    #            "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-    #        }
-    #    ],
-    #},
-    #{
-    #    "msg": "a sentient robot",
-    #    "picture": PICTURE_GENERIC,
-    #    "defeat_events": [
-    #        {
-    #            "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
-    #            "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-    #        }
-    #    ],
-    #},
-    #{
-    #    "msg": "an angry ancient god",
-    #    "picture": PICTURE_GENERIC,
-    #    "defeat_events": [
-    #        {
-    #            "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
-    #            "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-    #        }
-    #    ],
-    #},
-    #{
-    #    "msg": "an alien",
-    #    "picture": PICTURE_GENERIC,
-    #    "defeat_events": [
-    #        {
-    #            "msg": "The alien",
-    #            "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-    #        }
-    #    ],
-    #},
+    {
+        "msg": "a mad scientist",
+        "picture": PICTURE_GENERIC,
+        "defeat_events": [
+            {
+                "msg": "The mad scientist was fuming after having lost the battle, or at least his beakers were. \"My hypothesis is disproven!\" he raged, and then disappeared in a cloud of compound gases.",
+                "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            }
+        ],
+    },
+    {
+        "msg": "a sentient robot",
+        "picture": PICTURE_GENERIC,
+        "defeat_events": [
+            {
+                "msg": "The damaged robot now lay on the ground with wires and senors pouring out from its metal frame. \"Sensors recalibrating...Robot finally understand human emotions...feelings...mrwahawh...mwereha...boob be poop...\" And then the robot went silent as the final lights on its frame went out.",
+                "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            }
+        ],
+    },
+    {
+        "msg": "an angry ancient god",
+        "picture": PICTURE_GENERIC,
+        "defeat_events": [
+            {
+                "msg": "The angry ancient god seemed quite disheartened at this turn of events. \"Earth will be mine! I was here first!\", they complained. And then the ancient god tore open a portal to another astral plane and stepped through, slamming it shut behind them.",
+                "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            }
+        ],
+    },
+    {
+        "msg": "an alien",
+        "picture": PICTURE_GENERIC,
+        "defeat_events": [
+            {
+                "msg": "Something on the alien's wrist sparked for a few seconds, and then for the first time it spoke in a voice that wasn't a series of gurgles and burps.",
+                "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            },
+            {
+                "msg": "Alien: \"Finally! This translator unit is working! It's been nothing but trouble since I bought it in the Gorgenplox sector!\". And with that, the alien left to get a refund.",
+                "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            },
+        ],
+    },
     {
         "msg": "a vampire king",
         "picture": PICTURE_GENERIC,
@@ -182,16 +186,16 @@ DATA_VILLAIN = [
     #        }
     #    ],
     #},
-    #{
-    #    "msg": "a psychic child",
-    #    "picture": PICTURE_GENERIC,
-    #    "defeat_events": [
-    #        {
-    #            "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
-    #            "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-    #        }
-    #    ],
-    #},
+    {
+        "msg": "a psychic child",
+        "picture": PICTURE_GENERIC,
+        "defeat_events": [
+            {
+                "msg": "The psychic child stomps her feet in a fit before composing herself and facing the group. \"I knew this would happen.\" she says, and walks away.",
+                "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            }
+        ],
+    },
     {
         "msg": "a time traveler",
         "picture": PICTURE_GENERIC,
