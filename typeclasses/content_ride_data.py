@@ -156,26 +156,26 @@ DATA_VILLAIN = [
             }
         ],
     },
-    #{
-    #    "msg": "a mummy",
-    #    "picture": PICTURE_GENERIC,
-    #    "defeat_events": [
-    #        {
-    #            "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
-    #            "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-    #        }
-    #    ],
-    #},
-    #{
-    #    "msg": "a ghost",
-    #    "picture": PICTURE_GENERIC,
-    #    "defeat_events": [
-    #        {
-    #            "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
-    #            "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-    #        }
-    #    ],
-    #},
+    {
+        "msg": "a mummy",
+        "picture": PICTURE_GENERIC,
+        "defeat_events": [
+            {
+                "msg": "The defeated mummy turns away and starts picking up its torn pieces of linen cloth all around the room. \"Why did I even get out of the tomb today!\"",
+                "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            }
+        ],
+    },
+    {
+        "msg": "a ghost",
+        "picture": PICTURE_GENERIC,
+        "defeat_events": [
+            {
+                "msg": "The ghost exclaimed angrily: \"I'd have gotten away with it too, if it wasn't for you meddling kids!\" The enraged ghost then charges straight at the group and disappears from sight, leaving everyone covered in a ghostly ectoplasmic substance.",
+                "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            }
+        ],
+    },
     #{
     #    "msg": "a company executive",
     #    "picture": PICTURE_GENERIC,
@@ -222,7 +222,7 @@ DATA_VILLAIN = [
     #    "picture": PICTURE_GENERIC,
     #    "defeat_events": [
     #        {
-    #            "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+    #            "msg": "The Kaimera begins to look rather foolish as you notice the tape covering it's costume.",
     #            "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
     #        }
     #    ],

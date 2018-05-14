@@ -313,7 +313,7 @@ class ChimeraRideRoom(DefaultRoom):
                     'max_health': 100,
                     'health': 100,
                     'state': 'idle',
-                    'idle_warning_delay': 5,
+                    'idle_warning_delay': 6,
                     'idle_warning_1': False,
                     'idle_warning_2': False,
                     'idle_warning_3': False,
