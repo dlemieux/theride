@@ -12,6 +12,7 @@ from evennia import CmdSet
 from evennia import Command as BaseCommand
 
 from typeclasses.config_all import *
+from typeclasses.content_ride_data import *
 
 # from evennia import default_cmds
 
@@ -487,3 +488,43 @@ class CmdFeedback(Command):
         file.write(log_msg)
         file.close()
 
+class CmdDevTest(Command):
+    """
+    Lets devs put test code here.
+    """    
+    key = "devtest"
+    help_category = GAME_HELP_CATEGORY
+    locks = "cmd:perm(Developer)"
+
+    def func(self):
+        caller = self.caller
+        location = caller.location
+        
+        self.calculate_num_rides(caller, location)
+
+    def calculate_num_rides(self, caller, location):
+        num_combos = 1
+        lines_of_dialog = 0
+
+        num_combos *= len(DATA_ROLES)
+        caller.msg("DATA_ROLES: %s" % (len(DATA_ROLES)))
+        lines_of_dialog += len(DATA_ROLES) # Count 1 line per role
+
+        num_combos *= len(DATA_MAIN_PROBLEMS)
+        caller.msg("DATA_MAIN_PROBLEMS: %s" % (len(DATA_MAIN_PROBLEMS)))
+        lines_of_dialog += 2 * len(DATA_MAIN_PROBLEMS) # Start and end line
+
+        num_combos *= len(DATA_VILLAIN)
+        caller.msg("DATA_VILLAIN: %s" % (len(DATA_VILLAIN)))
+        for villain_info in DATA_VILLAIN:
+            lines_of_dialog += len(villain_info['defeat_events'])
+
+        for section_info in DATA_RIDE_EVENT_SECTIONS:
+            num_options = len(section_info['options'])
+            num_combos *= num_options
+            caller.msg("EVENT_SECTION: %s: %s" % (section_info['section_name'], num_options))
+            for option_info in section_info['options']:
+                lines_of_dialog += len(option_info['events'])
+
+        caller.msg("There are %s ride combinations" % (num_combos))
+        caller.msg("There are more than %s lines of dialog in the game" % (lines_of_dialog))

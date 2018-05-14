@@ -22,6 +22,7 @@ from commands.command import CmdHelpNewbie
 from commands.command import CmdExits
 from commands.command import CmdReadPass
 from commands.command import CmdFeedback
+from commands.command import CmdDevTest
 
 
 class CharacterCmdSet(default_cmds.CharacterCmdSet):
@@ -46,6 +47,7 @@ class CharacterCmdSet(default_cmds.CharacterCmdSet):
         self.add(CmdExits())
         self.add(CmdReadPass())
         self.add(CmdFeedback())
+        self.add(CmdDevTest())
 
         # Security guard commands
         self.add(CmdAttack())
