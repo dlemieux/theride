@@ -75,7 +75,7 @@ class CmdGuessNumber(Command):
             # player won!
             location.db.number_game_started = False
 
-            msg = "Line Attendant: \"We have a winner! |c%s|n guessed the answer |c%s|n!\"" % (caller.name, user_guess)
+            msg = "Line Attendant: \"We have a winner! |c%s|n guessed the answer |c%s|n! Their reward is the satisfaction of knowing that THEY guessed the number right before anyone else.\"" % (caller.name, user_guess)
             location.msg_contents(msg)
         elif user_guess > location.db.number_game_answer:
             # guess too high

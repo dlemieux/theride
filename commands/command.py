@@ -457,10 +457,13 @@ class CmdFeedback(Command):
 
         try:
             self.save_feedback(caller, self.args)
-            thank_you_msg = random.choice(thank_you_options)
+            thank_you_msg = random.choice(self.thank_you_options)
             caller.msg(thank_you_msg)
-        except Exception:
+        except Exception, e:
             caller.msg("Failed to submit feedback due to technical difficulties.")
+
+            if FEEDBACK_DISPLAY_EXCEPTIONS:
+                caller.msg(str(e))
 
     def save_feedback(self, caller, msg):
 
