@@ -176,22 +176,22 @@ class ChimeraRideRoom(DefaultRoom):
 
         # Set up the initial story setup
         self.ride_events.append({
-            'msg': "Thanks for joining us on the ride today. Now, according to my notes, you're a group of ROLE? Wow!",
+            'msg': "Ride Attendant: \"Thanks for joining us on the ride today. Now, according to my notes, you're a group of ROLE? Wow!\"",
             'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
         })
 
         self.ride_events.append({
-            'msg': "Well remember to ACTION when the time is right.",
+            'msg': "Ride Attendant: \"Well remember to ACTION when the time is right.\"",
             'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
         })
 
         self.ride_events.append({
-            'msg': "You came to the park at an unusual time. PROBLEM And hey, we could really use your help! But it seems like we're having some trouble for some reason.",
+            'msg': "Ride Attendant: \"You came to the park at an unusual time. PROBLEM And hey, we could really use your help! But it seems like we're having some trouble for some reason.\"",
             'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
         })
 
         self.ride_events.append({
-            'msg': "And you'll never believe it, but our efforts keep being thwarted by VILLAIN!",
+            'msg': "Ride Attendant: \"And you'll never believe it, but our efforts keep being thwarted by VILLAIN!\"",
             'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
         })
 
