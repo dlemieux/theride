@@ -925,7 +925,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
-            #},
+            },
             #{
             #    'option_name': 'staring contest',
             #    'events': [
