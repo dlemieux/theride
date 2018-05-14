@@ -130,10 +130,10 @@ class CmdRiderParticipate(Command):
 
         # Show the bars
         health_msg = ""
-        health_msg += " ||" # Starting bar
+        health_msg += "|r ||" # Starting bar
         health_msg += "".ljust(num_bars_left, '-')
         health_msg += "".ljust(max_bars - num_bars_left, ' ')
-        health_msg += "||" # Ending bar
+        health_msg += "|||n" # Ending bar
 
         return health_msg
 
@@ -237,7 +237,7 @@ class ChimeraRideRoom(DefaultRoom):
 
         self.ride_end_events.append({
             'msg': "Everything is finally as it should be. The Chimera lowers itself on the exit platform and grunts in appreciation.\nRide Attendant: \"Who knew a group of ROLE would save the day! Join us again some time.\"\nThey wave happily as the shoulder harnesses lift and you are finally free to exit.",
-            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY * 2, # Extra time to read final message
         })
 
     def update_loop(self):
@@ -316,6 +316,8 @@ class ChimeraRideRoom(DefaultRoom):
                     'idle_warning_delay': 5,
                     'idle_warning_1': False,
                     'idle_warning_2': False,
+                    'idle_warning_3': False,
+                    'idle_warning_4': False,
                     'battle_length_seconds': 20,
                 }
 
@@ -335,18 +337,23 @@ class ChimeraRideRoom(DefaultRoom):
             idle_warning_time = self.ride_villain_battle['idle_warning_delay']
 
             if elapsed_seconds >= idle_warning_time * 1 and not self.ride_villain_battle['idle_warning_1']:
-                msg = "\"What? You're not even going to try and fight?\""
+                msg = "Hmmm...that's not a bad idea..."
                 self.ride_villain_battle['idle_warning_1'] = True
                 self.send_room_message(msg)
 
             if elapsed_seconds >= idle_warning_time * 2 and not self.ride_villain_battle['idle_warning_2']:
-                msg = "\"Are you waiting for me to foolishly explain my entire plot so you can escape and stop me or something?\""
+                msg = "\"What? You're not even going to try and fight?\""
                 self.ride_villain_battle['idle_warning_2'] = True
                 self.send_room_message(msg)
 
-            if elapsed_seconds >= idle_warning_time * 3:
-                msg = "Your pacifist response seems to have worked, as your nemesis dies of boredom in front of you."
+            if elapsed_seconds >= idle_warning_time * 3 and not self.ride_villain_battle['idle_warning_3']:
+                msg = "\"Are you waiting for me to foolishly explain my entire plot so you can escape and stop me or something?\""
                 self.ride_villain_battle['idle_warning_3'] = True
+                self.send_room_message(msg)
+
+            if elapsed_seconds >= idle_warning_time * 4:
+                msg = "Your pacifist response seems to have worked, as your nemesis dies of boredom in front of you."
+                self.ride_villain_battle['idle_warning_4'] = True
                 self.ride_villain_battle['state'] = 'did_not_fight'
                 self.send_room_message(msg)
                 return CHIMERA_RIDE_DEFAULT_EVENT_DELAY # Give them time to read

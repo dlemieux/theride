@@ -1976,19 +1976,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "VILLAIN_PICTURE",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "\"You fools! You're just a bunch of ROLE. What are you going to do, ACTION me to death?\"",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "\"MWA HA HA HA HA!\"",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "Hmmm...that's not a bad idea...",
+                        'msg': "VILLAIN_PICTURE\n\"You fools! You're just a bunch of ROLE. What are you going to do, ACTION me to death? MWA HA HA HA HA!\"",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                         'type': 'start_villain_battle',
                     },
