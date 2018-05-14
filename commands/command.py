@@ -332,6 +332,8 @@ class CmdHelpNewbie(Command):
         string += "  |gemote|n, |gpose|n:          Share an emote or pose with all human players in the room.\n"
         string += "                        Ex: |gemote claps wildly!|n\n"
         string += "\n"
+        string += "  |gfeedback <your feedback>|n: Send us a message with feedback about the game (bugs, issues, or suggestions) so we can keep making it better!\n"
+        string += "\n"
         string += "  |ghelp|n, |ghelp <command>|n: See general help or help for a specific command.\n"
         #string += "  |g|n: \n"
 
