@@ -48,7 +48,7 @@ class ParkEntranceExit(DefaultExit):
         self.locks.add("traverse:attr(has_season_pass)")
 
     def at_traverse(self, traveller, target_loc):
-        traveller.msg("You proudly flass your park pass for the Gatekeeper.")
+        traveller.msg("You proudly flash your park pass for the Gatekeeper.")
         traveller.msg("The Gatekeeper acknowledges with a nod, and lets you pass through.")
 
         super(ParkEntranceExit, self).at_traverse(traveller, target_loc)
@@ -62,4 +62,4 @@ class ParkEntranceExit(DefaultExit):
 
     def at_failed_traverse(self, traveller):
         #super(ParkEntranceExit, self).at_failed_traverse(traveller)
-        traveller.msg("Gatekeeper: \"You can't enter the park until you |gbuy|n a park pass!\"")
+        traveller.msg("Gatekeeper: \"You can't enter the park until you [|gbuy|n] a park pass!\"")
