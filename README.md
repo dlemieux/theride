@@ -1,3 +1,7 @@
+# Welcome to Mythari Park!
+
+This repository holds the source code for Mythari Park (originally called The Ride) which was created for the Enter the MUD game jam.
+
 # Welcome to Evennia!
 
 This is your game directory, set up to let you start with
