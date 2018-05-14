@@ -36,7 +36,7 @@ DATA_ROLES = [
 DATA_MAIN_PROBLEMS = [
     {
         "msg": "The Chimera may be catching a cold!",
-        "end_line": "A veternarian enters carrying a person-sized syringe labeled ANTIBIOTICS. The Chimera eyes it suspiciously, but allows itself to be injected.",
+        "end_line": "A veterinarian enters carrying a person-sized syringe labeled ANTIBIOTICS. The Chimera eyes it suspiciously, but allows itself to be injected.",
     },
     {
         "msg": "The Chimera needs exercise!",
@@ -91,7 +91,7 @@ DATA_MAIN_PROBLEMS = [
     #   "end_line": "Everyone remembers that the cat is still stuck in the tree and start calling out to the cat to reassure it that they'll rescue the cat soon. The cat yawns, and leaps down out of the tree and onto the ground unharmed, because obviously it was a cat and being in a tree isn't a problem.",
     #},
     {
-        "msg": "We're scouting out a new territory for the park!",
+        "msg": "We're scouting out new territory for the park!",
         "end_line": "It turns out that the Chimera was wearing a GPS unit this whole time. Your adventuring managed to map out the whole territory!",
     },
     #{
@@ -102,46 +102,46 @@ DATA_MAIN_PROBLEMS = [
 
 # And you'll never believe it, but our efforts keep being thwarted by [villain]!
 DATA_VILLAIN = [
-    {
-        "msg": "a mad scientist",
-        "picture": PICTURE_GENERIC,
-        "defeat_events": [
-            {
-                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
-                "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            }
-        ],
-    },
-    {
-        "msg": "a sentient robot",
-        "picture": PICTURE_GENERIC,
-        "defeat_events": [
-            {
-                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
-                "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            }
-        ],
-    },
-    {
-        "msg": "an angry ancient god",
-        "picture": PICTURE_GENERIC,
-        "defeat_events": [
-            {
-                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
-                "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            }
-        ],
-    },
-    {
-        "msg": "an alien",
-        "picture": PICTURE_GENERIC,
-        "defeat_events": [
-            {
-                "msg": "The alien",
-                "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            }
-        ],
-    },
+    #{
+    #    "msg": "a mad scientist",
+    #    "picture": PICTURE_GENERIC,
+    #    "defeat_events": [
+    #        {
+    #            "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+    #            "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        }
+    #    ],
+    #},
+    #{
+    #    "msg": "a sentient robot",
+    #    "picture": PICTURE_GENERIC,
+    #    "defeat_events": [
+    #        {
+    #            "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+    #            "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        }
+    #    ],
+    #},
+    #{
+    #    "msg": "an angry ancient god",
+    #    "picture": PICTURE_GENERIC,
+    #    "defeat_events": [
+    #        {
+    #            "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+    #            "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        }
+    #    ],
+    #},
+    #{
+    #    "msg": "an alien",
+    #    "picture": PICTURE_GENERIC,
+    #    "defeat_events": [
+    #        {
+    #            "msg": "The alien",
+    #            "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        }
+    #    ],
+    #},
     {
         "msg": "a vampire king",
         "picture": PICTURE_GENERIC,
@@ -152,52 +152,52 @@ DATA_VILLAIN = [
             }
         ],
     },
-    {
-        "msg": "a mummy",
-        "picture": PICTURE_GENERIC,
-        "defeat_events": [
-            {
-                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
-                "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            }
-        ],
-    },
-    {
-        "msg": "a ghost",
-        "picture": PICTURE_GENERIC,
-        "defeat_events": [
-            {
-                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
-                "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            }
-        ],
-    },
-    {
-        "msg": "a company executive",
-        "picture": PICTURE_GENERIC,
-        "defeat_events": [
-            {
-                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
-                "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            }
-        ],
-    },
-    {
-        "msg": "a psychic child",
-        "picture": PICTURE_GENERIC,
-        "defeat_events": [
-            {
-                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
-                "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            }
-        ],
-    },
+    #{
+    #    "msg": "a mummy",
+    #    "picture": PICTURE_GENERIC,
+    #    "defeat_events": [
+    #        {
+    #            "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+    #            "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        }
+    #    ],
+    #},
+    #{
+    #    "msg": "a ghost",
+    #    "picture": PICTURE_GENERIC,
+    #    "defeat_events": [
+    #        {
+    #            "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+    #            "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        }
+    #    ],
+    #},
+    #{
+    #    "msg": "a company executive",
+    #    "picture": PICTURE_GENERIC,
+    #    "defeat_events": [
+    #        {
+    #            "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+    #            "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        }
+    #    ],
+    #},
+    #{
+    #    "msg": "a psychic child",
+    #    "picture": PICTURE_GENERIC,
+    #    "defeat_events": [
+    #        {
+    #            "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+    #            "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        }
+    #    ],
+    #},
     {
         "msg": "a time traveler",
         "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
-                "msg": "The time traveler curses as a device on her wrist beeps insistently. \"\" Then, she blinks out of this timeline.",
+                "msg": "The time traveler curses as a device on her wrist beeps insistently. \"See you again this time yesterday,\" she promises. Then, she blinks out of this timeline.",
                 "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
             }
         ],
@@ -213,26 +213,26 @@ DATA_VILLAIN = [
             }
         ],
     }, 
-    {
-        "msg": "a knockoff brand 'Kaimera'",
-        "picture": PICTURE_GENERIC,
-        "defeat_events": [
-            {
-                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
-                "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            }
-        ],
-    },
-    {
-        "msg": "a pirate captain",
-        "picture": PICTURE_GENERIC,
-        "defeat_events": [
-            {
-                "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
-                "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            }
-        ],
-    },
+    #{
+    #    "msg": "a knockoff brand 'Kaimera'",
+    #    "picture": PICTURE_GENERIC,
+    #    "defeat_events": [
+    #        {
+    #            "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+    #            "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        }
+    #    ],
+    #},
+    #{
+    #    "msg": "a pirate captain",
+    #    "picture": PICTURE_GENERIC,
+    #    "defeat_events": [
+    #        {
+    #            "msg": "Something tells me that you won't have to worry about VILLAIN for a long time.",
+    #            "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        }
+    #    ],
+    #},
     {
         "msg": "a cursed object",
         "picture": PICTURE_GENERIC,
@@ -558,171 +558,171 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "\"Save us!\"' the line attendant yells as you land, shattering the cage and earning your freedom!",
+                        'msg': "\"Save us!\" the ride attendant yells. The cage shatters as you land, earning your freedom!",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
             },
         ],
     }, # Trapped somewhere
-    {
-        'section_name': 'escape from trap',
-        'options': [
-            # The options list will have 1 item selected in it to represent the section.
-            {
-                'option_name': 'ride a rainbow to safety',
-                'events': [
-                    # The events list is all the events that will be shown in order.
-                    # Typically 4 messages long.
-                    {
-                        'msg': "The Chimera tries to show off by running even faster.",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "With its magical powers, it summons a bright and shiny rainbow!",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                    {
-                        'msg': "With a single leap, the Chimera leaps onto the rainbow and gallops towards the heavens!",
-                        'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-                    },
-                ],
-            },
-            #{
-            #    'option_name': 'follow a white rabbit',
-            #    'events': [
-            #        # The events list is all the events that will be shown in order.
-            #        # Typically 4 messages long.
-            #        {
-            #            'msg': "The Chimera has anticipated this type of danger!",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "With its magical powers, it summons ",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "A transition out.",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #    ],
-            #},
-            #{
-            #    'option_name': 'wolves scent their way out',
-            #    'events': [
-            #        # The events list is all the events that will be shown in order.
-            #        # Typically 4 messages long.
-            #        {
-            #            'msg': "The Chimera has anticipated this type of danger!",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "With its magical powers, it summons ",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "A transition out.",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #    ],
-            #},
-            #{
-            #    'option_name': 'red string of fate',
-            #    'events': [
-            #        # The events list is all the events that will be shown in order.
-            #        # Typically 4 messages long.
-            #        {
-            #            'msg': "The Chimera has anticipated this type of danger!",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "With its magical powers, it summons ",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "A transition out.",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #    ],
-            #},
-            #{
-            #    'option_name': 'circus',
-            #    'events': [
-            #        # The events list is all the events that will be shown in order.
-            #        # Typically 4 messages long.
-            #        {
-            #            'msg': "The Chimera has anticipated this type of danger!",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "With its magical powers, it summons ",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "A transition out.",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #    ],
-            #},
-            #{
-            #    'option_name': 'head towards a bright light',
-            #    'events': [
-            #        # The events list is all the events that will be shown in order.
-            #        # Typically 4 messages long.
-            #        {
-            #            'msg': "The Chimera has anticipated this type of danger!",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "With its magical powers, it summons ",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "A transition out.",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #    ],
-            #},
-            #{
-            #    'option_name': 'sledding',
-            #    'events': [
-            #        # The events list is all the events that will be shown in order.
-            #        # Typically 4 messages long.
-            #        {
-            #            'msg': "The Chimera has anticipated this type of danger!",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "With its magical powers, it summons ",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "A transition out.",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #    ],
-            #},
-            #{
-            #    'option_name': 'taken out with a trash heap',
-            #    'events': [
-            #        # The events list is all the events that will be shown in order.
-            #        # Typically 4 messages long.
-            #        {
-            #            'msg': "The Chimera has anticipated this type of danger!",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "With its magical powers, it summons ",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #        {
-            #            'msg': "A transition out.",
-            #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
-            #        },
-            #    ],
-            #},
-        ],
-    }, # Escape from trap
+    #{
+    #    'section_name': 'escape from trap',
+    #    'options': [
+    #        # The options list will have 1 item selected in it to represent the section.
+    #        {
+    #            'option_name': 'ride a rainbow to safety',
+    #            'events': [
+    #                # The events list is all the events that will be shown in order.
+    #                # Typically 4 messages long.
+    #                {
+    #                    'msg': "The Chimera tries to show off by running even faster.",
+    #                    'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #                },
+    #                {
+    #                    'msg': "With its magical powers, it summons a bright and shiny rainbow!",
+    #                    'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #                },
+    #                {
+    #                    'msg': "With a single leap, the Chimera leaps onto the rainbow and gallops towards the heavens!",
+    #                    'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #                },
+    #            ],
+    #        },
+    #        #{
+    #        #    'option_name': 'follow a white rabbit',
+    #        #    'events': [
+    #        #        # The events list is all the events that will be shown in order.
+    #        #        # Typically 4 messages long.
+    #        #        {
+    #        #            'msg': "The Chimera has anticipated this type of danger!",
+    #        #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        #        },
+    #        #        {
+    #        #            'msg': "With its magical powers, it summons ",
+    #        #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        #        },
+    #        #        {
+    #        #            'msg': "A transition out.",
+    #        #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        #        },
+    #        #    ],
+    #        #},
+    #        #{
+    #        #    'option_name': 'wolves scent their way out',
+    #        #    'events': [
+    #        #        # The events list is all the events that will be shown in order.
+    #        #        # Typically 4 messages long.
+    #        #        {
+    #        #            'msg': "The Chimera has anticipated this type of danger!",
+    #        #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        #        },
+    #        #        {
+    #        #            'msg': "With its magical powers, it summons ",
+    #        #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        #        },
+    #        #        {
+    #        #            'msg': "A transition out.",
+    #        #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        #        },
+    #        #    ],
+    #        #},
+    #        #{
+    #        #    'option_name': 'red string of fate',
+    #        #    'events': [
+    #        #        # The events list is all the events that will be shown in order.
+    #        #        # Typically 4 messages long.
+    #        #        {
+    #        #            'msg': "The Chimera has anticipated this type of danger!",
+    #        #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        #        },
+    #        #        {
+    #        #            'msg': "With its magical powers, it summons ",
+    #        #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        #        },
+    #        #        {
+    #        #            'msg': "A transition out.",
+    #        #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        #        },
+    #        #    ],
+    #        #},
+    #        #{
+    #        #    'option_name': 'circus',
+    #        #    'events': [
+    #        #        # The events list is all the events that will be shown in order.
+    #        #        # Typically 4 messages long.
+    #        #        {
+    #        #            'msg': "The Chimera has anticipated this type of danger!",
+    #        #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        #        },
+    #        #        {
+    #        #            'msg': "With its magical powers, it summons ",
+    #        #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        #        },
+    #        #        {
+    #        #            'msg': "A transition out.",
+    #        #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        #        },
+    #        #    ],
+    #        #},
+    #        #{
+    #        #    'option_name': 'head towards a bright light',
+    #        #    'events': [
+    #        #        # The events list is all the events that will be shown in order.
+    #        #        # Typically 4 messages long.
+    #        #        {
+    #        #            'msg': "The Chimera has anticipated this type of danger!",
+    #        #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        #        },
+    #        #        {
+    #        #            'msg': "With its magical powers, it summons ",
+    #        #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        #        },
+    #        #        {
+    #        #            'msg': "A transition out.",
+    #        #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        #        },
+    #        #    ],
+    #        #},
+    #        #{
+    #        #    'option_name': 'sledding',
+    #        #    'events': [
+    #        #        # The events list is all the events that will be shown in order.
+    #        #        # Typically 4 messages long.
+    #        #        {
+    #        #            'msg': "The Chimera has anticipated this type of danger!",
+    #        #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        #        },
+    #        #        {
+    #        #            'msg': "With its magical powers, it summons ",
+    #        #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        #        },
+    #        #        {
+    #        #            'msg': "A transition out.",
+    #        #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        #        },
+    #        #    ],
+    #        #},
+    #        #{
+    #        #    'option_name': 'taken out with a trash heap',
+    #        #    'events': [
+    #        #        # The events list is all the events that will be shown in order.
+    #        #        # Typically 4 messages long.
+    #        #        {
+    #        #            'msg': "The Chimera has anticipated this type of danger!",
+    #        #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        #        },
+    #        #        {
+    #        #            'msg': "With its magical powers, it summons ",
+    #        #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        #        },
+    #        #        {
+    #        #            'msg': "A transition out.",
+    #        #            'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
+    #        #        },
+    #        #    ],
+    #        #},
+    #    ],
+    #}, # Escape from trap
     {
         'section_name': 'villain challenge',
         'options': [
@@ -871,11 +871,11 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "Unfortunately, you should never underestimate the comedic potential of a Chimera perfectly moving its mouth and dancing to American pop classics!",
+                        'msg': "Unfortunately, you should never underestimate the comedic potential of a Chimera perfectly moving its mouth to American pop classics!",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "Wow, you think, I've never seen VILLAIN lose because they weren\'t funnier than the competition! You agree to a truce for now and are allowed to leave.",
+                        'msg': "Wow, you think, I've never seen VILLAIN resent Nicki Minaj so much! You agree to a truce for now and are allowed to leave.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
@@ -921,7 +921,7 @@ DATA_RIDE_EVENT_SECTIONS = [
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                     {
-                        'msg': "Wow, you think, I've never seen VILLAIN become insecure over arm comparisons. You agree to a truce for now and are allowed to leave.",
+                        'msg': "Wow, you think, I've never seen VILLAIN become insecure over limb comparisons. You agree to a truce for now and are allowed to leave.",
                         'delay': CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
                     },
                 ],
