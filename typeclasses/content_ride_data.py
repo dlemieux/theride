@@ -107,7 +107,7 @@ DATA_VILLAIN = [
         "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
-                "msg": "The mad scientist was fuming after having lost the battle, or at least his beakers were. \"My hypothesis is disproven!\" he raged, and then disappeared in a cloud of compound gases.",
+                "msg": "The mad scientist is fuming after having lost the battle, or at least his beakers are. \"My hypothesis is disproven!\" he rages, and then disappears in a cloud of compound gases.",
                 "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
             }
         ],
@@ -117,7 +117,7 @@ DATA_VILLAIN = [
         "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
-                "msg": "The damaged robot now lay on the ground with wires and senors pouring out from its metal frame. \"Sensors recalibrating...Robot finally understand human emotions...feelings...mrwahawh...mwereha...boob be poop...\" And then the robot went silent as the final lights on its frame went out.",
+                "msg": "The damaged robot collapses on the ground with wires and sensors pouring out from its metal frame. \"Sensors recalibrating...Robot finally understand human emotions...feelings...mrwahawh...mwereha...boop be boop...\" And then the robot goes silent as the final lights on its frame go dark.",
                 "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
             }
         ],
@@ -127,7 +127,7 @@ DATA_VILLAIN = [
         "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
-                "msg": "The angry ancient god seemed quite disheartened at this turn of events. \"Earth will be mine! I was here first!\", they complained. And then the ancient god tore open a portal to another astral plane and stepped through, slamming it shut behind them.",
+                "msg": "The angry ancient god seems quite disheartened at this turn of events. \"Earth will be mine! I was here first!\", it complains. Then, the ancient god tears open a portal to another astral plane and steps through, slamming it shut behind them.",
                 "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
             }
         ],
@@ -137,11 +137,11 @@ DATA_VILLAIN = [
         "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
-                "msg": "Something on the alien's wrist sparked for a few seconds, and then for the first time it spoke in a voice that wasn't a series of gurgles and burps.",
+                "msg": "Something on the alien's wrist sparks for a few seconds, and then for the first time it speaks in a voice that isn't a series of gurgles and burps.",
                 "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
             },
             {
-                "msg": "Alien: \"Finally! This translator unit is working! It's been nothing but trouble since I bought it in the Gorgenplox sector!\". And with that, the alien left to get a refund.",
+                "msg": "Alien: \"Finally! This translator unit is working! It's been nothing but trouble since I bought it in the Gorgenplox sector!\". And with that, the alien leaves to get a refund.",
                 "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
             },
         ],
@@ -161,7 +161,7 @@ DATA_VILLAIN = [
         "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
-                "msg": "The defeated mummy turns away and starts picking up its torn pieces of linen cloth all around the room. \"Why did I even get out of the tomb today!\"",
+                "msg": "The defeated mummy turns away and starts picking up its torn pieces of linen cloth all around the room. \"Why did I even get out of the tomb today!\" Then, it shambles off.",
                 "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
             }
         ],
@@ -171,7 +171,7 @@ DATA_VILLAIN = [
         "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
-                "msg": "The ghost exclaimed angrily: \"I'd have gotten away with it too, if it wasn't for you meddling kids!\" The enraged ghost then charges straight at the group and disappears from sight, leaving everyone covered in a ghostly ectoplasmic substance.",
+                "msg": "The ghost goes pale with anger. \"I'd have gotten away with it too, if it wasn't for you meddling kids!\" The enraged ghost then charges straight at the group and disappears from sight, leaving everyone covered in a ghostly ectoplasmic substance.",
                 "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
             }
         ],
@@ -181,7 +181,7 @@ DATA_VILLAIN = [
         "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
-                "msg": "The company executive suddenly holds up a finger to the group as if to wait a moment. You overhear him wispering into his cellphone, \"What do you mean the shareholder meeting has been moved up two hours!? I'm on my way!\". And with that, he's gone.",
+                "msg": "The company executive suddenly holds up a finger to the group as if to wait a moment. You overhear him whispering into his cellphone, \"What do you mean the shareholder meeting has been moved up two hours!? I'm on my way!\". And with that, he's gone.",
                 "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
             }
         ],
@@ -232,7 +232,7 @@ DATA_VILLAIN = [
         "picture": PICTURE_GENERIC,
         "defeat_events": [
             {
-                "msg": "The defeated pirate captain now lay on the ground, with his peg leg in two pieces off to the side. \"Arr! Look what ya did to me good peg leg!\" he shrieked. Then, he clambered up to his foot and hopped away.",
+                "msg": "The defeated pirate captain falls to the ground, with his peg leg in two pieces off to the side. \"Arr! Look what ya did to me good peg leg!\" he shrieks. Then, he clambers up on one foot and hops away.",
                 "delay": CHIMERA_RIDE_DEFAULT_EVENT_DELAY,
             }
         ],
