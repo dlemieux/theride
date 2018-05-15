@@ -253,6 +253,8 @@ will purchase their wares to help pass the time.
 @desc Line Attendant = The line attendant is dressed in a long brown cloak that covers his feet.\nThey also appears to be wearing a fake beard that extends down to knees.\nUse [|gtalk to line attendant|n] to see if they have a way to help pass the time.
 #
 @set Line Attendant/talk_to_msg = Line Attendant: "Welcome to the |rChimera|n! If you wait then another ride cart will be along shortly.\nIf you are feeling bored, you could talk with others, buy a hot dog, or type [|gplay game|n]"
+# Set display order
+@set Line Attendant/display_order = 1
 
 # Create the hot dog vendor
 @create/drop Hot Dog Vendor;vendor;hot dog;hot;dog : objects.ParkAttendant
@@ -260,6 +262,8 @@ will purchase their wares to help pass the time.
 @desc Hot Dog Vendor = The vendor is selling hot dogs to people in line. Try [|gbuy hot dog|n] to get one for yourself!
 #
 @set Hot Dog Vendor/talk_to_msg = Hot Dog Vendor: "Howdy there! Would you like to buy a hot dog! It only costs |c2|n points!\n                Type [|gbuy hot dog|n] and I'll have one made up for you in a jiffy!"
+# Set display order
+@set Hot Dog Vendor/display_order = 2
 
 ## Create the boarding zone
 #@dig ChimeraBoardingRoom;ride-room-05
